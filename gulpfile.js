@@ -27,11 +27,16 @@ gulp.task("sass", function() {
     .pipe(gulp.dest("dist"));
 });
 
+gulp.task("copyWebfonts", function() {
+  gulp.src("src/webfonts/*")
+    .pipe(gulp.dest("dist/webfonts"));
+});
 
-gulp.task("default", ["sass", "scripts"]);
+gulp.task("default", ["sass", "scripts", "copyWebfonts"]);
 
 
 gulp.task("watch", function() {
   gulp.watch("src/js/*.js", ["scripts"]);
   gulp.watch("src/*.scss", ["sass"]);
+  gulp.watch("src/webfonts/*", ["copyWebfonts"]);
 });
