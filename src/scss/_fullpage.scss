@@ -1,0 +1,19 @@
+// This should be renamed. It is full height, but not full page.
+
+.fullpage .fullpage-section {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	background: linear-gradient(white, #fcfcfc);
+}
+
+.fullpage .fullpage-content {
+	width: 60vw;
+}
+
+.fullpage .next-section {
+	position: absolute;
+	bottom: 5vh;
+}
