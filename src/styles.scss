@@ -1,6 +1,26 @@
+
 @import 'scss/bootstrap-overrides';
 @import 'scss/lib/bootstrap/bootstrap';
 
+.theme-dark {
+  @import 'scss/themes/dark/bootstrap-overrides';
+  @import 'scss/lib/bootstrap/bootstrap';
+}
+
+.theme-corporate {
+  @import 'scss/themes/corporate/bootstrap-overrides';
+  @import 'scss/lib/bootstrap/bootstrap';
+}
+
+.theme-sales {
+  @import 'scss/themes/sales/bootstrap-overrides';
+  @import 'scss/lib/bootstrap/bootstrap';
+}
+
+
+
+
+
 @import 'scss/fullpage';
-@import 'scss/section/headers';
-@import 'scss/section/footers';
+@import 'scss/sections/headers';
+@import 'scss/sections/footers';
