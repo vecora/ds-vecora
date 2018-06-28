@@ -9,7 +9,7 @@ To use the styles, copy everything in the `dist` folder to your web root.
 Install Gulp globally
 ´sudo npm install -g gulp´
 
-´npm install´
+´npm install --save-dev´
 
 Open terminal and type `gulp watch`. Gulp builds continuously as you make changes.
 
