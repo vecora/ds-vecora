@@ -16,6 +16,6 @@ To use the styles, copy everything in the `dist` folder to your web root.
 
 4. Install dependencies locally by typing `npm install --save-dev`
 
-5. Type ´gulp´ to build. Build files are located in the `dist` folder. Alternativly type `gulp watch` to watch for changes in the `src` folder and build continuously.
+5. Type `gulp` to build. Build files are located in the `dist` folder. Alternativly type `gulp watch` to watch for changes in the `src` folder and build continuously.
 
 ### Building the documentation
