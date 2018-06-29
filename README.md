@@ -4,6 +4,8 @@
 
 To use the styles, copy everything in the `dist` folder to your web root.
 
+Read the [documentation](https://vecora.github.io/sg-vecora/docs/) for more information.
+
 ## Build instructions
 
 ### Building the style guide
