@@ -11,5 +11,4 @@ layout: home
 * Themes
 * Layouts
 * Components
-  * Range
 * Scripts
