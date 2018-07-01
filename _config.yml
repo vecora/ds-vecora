@@ -2,7 +2,7 @@ title: Style guide for Vecora
 email: your-email@example.com
 description: > # this means to ignore newlines until "baseurl:"
   Style guide for Vecora
-baseurl: "sg-vecora/" # the subpath of your site, e.g. /blog
+baseurl: "https://vecora.github.io/sg-vecora" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  vecora
 
