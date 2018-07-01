@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Themes
-description: Themes are meant to, together with layouts, give a greater sense of order while browsing around the site, by visually telling the user in what section he is viewing. 
+description: Themes are meant to, together with layouts, give a greater sense of order while browsing around the site, by visually telling the user what section he is viewing. 
 ---
 
 ## Classes
