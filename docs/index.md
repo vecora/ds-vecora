@@ -1,9 +1,8 @@
 ---
 layout: default
+title: Index
+description:
 ---
-
-
-# Content
 
 * [Themes]({{ site.baseurl }}{% link docs/themes.md %})
 * [Layouts]({{ site.baseurl }}{% link docs/layouts.md %})

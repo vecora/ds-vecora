@@ -1,8 +1,8 @@
 ---
 layout: default
+title: scripts
+description:
 ---
-
-# Scripts
 
 * [Accounting.js](http://openexchangerates.github.io/accounting.js/)
 * Custom scripts
