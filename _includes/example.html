@@ -1,4 +1,7 @@
 <div>
   {% raw %}{{ include.content }}{% endraw %}
 </div>
-<pre><code>{{ include.content | xml_escape }}</code></pre>
+
+{% highlight html %}
+  {{ include.content }}
+{% endhighlight %}
