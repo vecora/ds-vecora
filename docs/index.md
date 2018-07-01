@@ -5,7 +5,7 @@ layout: default
 
 # Content
 
-* [Themes]({% link docs/themes.md %})
-* [Layouts]({% link docs/layouts.md %})
-* [Components]({% link docs/components.md %})
-* [Scripts]({% link docs/scripts.md %})
+* [Themes]({{ site.baseurl }}{% link docs/themes.md %})
+* [Layouts]({{ site.baseurl }}{% link docs/layouts.md %})
+* [Components]({{ site.baseurl }}{% link docs/components.md %})
+* [Scripts]({{ site.baseurl }}{% link docs/scripts.md %})
