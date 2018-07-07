@@ -21,8 +21,8 @@ description:
 
 {% capture example %}
 <div class="cookie-message">
-  <p>Ved å fortsette på dette nettstedet godkjenner du bruken av informasjonskapsler. Les mer om hvordan vi håndtere informasjonen i vår <a href="#">personvernerklæring</a></p>
-  <button>Det er ok!</button>
+  <p>Ved bruke dette nettstedet godtar du at vi lagrer informasjonskapsler i din nettleser. Les mer om hvorfor, og hvordan vi håndterer dine personopplysninger i vår <a href="#">personvernerklæring</a>.</p>
+  <button>OK</button>
 </div>
 {% endcapture %}
 {% include example.html content=example %}
