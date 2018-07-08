@@ -36,7 +36,7 @@ CookieMessage = {
 if (CookieMessage.exists) {
 
   CookieMessage.updateVisibility();
-  log(document.querySelector(".cookie-message button")); // test
+  console.log(document.querySelector(".cookie-message button")); // test
   document.querySelector(".cookie-message button").addEventListener("click", function() {
     CookieMessage.accepted = true;
   });
