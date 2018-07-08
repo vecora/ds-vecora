@@ -36,10 +36,9 @@ CookieMessage = {
 if (CookieMessage.exists) {
 
   CookieMessage.updateVisibility();
-  console.log(document.querySelector(".cookie-message button")); // test
+
   document.querySelector(".cookie-message button").addEventListener("click", function() {
     CookieMessage.accepted = true;
   });
-  console.log("Event added."); // test
 
 }
