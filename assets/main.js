@@ -2,7 +2,7 @@
 
   var cookieMessageToggle = document.getElementById("cookieMessageToggle");
 
-    if (cookieMessageToggle) {
+  if (cookieMessageToggle) {
 
     function updateCoockieMessageToggleText() {
       if (CookieMessage.accepted) {
