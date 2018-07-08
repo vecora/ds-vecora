@@ -12,8 +12,13 @@
 
 
   // Initialize
-
   updateCoockieMessageToggleText();
+
+
+  CookieMessage.onStatusChange = function() {
+    updateCoockieMessageToggleText();
+  }
+
 
   cookieMessageToggle.addEventListener("click", function() {
 
@@ -22,8 +27,6 @@
     } else {
       CookieMessage.accepted = true;
     }
-
-    updateCoockieMessageToggleText();
 
   });
 

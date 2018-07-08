@@ -28,6 +28,7 @@ CookieMessage = {
       delete localStorage.cookieMessageStatus;
     }
     CookieMessage.updateVisibility();
+    CookieMessage.onStatusChange();
   }
 };
 
