@@ -21,7 +21,7 @@
       updateCoockieMessageToggleText();
     }
 
-
+    console.log(cookieMessageToggle); // test
     cookieMessageToggle.addEventListener("click", function() {
 
       if (CookieMessage.accepted) {
