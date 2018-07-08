@@ -25,7 +25,7 @@ Should be implemented right before scripts at the end of the `body` element on e
 
 ```
 <div class="cookie-message">
-  <button class="btn btn-primary float-right">Det er OK!</button>
-  <p>Ved bruke dette nettstedet godtar du at vi lagrer informasjonskapsler i din nettleser. Les mer om hvorfor, og hvordan vi håndterer dine personopplysninger i vår <a href="#">personvernerklæring</a>.</p>
+  <button class="btn btn-primary float-right">That's okey!</button>
+  <p>By using these this web site you accept that we use information capsules. Read more about how we handle your personal information in our <a href="#">privacy statement</a>.</p>
 </div>
 ```
