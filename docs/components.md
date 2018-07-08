@@ -21,12 +21,11 @@ description:
 
 Should be implemented right before scripts at the end of the `body` element on every page. Everything else is handled automagically by JavaScript.
 
-<button class="btn btn-primary">Activate cookie message</button>
+<button class="btn btn-primary" id="cookieMessageToggle">Activate cookie message</button>
 
-{% capture example %}
+```
 <div class="cookie-message">
   <button class="btn btn-primary float-right">Det er OK!</button>
   <p>Ved bruke dette nettstedet godtar du at vi lagrer informasjonskapsler i din nettleser. Les mer om hvorfor, og hvordan vi håndterer dine personopplysninger i vår <a href="#">personvernerklæring</a>.</p>
 </div>
-{% endcapture %}
-{% include example.html content=example %}
+```
