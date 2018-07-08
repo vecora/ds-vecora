@@ -1,6 +1,9 @@
 .cookie-message {
   // display: none;
 
+  // Initial state is hidden, until activated by JS.
+  display: none;
+
   width: calc(100% - 20px);
   max-width: 800px;
   padding: 20px;

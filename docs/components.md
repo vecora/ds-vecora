@@ -19,7 +19,7 @@ description:
 
 ## Cookie message
 
-Should be implemented right before scripts at the end of the `body` element on every page.
+Should be implemented right before scripts at the end of the `body` element on every page. Everything else is handled automagically by JavaScript.
 
 <button class="btn btn-primary">Activate cookie message</button>
 
