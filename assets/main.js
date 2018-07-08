@@ -5,7 +5,7 @@ function setCoockieMessageToggleText(cookieMessageToggle, cookieMessageStatus) {
 
   if (cookieMessageStatus === 'accepted') {
     cookieMessageToggle.innerHTML = "Activate cookie message";
-  } else if (cookieMessageStatus === undefined) {
+  } else if (typeof cookieMessageStatus === "undefined") {
     cookieMessageToggle.innerHTML = "Deactivate cookie message";
   }
 
@@ -15,8 +15,8 @@ cookieMessageToggle.addEventListener("click", function() {
 
   if (localStorage.cookieMessageStatus === "accepted") {
     document.querySelector(".cookie-message").style.display = "none";
-    localStorage.cookieMessageStatus = undefined;
-  } else if (localStorage.cookieMessageStatus === undefined) {
+    delete localStorage.cookieMessageStatus;
+  } else if (typeof localStorage.cookieMessageStatus === "undefined") {
     document.querySelector(".cookie-message").style.display = "block";
     localStorage.cookieMessageStatus = "accepted";
   }
