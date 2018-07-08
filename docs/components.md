@@ -23,11 +23,10 @@ Should be implemented right before scripts at the end of the `body` element on e
 
 <button class="btn btn-primary" id="cookieMessageToggle">Activate cookie message</button>
 
-{% capture example %}
+{% capture code %}
 <div class="cookie-message">
   <button class="btn btn-primary float-right">That's okey!</button>
   <p>By using this website you accept that we use information capsules. Read more about how we handle your personal information in our <a href="#">privacy statement</a>.</p>
 </div>
 {% endcapture %}
-
-<pre><code class="language-html">{{ example | escape }}</code></pre>
+{% include code.html content=code %}

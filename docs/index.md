@@ -8,7 +8,7 @@ Based on <a href="https://getbootstrap.com/">Bootstrap 4</a>.
 
 ## Starter template
 
-```
+{% capture code %}
 <!doctype html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="nb-NO" class="">
 
@@ -40,4 +40,5 @@ Based on <a href="https://getbootstrap.com/">Bootstrap 4</a>.
 </body>
 
 </html>
-```
+{% endcapture %}
+{% include code.html content=code %}
