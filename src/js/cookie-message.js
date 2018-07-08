@@ -40,5 +40,6 @@ if (CookieMessage.exists) {
   document.querySelector(".cookie-message button").addEventListener("click", function() {
     CookieMessage.accepted = true;
   });
+  console.log("Event added."); // test
 
 }
