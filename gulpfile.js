@@ -14,7 +14,14 @@ const concat = require("gulp-concat");
 
 
 gulp.task("scripts", function() {
-  gulp.src("src/js/*.js")
+  gulp.src([
+    "src/js/lib/jquery-3.3.1.js",
+    "src/js/lib/popper-1.14.3.js",
+    "src/js/lib/bootstrap-4.0.0.js",
+    "src/js/lib/accounting-0.4.2.js",
+    "src/js/lib/prism-1.15.0.min.js",
+    "src/js/*.js"
+  ])
     .pipe(concat("scripts.js"))
     .pipe(uglify())
     .pipe(gulp.dest("dist/"));
@@ -36,7 +43,9 @@ gulp.task("default", ["sass", "scripts", "copyWebfonts"]);
 
 
 gulp.task("watch", function() {
+  /*
   gulp.watch("src/js/*.js", ["scripts"]);
   gulp.watch("src/*.scss", ["sass"]);
   gulp.watch("src/webfonts/*", ["copyWebfonts"]);
+  */
 });
