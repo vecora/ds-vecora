@@ -30,3 +30,11 @@ Should be implemented right before scripts at the end of the `body` element on e
 </div>
 {% endcapture %}
 {% include code.html content=code %}
+
+
+## Map
+
+{% capture example %}
+<div class="map" data-lat="-34.397" data-lng="150.644" data-zoom="8"></div>
+{% endcapture %}
+{% include example.html content=example %}

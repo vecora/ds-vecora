@@ -36,6 +36,7 @@ Based on <a href="https://getbootstrap.com/">Bootstrap 4</a>.
     <p>By using this website you accept that we use information capsules. Read more about how we handle your personal information in our <a href="#">privacy statement</a>.</p>
   </div>
 
+  <script async defer src="//maps.googleapis.com/maps/api/js?key=AIzaSyDAC2otWTUAVKGqsOyNNOgztuH64LFBNQs&callback=Maps.init"></script>
   <script src="scripts.js"></script>
 </body>
 
