@@ -7,8 +7,11 @@ Maps = {
 
       var map;
       map = new google.maps.Map(element, {
-        center: {lat: element.dataset.lat, lng: element.dataset.lng},
-        zoom: element.dataset.zoom
+        center: {
+          lat: parseFloat(element.dataset.lat),
+          lng: parseFloat(element.dataset.lng)
+        },
+        zoom: parseInt(element.dataset.zoom)
       });
 
     });
