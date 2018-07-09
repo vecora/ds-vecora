@@ -35,6 +35,6 @@ Should be implemented right before scripts at the end of the `body` element on e
 ## Map
 
 {% capture example %}
-<div class="map" data-lat="58.855319" data-lng="5.740239" data-zoom="8"></div>
+<div class="map" data-lat="58.855319" data-lng="5.740239" data-zoom="14"></div>
 {% endcapture %}
 {% include example.html content=example %}
