@@ -33,12 +33,13 @@ Maps = {
 
     maps.forEach(function(element) {
 
-      var map;
-      map = new google.maps.Map(element, {
-        center: {
-          lat: parseFloat(element.dataset.lat),
-          lng: parseFloat(element.dataset.lng)
-        },
+      var position = {
+        lat: parseFloat(element.dataset.lat),
+        lng: parseFloat(element.dataset.lng)
+      };
+
+      var map = new google.maps.Map(element, {
+        center: position,
         zoom: parseInt(element.dataset.zoom),
         mapTypeControl: false,
         streetViewControl: false,
@@ -49,6 +50,10 @@ Maps = {
           position: google.maps.ControlPosition.RIGHT_CENTER
         },
         styles: mapStyles
+      });
+
+      var marker = new google.maps.Marker({
+        position: position, map: map
       });
 
     });
