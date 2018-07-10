@@ -4,6 +4,10 @@ title: Scripts
 description:
 ---
 
-* [Accounting.js](http://openexchangerates.github.io/accounting.js/)
 * Custom scripts
   * Active vs passive management of media buying
+
+
+  ## Accounting.js
+
+  [Accounting.js](http://openexchangerates.github.io/accounting.js/)

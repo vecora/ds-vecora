@@ -38,3 +38,22 @@ Should be implemented right before scripts at the end of the `body` element on e
 <div class="map" data-lat="58.855319" data-lng="5.740239" data-zoom="14"></div>
 {% endcapture %}
 {% include example.html content=example %}
+
+
+## Money
+
+Format numbers as currency on the fly. Other scripts can just read or write raw numbers.
+
+This component relies on [Accounting.js](http://openexchangerates.github.io/accounting.js/).
+
+{% capture example %}
+<span class="money">1995.25</span>
+{% endcapture %}
+{% include example.html content=example %}
+
+### Show decimals
+
+{% capture example %}
+<span class="money money-decimals">1995.25</span>
+{% endcapture %}
+{% include example.html content=example %}
