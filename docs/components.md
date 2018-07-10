@@ -42,7 +42,7 @@ Should be implemented right before scripts at the end of the `body` element on e
 
 ## Money
 
-Format numbers as currency on the fly. Other scripts can just read or write raw numbers.
+Format numbers as currency on the fly. Other scripts can just read or write raw numbers from `innerHTML`.
 
 This component relies on [Accounting.js](http://openexchangerates.github.io/accounting.js/).
 
