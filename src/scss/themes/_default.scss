@@ -15,6 +15,7 @@ $font-family-sans-serif:
   ;
 
 
+// Bootstrap
 @import "../lib/bootstrap/functions";
 @import "../lib/bootstrap/variables";
 @import "../lib/bootstrap/mixins";
@@ -50,3 +51,15 @@ $font-family-sans-serif:
 @import "../lib/bootstrap/carousel";
 @import "../lib/bootstrap/utilities";
 // @import "../lib/bootstrap/print";
+
+
+
+// Additional styles
+@import '../variables';
+@import '../fullpage';
+@import '../range';
+@import '../cookie-message';
+@import '../map';
+@import '../lib/prism/prism';
+@import '../sections/headers';
+@import '../sections/footers';

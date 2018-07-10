@@ -4,8 +4,14 @@ $body-bg: #1f1f1f;
 $body-color: white;
 
 
+// Overrides for additional styles
+$footer-background: #222;
+$footer-background-legal: #2d2d2d;
+
 
 .theme-dark {
+
+  // Bootstrap
   @import "../lib/bootstrap/variables";
   @import "../lib/bootstrap/mixins";
   @import "../lib/bootstrap/root";
@@ -36,4 +42,15 @@ $body-color: white;
   @import "../lib/bootstrap/tooltip";
   @import "../lib/bootstrap/popover";
   // @import "../lib/bootstrap/carousel";
+
+
+  // Additional styles
+  @import '../variables';
+  // @import '../fullpage';
+  // @import '../range';
+  // @import '../cookie-message';
+  // @import '../map';
+  // @import '../lib/prism/prism';
+  // @import '../sections/headers';
+  @import '../sections/footers';
 }
