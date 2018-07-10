@@ -5,8 +5,9 @@ $body-color: white;
 
 
 // Overrides for additional styles
-$footer-background: #222;
-$footer-background-legal: #2d2d2d;
+$footer-bg: #222;
+$footer-bg-legal: #2d2d2d;
+$cookie-message-bg: rgba(80,80,80,0.9);
 
 
 .theme-dark {
@@ -48,7 +49,7 @@ $footer-background-legal: #2d2d2d;
   @import '../variables';
   // @import '../fullpage';
   // @import '../range';
-  // @import '../cookie-message';
+  @import '../cookie-message';
   // @import '../map';
   // @import '../lib/prism/prism';
   // @import '../sections/headers';
