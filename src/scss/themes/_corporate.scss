@@ -1,8 +1,13 @@
 
 // Bootstrap overrides
-$body-bg: blue;
-$body-color: white;
+$body-bg: lighten($blue, 40%);
+$body-color: $gray-900;
 
+
+// Overrides for additional styles
+$footer-bg: lighten($blue, 35%);
+$footer-bg-legal: lighten($blue, 30%);
+$cookie-message-bg: rgba(lighten($blue, 25%), 0.9);
 
 
 .theme-corporate {
@@ -36,4 +41,15 @@ $body-color: white;
   @import "../lib/bootstrap/tooltip";
   @import "../lib/bootstrap/popover";
   // @import "../lib/bootstrap/carousel";
+
+
+  // Additional styles
+  @import '../variables';
+  // @import '../fullpage';
+  // @import '../range';
+  @import '../cookie-message';
+  // @import '../map';
+  // @import '../lib/prism/prism';
+  // @import '../sections/headers';
+  @import '../sections/footers';
 }

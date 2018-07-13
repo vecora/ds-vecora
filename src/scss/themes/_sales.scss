@@ -1,11 +1,35 @@
 
 // Bootstrap overrides
-$body-bg: orange;
-$body-color: white;
+$body-bg: white;
+$body-color: $gray-900;
+
+$blue: #fd7e14;
+$primary: $blue;
+
+$colors: (
+  "blue": $blue
+);
+
+$theme-colors: (
+  "primary": $primary
+);
+
+$link-color: $primary;
+$link-hover-color: darken($link-color, 15%);
+
+$component-active-bg: theme-color("primary");
+$nav-pills-link-active-bg: $component-active-bg;
+
+
+
+
+
+$cookie-message-bg: rgba(230,230,230,0.9);
+
 
 
 .theme-sales {
-  @import "../lib/bootstrap/variables";
+  //@import "../lib/bootstrap/variables";
   @import "../lib/bootstrap/mixins";
   @import "../lib/bootstrap/root";
   @import "../lib/bootstrap/reboot";
@@ -35,4 +59,7 @@ $body-color: white;
   @import "../lib/bootstrap/tooltip";
   @import "../lib/bootstrap/popover";
   // @import "../lib/bootstrap/carousel";
+
+  //@import '../variables';
+  @import '../cookie-message';
 }
