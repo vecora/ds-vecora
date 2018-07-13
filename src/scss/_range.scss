@@ -11,26 +11,25 @@
 $track-w: 12.5em;
 $track-h: .25em;
 $thumb-d: 1.5em;
-$track-c: #ccc;
-$filll-c: #95a;
+
 
 @mixin track($fill: 0) {
     box-sizing: border-box;
     border: none;
     width: $track-w; height: $track-h;
-    background: $track-c;
+    background: $range-track-right;
 
     @if $fill == 1 {
-        .js & {
-            background: linear-gradient($filll-c, $filll-c)
-                0/ var(--sx) 100% no-repeat $track-c
+        & { // was .js & {
+            background: linear-gradient($range-track-left, $range-track-left)
+                0/ var(--sx) 100% no-repeat $range-track-right !important
         }
     }
 }
 
 @mixin fill() {
     height: $track-h;
-    background: $filll-c
+    background: $range-track-left
 }
 
 @mixin thumb() {
@@ -38,7 +37,7 @@ $filll-c: #95a;
     border: none;
     width: $thumb-d; height: $thumb-d;
     border-radius: 50%;
-    background: #f90;
+    background: $range-knob-color;
 }
 
 [type='range'] {
