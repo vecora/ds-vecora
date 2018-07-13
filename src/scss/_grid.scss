@@ -9,9 +9,9 @@
 
 
 .container-fluid {
-  .max-width-hd { max-width: 1920px; }
-  .max-width-wqhd { max-width: 2560px; }
-  .max-width-uhd { max-width: 3840px; }
+  &.max-width-hd { max-width: 1920px; }
+  &.max-width-wqhd { max-width: 2560px; }
+  &.max-width-uhd { max-width: 3840px; }
 }
 
 
