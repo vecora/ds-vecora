@@ -3,6 +3,9 @@
 $body-bg: #1f1f1f;
 $body-color: white;
 
+$link-color: #ffca76;
+$link-hover-color: darken($link-color, 15%);
+
 // Overrides for additional styles
 $footer-bg: #222;
 $footer-bg-legal: #2d2d2d;
