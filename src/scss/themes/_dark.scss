@@ -7,7 +7,7 @@ $body-color: white;
 $footer-bg: #222;
 $footer-bg-legal: #2d2d2d;
 $cookie-message-bg: rgba(80,80,80,0.9);
-
+$grid-lines-color: #444;
 
 .theme-dark {
 
@@ -47,6 +47,7 @@ $cookie-message-bg: rgba(80,80,80,0.9);
   // Additional styles
   @import '../variables';
   // @import '../fullpage';
+  @import '../grid';
   // @import '../range';
   @import '../cookie-message';
   // @import '../map';

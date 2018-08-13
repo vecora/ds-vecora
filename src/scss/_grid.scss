@@ -20,7 +20,7 @@
   [class*="col-"] {
     padding: $grid-gutter-width;
 
-    border-top: 1px solid #eee;
+    border-top: 1px solid $grid-lines-color;
     &:first-child {
       border-top: none;
     }
@@ -39,7 +39,7 @@
       &:nth-child(2), &:nth-child(3), &:nth-child(4) {
         border-top: none;
       }
-      border-right: 1px solid #eee;
+      border-right: 1px solid $grid-lines-color;
       &:nth-child(4n) {
         border-right: none;
       }
@@ -51,7 +51,7 @@
       &:nth-child(2), &:nth-child(3) {
         border-top: none;
       }
-      border-right: 1px solid #eee;
+      border-right: 1px solid $grid-lines-color;
       &:nth-child(3n) {
         border-right: none;
       }
@@ -63,7 +63,7 @@
       &:nth-child(2), &:nth-child(3) {
         border-top: none;
       }
-      border-right: 1px solid #eee;
+      border-right: 1px solid $grid-lines-color;
       &:nth-child(3n) {
         border-right: none;
       }
@@ -75,7 +75,7 @@
       &:nth-child(2) {
         border-top: none;
       }
-      border-right: 1px solid #eee;
+      border-right: 1px solid $grid-lines-color;
       &:nth-child(2n) {
         border-right: none;
       }
