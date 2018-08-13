@@ -4,8 +4,6 @@ title: Content
 description:
 ---
 
-# Content
-
 ## Hyphenate
 
 {% capture example %}
