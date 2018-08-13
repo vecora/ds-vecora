@@ -9,6 +9,24 @@ em {
   font-weight: 900;
 }
 
+[lang=no],
+[lang=nb],
+[lang=nn],
+[lang=nb-NO],
+[lang=nn-NO] {
+  &.q, .q {
+    quotes: "«" "»"; // no double quotes
+
+    &::before {
+      content: open-quote;
+    }
+
+    &::after {
+      content: close-quote;
+    }
+  }
+}
+
 .display-1, .display-2 {
   text-align: center;
 }
