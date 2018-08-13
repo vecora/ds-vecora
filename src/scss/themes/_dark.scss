@@ -1,19 +1,13 @@
 
-// Bootstrap overrides
-$body-bg: #1f1f1f;
-$body-color: white;
-
-$link-color: #ffca76;
-$link-hover-color: darken($link-color, 15%);
-
-// Overrides for additional styles
-$footer-bg: #222;
-$footer-bg-legal: #2d2d2d;
-$cookie-message-bg: rgba(80,80,80,0.9);
-$grid-lines-color: #444;
-$grid-box-hover-color: #2e2e2e;
 
 .theme-dark {
+
+  // Bootstrap overrides
+  $body-bg: #1f1f1f;
+  $body-color: white;
+
+  $link-color: #ffca76;
+  $link-hover-color: darken($link-color, 15%);
 
   // Bootstrap
   @import "../lib/bootstrap/variables";
@@ -46,6 +40,16 @@ $grid-box-hover-color: #2e2e2e;
   @import "../lib/bootstrap/tooltip";
   @import "../lib/bootstrap/popover";
   // @import "../lib/bootstrap/carousel";
+
+
+
+
+  // Overrides for additional styles
+  $footer-bg: #222;
+  $footer-bg-legal: #2d2d2d;
+  $cookie-message-bg: rgba(80,80,80,0.9);
+  $grid-lines-color: #444;
+  $grid-box-hover-color: #2e2e2e;
 
 
   // Additional styles

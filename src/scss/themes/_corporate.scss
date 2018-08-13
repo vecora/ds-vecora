@@ -1,21 +1,13 @@
 
-// Bootstrap overrides
-$body-bg: lighten($blue, 40%);
-$body-color: $gray-900;
-
-
-// Overrides for additional styles
-$footer-bg: lighten($blue, 35%);
-$footer-bg-legal: lighten($blue, 30%);
-$cookie-message-bg: rgba(lighten($blue, 25%), 0.9);
-
-$range-track-right: lighten($blue, 45%);
-$range-track-left: lighten($blue, 25%);
-$range-knob-color: $blue;
 
 
 
 .theme-corporate {
+
+  // Bootstrap overrides
+  $body-bg: lighten($blue, 40%);
+  $body-color: $gray-900;
+
   @import "../lib/bootstrap/variables";
   @import "../lib/bootstrap/mixins";
   @import "../lib/bootstrap/root";
@@ -47,6 +39,15 @@ $range-knob-color: $blue;
   @import "../lib/bootstrap/popover";
   // @import "../lib/bootstrap/carousel";
 
+
+  // Overrides for additional styles
+  $footer-bg: lighten($blue, 35%);
+  $footer-bg-legal: lighten($blue, 30%);
+  $cookie-message-bg: rgba(lighten($blue, 25%), 0.9);
+
+  $range-track-right: lighten($blue, 45%);
+  $range-track-left: lighten($blue, 25%);
+  $range-knob-color: $blue;
 
   // Additional styles
   @import '../variables';
