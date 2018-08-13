@@ -29,7 +29,10 @@
       border-right: none;
     }
 
-    &:hover {
+  }
+
+  &.hover {
+    [class*="col-"]:hover {
       background-color: $grid-box-hover-color;
     }
   }
