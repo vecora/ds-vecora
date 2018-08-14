@@ -9,21 +9,19 @@ em {
   font-weight: 900;
 }
 
-[lang=no],
-[lang=nb],
-[lang=nn],
-[lang=nb-NO],
-[lang=nn-NO] {
-  &.q, .q {
-    quotes: "«" "»"; // no double quotes
+q:lang(no),
+q:lang(nb),
+q:lang(nn),
+q:lang(nb-NO),
+q:lang(nn-NO) {
+  quotes: "«" "»"; // no double quotes
 
-    &::before {
-      content: open-quote;
-    }
+  &::before {
+    content: open-quote;
+  }
 
-    &::after {
-      content: close-quote;
-    }
+  &::after {
+    content: close-quote;
   }
 }
 
