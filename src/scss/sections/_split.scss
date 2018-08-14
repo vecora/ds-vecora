@@ -1,0 +1,7 @@
+.split {
+  background-image: linear-gradient($v-angle-right, rgba(255,0,0,.8) 50%, rgba(255,0,0,0) 50%);
+
+  &.split-left {
+    background-image: linear-gradient($v-angle-left, rgba(255,0,0,.8) 50%, rgba(255,0,0,0) 50%);
+  }
+}
