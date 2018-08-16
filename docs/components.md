@@ -17,6 +17,25 @@ description:
 {% include example.html content=example %}
 
 
+## Social proofing
+
+### Review
+
+{% capture example %}
+<div class="review">
+  <img src="">
+  <div class="stars">4.5 out of 5 stars</div>
+  <blockquote>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <footer>
+      <cite title="">Gunnar Grafse</cite>
+    </footer>
+  </blockquote>
+</div>
+{% endcapture %}
+{% include example.html content=example %}
+
+
 ## Cookie message
 
 Should be implemented right before scripts at the end of the `body` element on every page. Everything else is handled automagically by JavaScript.
