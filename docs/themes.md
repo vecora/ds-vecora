@@ -23,19 +23,19 @@ Theme classes can be applied any box, and applies to everything inside that box,
 
 <div id="theme-switcher">
 
-  <div class="custom-control custom-radio">
+  <div class="custom-control custom-radio custom-control-inline"">
     <input type="radio" id="theme-default" name="theme-class" class="custom-control-input" v-on:change="switchTheme('')">
     <label class="custom-control-label" for="theme-default">Default</label>
   </div>
-  <div class="custom-control custom-radio">
+  <div class="custom-control custom-radio custom-control-inline"">
     <input type="radio" id="theme-dark" name="theme-class" class="custom-control-input" v-on:change="switchTheme('theme-dark')">
     <label class="custom-control-label" for="theme-dark">Dark</label>
   </div>
-  <div class="custom-control custom-radio">
+  <div class="custom-control custom-radio custom-control-inline"">
     <input type="radio" id="theme-corporate" name="theme-class" class="custom-control-input" v-on:change="switchTheme('theme-corporate')">
     <label class="custom-control-label" for="theme-dark">Corporate</label>
   </div>
-  <div class="custom-control custom-radio">
+  <div class="custom-control custom-radio custom-control-inline"">
     <input type="radio" id="theme-sales" name="theme-class" class="custom-control-input" v-on:change="switchTheme('theme-sales')">
     <label class="custom-control-label" for="theme-dark">Sales</label>
   </div>
