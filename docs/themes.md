@@ -19,10 +19,10 @@ Theme classes can be applied any box, and applies to everything inside that box,
 <html lang="en" class="theme-dark">
 ```
 
-## Theme switcher
+## Test themes
 
-<div id="theme-switcher">
-<ul class="nav nav-pills">
+<div>
+<ul class="nav nav-pills" id="theme-switcher">
   <li class="nav-item">
     <a href="#" class="nav-link active" v-on:click.native.prevent="switchTheme('', $event)">Default</a>
   </li>
@@ -36,4 +36,3 @@ Theme classes can be applied any box, and applies to everything inside that box,
     <button class="nav-link" v-on:click.native.prevent="switchTheme('theme-sales', $event)">Sales</button>
   </li>
 </ul>
-</div>
