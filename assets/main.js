@@ -42,19 +42,21 @@
 // Initialize
 var themeClass = localStorage.getItem('themeClass');
 document.documentElement.className = themeClass;
-switch (themeClass) {
-  case "theme-dark":
-    document.getElementById('theme-dark').checked = true;
-    break;
-  case "theme-corporate":
-    document.getElementById('theme-corporate').checked = true;
-    break;
-  case "theme-sales":
-    document.getElementById('theme-sales').checked = true;
-    break;
-  default:
-    document.getElementById('theme-default').checked = true;
-}
+$(document).ready(function() {
+  switch (themeClass) {
+    case "theme-dark":
+      document.getElementById('theme-dark').checked = true;
+      break;
+    case "theme-corporate":
+      document.getElementById('theme-corporate').checked = true;
+      break;
+    case "theme-sales":
+      document.getElementById('theme-sales').checked = true;
+      break;
+    default:
+      document.getElementById('theme-default').checked = true;
+  }
+});
 
 
 var themeSwitcherApp = new Vue({
