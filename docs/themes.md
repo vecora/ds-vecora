@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Themes
-description: Themes are meant to, together with layouts, give a greater sense of order while browsing around the site, by visually telling the user what section he is viewing. 
+description: Themes are meant to, together with layouts, give a greater sense of order while browsing around the site, by visually telling the user what section he is viewing.
 ---
 
 ## Classes
@@ -18,3 +18,20 @@ Theme classes can be applied any box, and applies to everything inside that box,
 ```html
 <html lang="en" class="theme-dark">
 ```
+
+## Theme switcher
+
+<ul class="nav nav-pills" id="theme-switcher">
+  <li class="nav-item">
+    <button class="nav-link active" v-on:click="switchTheme">Default</button>
+  </li>
+  <li class="nav-item">
+    <button class="nav-link" v-on:click="switchTheme">Dark</button>
+  </li>
+  <li class="nav-item">
+    <button class="nav-link" v-on:click="switchTheme">Corporate</button>
+  </li>
+  <li class="nav-item">
+    <button class="nav-link" v-on:click="switchTheme">Sales</button>
+  </li>
+</ul>
