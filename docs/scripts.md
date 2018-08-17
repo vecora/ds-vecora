@@ -8,6 +8,12 @@ description:
   * Active vs passive management of media buying
 
 
-  ## Accounting.js
+  ## External libraries
+
+  ### Vue.js
+
+  [Vue.js](https://vuejs.org/)
+
+  ### Accounting.js
 
   [Accounting.js](http://openexchangerates.github.io/accounting.js/)

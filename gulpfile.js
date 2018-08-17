@@ -15,6 +15,7 @@ const concat = require("gulp-concat");
 
 gulp.task("scripts", function() {
   gulp.src([
+    "src/js/lib/vue-2.5.17.js",
     "src/js/lib/jquery-3.3.1.js",
     "src/js/lib/popper-1.14.3.js",
     "src/js/lib/bootstrap-4.0.0.js",
