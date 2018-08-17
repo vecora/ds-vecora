@@ -39,16 +39,12 @@
 
 // Theme switcher
 
-var docsApp = new Vue({
-  el: '#docs',
-  data: {
-    themeClass: '',
-  },
+var themeSwitcherApp = new Vue({
+  el: '#theme-switcher',
   methods: {
     switchTheme: function (themeClass, event) {
       console.log(themeClass, event.target);
-      this.themeClass = themeClass;
-      //document.documentElement.classList.add(themeClass);
+      document.documentElement.classList.add(themeClass);
     }
   }
 })
