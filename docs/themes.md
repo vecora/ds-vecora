@@ -23,10 +23,10 @@ Theme classes can be applied any box, and applies to everything inside that box,
 
 <ul class="nav nav-pills" id="theme-switcher">
   <li class="nav-item">
-    <button class="nav-link active" v-on:click="switchTheme">Default</button>
+    <a href="#" class="nav-link active" v-on:click="switchTheme">Default</a>
   </li>
   <li class="nav-item">
-    <button class="nav-link" v-on:click="switchTheme">Dark</button>
+    <a href="#" class="nav-link" v-on:click="switchTheme">Dark</a>
   </li>
   <li class="nav-item">
     <button class="nav-link" v-on:click="switchTheme">Corporate</button>

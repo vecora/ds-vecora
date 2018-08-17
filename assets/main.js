@@ -59,7 +59,7 @@ var themeSwitcherApp = new Vue({
           themeClass = "theme-sales";
           break;
       }
-      document.documentElement.classList.add(themeClass);
+      //document.documentElement.classList.add(themeClass);
     }
   }
 })
