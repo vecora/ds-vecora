@@ -30,9 +30,9 @@ Theme classes can be applied any box, and applies to everything inside that box,
     <a href="#" class="nav-link" v-on:click.prevent="switchTheme('theme-dark', $event)">Dark</a>
   </li>
   <li class="nav-item">
-    <button class="nav-link" v-on:click.prevent="switchTheme('theme-corporate', $event)">Corporate</button>
+    <a href="#" class="nav-link" v-on:click.prevent="switchTheme('theme-corporate', $event)">Corporate</a>
   </li>
   <li class="nav-item">
-    <button class="nav-link" v-on:click.prevent="switchTheme('theme-sales', $event)">Sales</button>
+    <a href="#" class="nav-link" v-on:click.prevent="switchTheme('theme-sales', $event)">Sales</a>
   </li>
 </ul>
