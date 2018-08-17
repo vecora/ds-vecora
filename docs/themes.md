@@ -23,19 +23,19 @@ Theme classes can be applied any box, and applies to everything inside that box,
 
 <div id="theme-switcher">
 
-  <div class="custom-control custom-radio" v-on:click.prevent="switchTheme('', $event)">
+  <div class="custom-control custom-radio" v-on:click="switchTheme('', $event)">
     <input type="radio" id="theme-default" name="theme-class" class="custom-control-input">
     <label class="custom-control-label" for="theme-default">Default</label>
   </div>
-  <div class="custom-control custom-radio" v-on:click.prevent="switchTheme('theme-dark', $event)">
+  <div class="custom-control custom-radio" v-on:click="switchTheme('theme-dark', $event)">
     <input type="radio" id="theme-dark" name="theme-class" class="custom-control-input">
     <label class="custom-control-label" for="theme-dark">Dark</label>
   </div>
-  <div class="custom-control custom-radio" v-on:click.prevent="switchTheme('theme-corporate', $event)">
+  <div class="custom-control custom-radio" v-on:click="switchTheme('theme-corporate', $event)">
     <input type="radio" id="theme-corporate" name="theme-class" class="custom-control-input">
     <label class="custom-control-label" for="theme-dark">Corporate</label>
   </div>
-  <div class="custom-control custom-radio" v-on:click.prevent="switchTheme('theme-sales', $event)">
+  <div class="custom-control custom-radio" v-on:click="switchTheme('theme-sales', $event)">
     <input type="radio" id="theme-sales" name="theme-class" class="custom-control-input">
     <label class="custom-control-label" for="theme-dark">Sales</label>
   </div>
