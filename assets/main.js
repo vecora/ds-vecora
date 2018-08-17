@@ -40,7 +40,7 @@
 // Theme switcher
 
 // Initialize
-document.documentElement.className = localStorage('themeClass');
+document.documentElement.className = localStorage.get('themeClass');
 
 var themeSwitcherApp = new Vue({
   el: '#theme-switcher',
