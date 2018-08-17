@@ -41,7 +41,7 @@
 
 var docsApp = new Vue({
   el: '#docs',
-  data {
+  data: {
     themeClass: '',
   },
   methods: {
