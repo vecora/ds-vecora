@@ -9,11 +9,11 @@ description:
 ### Range
 
 
-{% capture example %}
+{%- capture example -%}
 <form>
   <input type="range" min="0" max="100" value="50" step="1">
 </form>
-{% endcapture %}
+{%- endcapture -%}
 {% include example.html content=example %}
 
 
