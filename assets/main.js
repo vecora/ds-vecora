@@ -42,23 +42,8 @@
 var themeSwitcherApp = new Vue({
   el: '#theme-switcher',
   methods: {
-    switchTheme: function (event) {
-      console.log(event.target);
-      var themeClass;
-      switch(event.target.innerHTML) {
-        case "Default":
-          themeClass = "";
-          break;
-        case "Dark":
-          themeClass = "theme-dark";
-          break;
-        case "Corporate":
-          themeClass = "theme-corporate";
-          break;
-        case "Sales":
-          themeClass = "theme-sales";
-          break;
-      }
+    switchTheme: function (themeClass, event) {
+      console.log(themeClass, event.target);
       //document.documentElement.classList.add(themeClass);
     }
   }
