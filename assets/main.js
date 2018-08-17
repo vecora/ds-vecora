@@ -48,6 +48,10 @@ var themeSwitcherApp = new Vue({
     switchTheme: function (themeClass, event) {
       document.documentElement.className = themeClass;
       localStorage.setItem("themeClass", themeClass);
+      document.querySelectorAll("#theme-switcher a").forEach(function(el) {
+        el.classList.remove("active");
+      });
+      event.target.classList.add("active");
     }
   }
 })
