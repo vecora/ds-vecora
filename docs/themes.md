@@ -21,18 +21,23 @@ Theme classes can be applied any box, and applies to everything inside that box,
 
 ## Switch between themes
 
-<div>
-<ul class="nav nav-pills" id="theme-switcher">
-  <li class="nav-item">
-    <a href="#" class="nav-link active" v-on:click.prevent="switchTheme('', $event)">Default</a>
-  </li>
-  <li class="nav-item">
-    <a href="#" class="nav-link" v-on:click.prevent="switchTheme('theme-dark', $event)">Dark</a>
-  </li>
-  <li class="nav-item">
-    <a href="#" class="nav-link" v-on:click.prevent="switchTheme('theme-corporate', $event)">Corporate</a>
-  </li>
-  <li class="nav-item">
-    <a href="#" class="nav-link" v-on:click.prevent="switchTheme('theme-sales', $event)">Sales</a>
-  </li>
-</ul>
+<div id="theme-switcher">
+
+  <div class="custom-control custom-radio" v-on:click.prevent="switchTheme('', $event)">
+    <input type="radio" id="theme-default" name="theme-class" class="custom-control-input">
+    <label class="custom-control-label" for="theme-default">Default</label>
+  </div>
+  <div class="custom-control custom-radio" v-on:click.prevent="switchTheme('theme-dark', $event)">
+    <input type="radio" id="theme-dark" name="theme-class" class="custom-control-input">
+    <label class="custom-control-label" for="theme-dark">Dark</label>
+  </div>
+  <div class="custom-control custom-radio" v-on:click.prevent="switchTheme('theme-corporate', $event)">
+    <input type="radio" id="theme-corporate" name="theme-class" class="custom-control-input">
+    <label class="custom-control-label" for="theme-dark">Corporate</label>
+  </div>
+  <div class="custom-control custom-radio" v-on:click.prevent="switchTheme('theme-sales', $event)">
+    <input type="radio" id="theme-sales" name="theme-class" class="custom-control-input">
+    <label class="custom-control-label" for="theme-dark">Sales</label>
+  </div>
+
+</div>
