@@ -43,6 +43,7 @@ var themeSwitcherApp = new Vue({
   el: '#theme-switcher',
   methods: {
     switchTheme: function (event) {
+      console.log(event.target);
       var themeClass;
       switch(event.target.innerHTML) {
         case "Default":
