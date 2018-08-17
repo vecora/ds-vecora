@@ -9,8 +9,7 @@ github_username:  vecora
 # Build settings
 markdown: kramdown
 
-plugins:
-  - jekyll-toc
+
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
