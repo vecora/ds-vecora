@@ -12,6 +12,15 @@
     top: 0;
     left: 220px; // should be var + gutter
 
+    > p::before {
+      content: "\201C";
+      font-size: 180px;
+      float: left;
+      height: 100px;
+      margin-top: -50px;
+      margin-left: -10px;
+    }
+
     p { margin-top: 10px; }
     footer {
       cite {}
