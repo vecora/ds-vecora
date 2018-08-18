@@ -41,7 +41,10 @@ gulp.task("copyWebfonts", function() {
 });
 
 gulp.task("copyResources", function() {
-  gulp.src("src/resources/*")
+  gulp.src([
+      "!src/*.afdesign",
+      "src/resources/*"
+    ])
     .pipe(gulp.dest("dist/resources"));
 });
 
