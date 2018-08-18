@@ -40,7 +40,12 @@ gulp.task("copyWebfonts", function() {
     .pipe(gulp.dest("dist/webfonts"));
 });
 
-gulp.task("default", ["sass", "scripts", "copyWebfonts"]);
+gulp.task("copyResources", function() {
+  gulp.src("src/resources/*")
+    .pipe(gulp.dest("dist/resources"));
+});
+
+gulp.task("default", ["sass", "scripts", "copyWebfonts", "copyResources"]);
 
 
 gulp.task("watch", function() {
