@@ -34,7 +34,7 @@ description:
 | 5 out of 5   | `stars-5` or `stars-50` |
 
 {% capture example %}
-<div class="stars stars-3">3 out of 5 stars</div>
+<div class="stars stars-3">Rated 3 out of 5</div>
 {% endcapture %}
 {% include example.html content=example %}
 
@@ -46,7 +46,7 @@ description:
 {% capture example %}
 <div class="review">
   <img src="">
-  <div class="stars stars-45">4.5 out of 5 stars</div>
+  <div class="stars stars-45">Rated 4.5 out of 5</div>
   <blockquote>
     <p>Lorem ipsum dolor sit amet.</p>
     <footer>
