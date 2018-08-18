@@ -38,7 +38,8 @@ Rating goes from 0 to 5 with increments of 0.5.
     <div class="rating" data-value="4.5">Rated 4.5 out of 5</div>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     <footer>
-      <cite title="">Gunnar Grafse</cite>, daglig leder i Grafse Maskin AS
+      <cite title=""><em>Gunnar Grafse</em></cite>, daglig leder i Grafse Maskin AS
+      <p class="small">Anmeldelse fra Google</p>
     </footer>
   </blockquote>
 </div>
