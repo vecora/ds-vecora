@@ -24,7 +24,7 @@ description:
 {% capture example %}
 <div class="review">
   <img src="">
-  <div class="stars">4.5 out of 5 stars</div>
+  <div class="stars stars-45">4.5 out of 5 stars</div>
   <blockquote>
     <p>Lorem ipsum dolor sit amet.</p>
     <footer>
