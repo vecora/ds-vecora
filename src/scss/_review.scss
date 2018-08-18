@@ -1,11 +1,17 @@
 
 .review {
+  positiob: relative;
 
   img {
-
+    border-radius: 50%;
+    width: 200px;
   }
 
   blockquote {
+    position: absolute;
+    top: 0;
+    left: 220px; // should be var + gutter
+
     p {}
     footer {
       cite {}

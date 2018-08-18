@@ -1,19 +1,19 @@
-.stars {
+.rating {
   background-image: url("resources/stars.svg");
   background-size: 100%;
   width: 150px;
   height: 26px;
   text-indent: -9999px;
 
-  &.stars-0, &.stars-00 { background-position-y: 0px; }
-  &.stars-05 { background-position-y: -25px; }
-  &.stars-1, &.stars-10 { background-position-y: -50px; }
-  &.stars-15 { background-position-y: -75px; }
-  &.stars-2, &.stars-20 { background-position-y: -100px; }
-  &.stars-25 { background-position-y: -126px; }
-  &.stars-3, &.stars-30 { background-position-y: -151px; }
-  &.stars-35 { background-position-y: -176px; }
-  &.stars-4, &.stars-40 { background-position-y: -202px; }
-  &.stars-45 { background-position-y: -227px; }
-  &.stars-5, &.stars-50 { background-position-y: -253px; }
+  &[data-value="0"] { background-position-y: 0px; }
+  &[data-value="0.5"] { background-position-y: -25px; }
+  &[data-value="1"] { background-position-y: -50px; }
+  &[data-value="1.5"] { background-position-y: -75px; }
+  &[data-value="2"] { background-position-y: -100px; }
+  &[data-value="2.5"] { background-position-y: -126px; }
+  &[data-value="3"] { background-position-y: -151px; }
+  &[data-value="3.5"] { background-position-y: -176px; }
+  &[data-value="4"] { background-position-y: -202px; }
+  &[data-value="4.5"] { background-position-y: -227px; }
+  &[data-value="5"] { background-position-y: -253px; }
 }

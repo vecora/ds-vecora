@@ -19,22 +19,10 @@ description:
 
 ## Rating
 
-| Rating       | Class                   |
-| ------------ |-------------------------|
-| 0 out of 5   | `stars-0` or `stars-00` |
-| 0.5 out of 5 | `stars-05`              |
-| 1 out of 5   | `stars-1` or `stars-10` |
-| 1.5 out of 5 | `stars-15`              |  
-| 2 out of 5   | `stars-2` or `stars-20` |
-| 2.5 out of 5 | `stars-25`              |
-| 3 out of 5   | `stars-3` or `stars-30` |
-| 3.5 out of 5 | `stars-35`              |
-| 4 out of 5   | `stars-4` or `stars-40` |
-| 4.5 out of 5 | `stars-45`              |
-| 5 out of 5   | `stars-5` or `stars-50` |
+Rating goes from 0 to 5 with increments of 0.5.
 
 {% capture example %}
-<div class="stars stars-3">Rated 3 out of 5</div>
+<div class="rating" data-value="3">Rated 3 out of 5</div>
 {% endcapture %}
 {% include example.html content=example %}
 
@@ -45,12 +33,12 @@ description:
 
 {% capture example %}
 <div class="review">
-  <img src="">
-  <div class="stars stars-45">Rated 4.5 out of 5</div>
+  <img src="https://placekitten.com/500/500">
   <blockquote>
-    <p>Lorem ipsum dolor sit amet.</p>
+    <div class="rating" data-value="4.5">Rated 4.5 out of 5</div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     <footer>
-      <cite title="">Gunnar Grafse</cite>
+      <cite title="">Gunnar Grafse</cite>, daglig leder i Grafse Maskin AS
     </footer>
   </blockquote>
 </div>
