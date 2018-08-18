@@ -17,6 +17,28 @@ description:
 {% include example.html content=example %}
 
 
+## Rating
+
+| Rating       | Class                   |
+| ------------ |-------------------------|
+| 0 out of 5   | `stars-0` or `stars-00` |
+| 0.5 out of 5 | `stars-05`              |
+| 1 out of 5   | `stars-1` or `stars-10` |
+| 1.5 out of 5 | `stars-15`              |  
+| 2 out of 5   | `stars-2` or `stars-20` |
+| 2.5 out of 5 | `stars-25`              |
+| 3 out of 5   | `stars-3` or `stars-30` |
+| 3.5 out of 5 | `stars-35`              |
+| 4 out of 5   | `stars-4` or `stars-40` |
+| 4.5 out of 5 | `stars-45`              |
+| 5 out of 5   | `stars-5` or `stars-50` |
+
+{% capture example %}
+<div class="stars stars-3">3 out of 5 stars</div>
+{% endcapture %}
+{% include example.html content=example %}
+
+
 ## Social proofing
 
 ### Review
