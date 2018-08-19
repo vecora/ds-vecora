@@ -10,6 +10,16 @@ $link-hover-decoration: none;
 $display1-weight:             700;
 $display2-weight:             700;
 
+
+$custom-file-text: (
+  en: "Browse",
+  no: "Velg fil",
+  nb: "Velg fil",
+  nn: "Velg fil",
+  nb-NO: "Velg fil",
+  nn-NO: "Velg fil"
+);
+
 // Bootstrap
 @import "../lib/bootstrap/functions";
 @import "../lib/bootstrap/variables";
