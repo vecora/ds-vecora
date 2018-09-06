@@ -24,6 +24,8 @@ Bootstrap has support for `<q>` elements, but it only supports english quotation
 
 ### Hyphenate
 
+This is a standard HTML entity, but still worth mentioning. 
+
 {% capture example %}
 <h1>Hidden&shy;breakpoint</h1>
 {% endcapture %}
