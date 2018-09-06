@@ -24,9 +24,62 @@ Bootstrap has support for `<q>` elements, but it only supports english quotation
 
 ### Hyphenate
 
-This is a standard HTML entity, but still worth mentioning. 
+This is a standard HTML entity, but still worth mentioning.
 
 {% capture example %}
 <h1>Hidden&shy;breakpoint</h1>
 {% endcapture %}
 {% include example.html content=example %}
+
+
+## Tables
+
+### Sorting
+
+{% capture example %}
+<table class="table sortable">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>40</td>
+      <td>Ronald Reagan</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>Abraham Lincoln</td>
+    </tr>
+    <tr>
+      <td>32</td>
+      <td>Franklin D. Roosevelt</td>
+    </tr>
+    <tr>
+      <td>44</td>
+      <td>Barack Obama</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>George Washington</td>
+    </tr>
+    <tr>
+      <td>28</td>
+      <td>Woodrow Wilson</td>
+    </tr>
+    <tr>
+      <td>35</td>
+      <td>John F. Kennedy</td>
+    </tr>
+    <tr>
+      <td>26</td>
+      <td>Theodore Roosevelt</td>
+    </tr>
+  </tbody>
+</table>
+{% endcapture %}
+{% include example.html content=example %}
+
+### Filtering
