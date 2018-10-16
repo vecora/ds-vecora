@@ -49,11 +49,11 @@ $gradients: map-merge((
 
 $theme-gradients: () !default;
 $theme-gradients: map-merge((
-  "primary":    (#FA4024, #FF0078),
-  "secondary":  (#251e4c, #1f1840), // should mimic the background of the theme
-  "success":    (#F5FF00, #1CFF00),
-  "info":       (#008CFF, #00FFF2),
-  "warning":    (#FA4024, #F5FF00),
-  "danger":     (#FA4024, #FA4024)
+  "primary":    ((#FA4024, #FF0078) white),
+  "secondary":  ((#251e4c, #1f1840) white), // should mimic the background of the theme
+  "success":    ((#F5FF00, #1CFF00) #322c52),
+  "info":       ((#008CFF, #00FFF2) white),
+  "warning":    ((#fa9124,#faff76) #322c52),
+  "danger":     ((#940A40, #FA4024) white)
 ), $theme-gradients);
 // stylelint-enable
