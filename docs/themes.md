@@ -60,6 +60,8 @@ Theme classes can be applied to any box, and applies to everything inside that b
   <div class="docs-gradient-item"><div class="docs-gradient docs-gradient-8"></div><div class="docs-color-codes"></div></div>
 </div>
 
+Gradients can be played with [here](https://www.css-gradient.com/).
+
 ### UI colors
 
 NOTES:
