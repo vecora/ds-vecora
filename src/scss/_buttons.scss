@@ -86,7 +86,16 @@ fieldset:disabled a.btn {
 
 .button.outline {
   background: none;
+  padding-top: 9px;
+  padding-bottom: 8px;
   border: 2px solid white;
+
+  @each $color, $value in $theme-gradients {
+    &.#{$color} {
+      border-image: linear-gradient(to right, nth($value, 1));
+      color: nth(nth($value, 1), 1) !important;
+    }
+  }
 }
 
 /*
