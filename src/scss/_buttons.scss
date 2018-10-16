@@ -101,18 +101,18 @@ fieldset:disabled a.btn {
 .button.small {
   padding: 8px 20px 7px 20px;
   letter-spacing: 0.5px;
-  font-size: 60%;
-  font-weight: 600;
+  font-size: 60% !important;
+  font-weight: 600 !important;
 }
 .button.big {
-  padding: 20px 40px 18px 40px;
+  padding: 16px 40px 14px 40px;
   letter-spacing: 1.5px;
-  font-size: 100%;
+  font-size: 120%;
 }
 .button.massive {
-  padding: 30px 60px 27px 60px;
+  padding: 24px 50px 22px 50px;
   letter-spacing: 2px;
-  font-size: 125%;
+  font-size: 150%;
 }
 
 /*
