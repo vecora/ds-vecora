@@ -4,7 +4,7 @@ title: Buttons
 description:
 ---
 
-
+Buttons styles are similar to bootstrap, but are rewritten. Bootstrap styles are not used.
 
 
 
