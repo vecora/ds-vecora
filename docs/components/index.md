@@ -1,5 +1,5 @@
 ---
-layout: frontpage
-title: Vecora's style guide for web development
+layout: default
+title: Components
 description:
 ---
