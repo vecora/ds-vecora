@@ -20,6 +20,8 @@ These buttons change with the theme.
 
 ## Colors
 
+Force specific theme color.
+
 These buttons won't change with the theme.
 
 {% capture example %}
