@@ -27,3 +27,33 @@ $yellow:  #E9E100;
 $red:     #CD1047;
 $orange:  #E8432C;
 // No change yet to $indigo
+
+/*
+$gradients: () !default;
+$gradients: map-merge((
+  "blue":       $blue,
+  "indigo":     $indigo,
+  "purple":     $purple,
+  "pink":       $pink,
+  "red":        $red,
+  "orange":     $orange,
+  "yellow":     $yellow,
+  "green":      $green,
+  "teal":       $teal,
+  "cyan":       $cyan,
+  "white":      $white,
+  "gray":       $gray-600,
+  "gray-dark":  $gray-800
+), $colors);
+*/
+
+$theme-gradients: () !default;
+$theme-gradients: map-merge((
+  "primary":    "#008CFF, #00FFF2",
+  "secondary":  $secondary, // should mimic the background of the theme
+  "success":    "#008CFF, #1CFF00",
+  "info":       "#008CFF, #1CFF00",
+  "warning":    "#FF0078, #F5FF00",
+  "danger":     "#940A40, #FA4024"
+), $theme-colors);
+// stylelint-enable
