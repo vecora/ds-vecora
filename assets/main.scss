@@ -56,3 +56,22 @@ h3, h4 { margin-top: 50px !important; }
   border-radius: 4px;
   box-shadow: 0 0 4px #131e3c2e;
 }
+
+
+
+.gradients {
+  .gradient {
+    width: 200px;
+    height: 200px;
+  }
+
+  .gradient-1 { background: linear-gradient(#008CFF, #DE00FF, #FF0078); }
+  .gradient-2 { background: linear-gradient(#FA4024, #FF0078); }
+  .gradient-3 { background: linear-gradient(#008CFF, #1CFF00); }
+  .gradient-4 { background: linear-gradient(#DE00FF, #008CFF, #00FFF2); }
+  .gradient-5 { background: linear-gradient(#DE00FF, #FF0078); }
+  .gradient-6 { background: linear-gradient(#940A40, #FA4024); }
+  .gradient-7 { background: linear-gradient(#FF0078, #F5FF00); }
+  .gradient-8 { background: linear-gradient(#171C59, #FF0078); }
+
+}

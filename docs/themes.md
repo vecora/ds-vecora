@@ -45,6 +45,18 @@ Theme classes can be applied to any box, and applies to everything inside that b
 
 ## Colors
 
+<div class="gradients">
+  <div class="gradient gradient-1"></div>
+  <div class="gradient gradient-2"></div>
+  <div class="gradient gradient-3"></div>
+  <div class="gradient gradient-4"></div>
+  <div class="gradient gradient-5"></div>
+  <div class="gradient gradient-6"></div>
+  <div class="gradient gradient-7"></div>
+  <div class="gradient gradient-8"></div>
+</div>
+
+
 ### Gradients
 
 ### UI colors
