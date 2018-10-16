@@ -41,3 +41,12 @@ Theme classes can be applied to any box, and applies to everything inside that b
   </div>
 
 </div>
+
+
+## Colors
+
+### Gradients
+
+### UI colors
+
+#### Accent colors
