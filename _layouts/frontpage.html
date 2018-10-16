@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <base href="{{ site.baseurl }}/">
+  <link rel="stylesheet" href="dist/styles.css">
+  <link rel="stylesheet" href="assets/main.css">
+  <title>{{ page.title }}</title>
+</head>
+
+<body data-spy="scroll" data-target="#document-nav" data-offset="0">
+
+  <header>
+    <br>
+    <p class="text-center"><a href="https://github.com/vecora/sg-vecora">GitHub</a></p>
+    <br>
+  </header>
+
+  <main>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-2">
+
+
+        </div>
+        <div class="col-8">
+
+          <h1>{{ page.title }}</h1>
+          <p class="lead">{{ page.description }}</p>
+          {{ content }}
+
+          <a href="https://vecora.github.io/sg-vecora/docs/introduction/" class="btn btn-primary btn-lg">Read the documentation</a>
+
+          <br><br>
+
+          <a href="https://github.com/vecora/sg-vecora" class="btn btn-secondary btn-lg">Download from GitHub</a>
+
+        </div>
+        <div class="col-2">
+
+
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+
+  </footer>
+
+  <div class="cookie-message">
+    <button class="btn btn-primary float-right">That's okey!</button>
+    <p>By using this website you accept that we use information capsules. Read more about how we handle your personal information in our <a href="#">privacy statement</a>.</p>
+  </div>
+
+  <script src="dist/scripts.js"></script>
+  <script async defer src="//maps.googleapis.com/maps/api/js?key=AIzaSyDAC2otWTUAVKGqsOyNNOgztuH64LFBNQs&callback=Maps.init"></script>
+  <script src="assets/main.js"></script>
+</body>
+
+</html>
