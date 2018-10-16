@@ -20,7 +20,7 @@ These buttons change with the theme.
 
 ## Colors
 
-These buttons don't change with the theme.
+These buttons won't change with the theme.
 
 {% capture example %}
 <button type="button" class="btn btn-primary">Default</button>
