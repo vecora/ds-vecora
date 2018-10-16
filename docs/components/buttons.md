@@ -13,7 +13,7 @@ Button classes can be applied to `button` or `a` elements.
 These buttons change with the theme.
 
 {% capture example %}
-<button type="button" class="button focus">Primary</button>
+<button type="button" class="button primary">Primary</button>
 <button type="button" class="button">Secondary</button>
 {% endcapture %}
 {% include example.html content=example %}
