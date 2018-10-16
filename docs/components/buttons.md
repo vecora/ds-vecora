@@ -54,8 +54,6 @@ Function colors.
 
 ## Sizes
 
-### Large
-
 {% capture example %}
 <button type="button" class="button small">Small button</button>
 <button type="button" class="button">Normal button</button>
