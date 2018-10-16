@@ -86,8 +86,8 @@ fieldset:disabled a.btn {
 
 .button.outline {
   background: none;
-  padding-top: 9px;
-  padding-bottom: 8px;
+  //padding-top: 9px;
+  //padding-bottom: 8px;
   border: 2px solid white;
 
   @each $color, $value in $theme-gradients {
@@ -96,6 +96,23 @@ fieldset:disabled a.btn {
       color: nth(nth($value, 1), 1) !important;
     }
   }
+}
+
+.button.small {
+  padding: 8px 20px 7px 20px;
+  letter-spacing: 0.5px;
+  font-size: 60%;
+  font-weight: 600;
+}
+.button.big {
+  padding: 20px 40px 18px 40px;
+  letter-spacing: 1.5px;
+  font-size: 100%;
+}
+.button.massive {
+  padding: 30px 60px 27px 60px;
+  letter-spacing: 2px;
+  font-size: 125%;
 }
 
 /*
