@@ -55,5 +55,5 @@ $theme-gradients: map-merge((
   "info":       "#008CFF, #1CFF00",
   "warning":    "#FF0078, #F5FF00",
   "danger":     "#940A40, #FA4024"
-), $theme-colors);
+), $theme-gradients);
 // stylelint-enable

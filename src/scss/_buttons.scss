@@ -65,7 +65,8 @@ fieldset:disabled a.btn {
 @each $color, $value in $theme-gradients {
   .btn-#{$color} {
     //@include button-variant($value, $value); // EEK: this mixin comes from boostrap
-    background-image: linear-gradient($value);
+    background-image: linear-gradient(to right, $value);
+    border: none;
   }
 }
 /*
