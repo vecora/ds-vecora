@@ -20,6 +20,8 @@
     text-decoration: none;
   }
 
+  border-radius: 50px; // TODO: figure out the height and set this to half the height
+
   &:focus,
   &.focus {
     outline: 0;
