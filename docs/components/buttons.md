@@ -39,16 +39,10 @@ Buttons styles are similar to bootstrap, but are rewritten. Bootstrap styles are
 ### Large
 
 {% capture example %}
-<button type="button" class="btn btn-primary btn-lg">Large button</button>
-<button type="button" class="btn btn-secondary btn-lg">Large button</button>
-{% endcapture %}
-{% include example.html content=example %}
-
-### Small
-
-{% capture example %}
-<button type="button" class="btn btn-primary btn-sm">Small button</button>
-<button type="button" class="btn btn-secondary btn-sm">Small button</button>
+<button type="button" class="btn btn-primary small">Small button</button>
+<button type="button" class="btn btn-primary">Normal button</button>
+<button type="button" class="btn btn-primary big">Big button</button>
+<button type="button" class="btn btn-primary Massive">Massive button</button>
 {% endcapture %}
 {% include example.html content=example %}
 

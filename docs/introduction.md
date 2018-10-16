@@ -10,6 +10,8 @@ The style guide itself should also be compatible with IE11.
 
 Based on <a href="https://getbootstrap.com/">Bootstrap 4</a>.
 
+Bootstrap has a class name convention where all classes are prefixed whatever they belong to. We <em>do not</em> use the same class name convention for our own classes [we use something similar to Semantic UI]. 
+
 ## Starter template
 
 {% capture code %}
