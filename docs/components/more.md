@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Components
+title: More components
 description:
 ---
 

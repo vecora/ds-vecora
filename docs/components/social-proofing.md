@@ -1,3 +1,10 @@
+---
+layout: default
+title: Social proofing
+description:
+---
+
+
 ## Rating
 
 Rating goes from 0 to 5 with increments of 0.5.
