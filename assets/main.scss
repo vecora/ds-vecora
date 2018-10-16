@@ -21,4 +21,20 @@ body {
       margin-left: 20px;
     }
   }
+
+  .list-bold {
+    li {
+      font-weight: bold;
+      ul {
+        margin-left: 0;
+        li {
+          font-weight: normal;
+          ul {
+            margin-left: 20px;
+          }
+        }
+      }
+    }
+  }
+
 }
