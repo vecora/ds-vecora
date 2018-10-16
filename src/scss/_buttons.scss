@@ -84,6 +84,10 @@ fieldset:disabled a.btn {
   }
 }
 
+.button.outline {
+  background: none;
+  border: 2px solid white;
+}
 
 /*
 @each $color, $value in $theme-colors {
