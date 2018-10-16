@@ -45,6 +45,7 @@ if (document.querySelector("#theme-switcher")) {
 
   $(document).ready(function() {
 
+    console.log(themeClass);
     document.documentElement.className = themeClass;
 
     switch (themeClass) {
