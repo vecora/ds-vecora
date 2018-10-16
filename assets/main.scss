@@ -59,14 +59,14 @@ h3, h4 { margin-top: 50px !important; }
 
 
 
-.docs-gradients {
-  .docs-gradient-container {
-    float: left;
+.docs-gradients-container {
+  display: flex;
+
+  .docs-gradient-item {
     width: 25%;
   }
 
   .docs-gradient {
-    width: calc(100% - 40px);
     height: 200px;
     margin: 0 20px;
     .docs-gradient-1 { background: linear-gradient(#008CFF, #DE00FF, #FF0078); }

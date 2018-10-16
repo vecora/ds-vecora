@@ -49,15 +49,15 @@ Theme classes can be applied to any box, and applies to everything inside that b
 
 ### Gradients
 
-<div class="docs-gradients">
-  <div class="docs-gradient-container"><div class="docs-gradient docs-gradient-1"></div><div class="docs-color-codes"></div></div>
-  <div class="docs-gradient-container"><div class="docs-gradient docs-gradient-2"></div><div class="docs-color-codes"></div></div>
-  <div class="docs-gradient-container"><div class="docs-gradient docs-gradient-3"></div><div class="docs-color-codes"></div></div>
-  <div class="docs-gradient-container"><div class="docs-gradient docs-gradient-4"></div><div class="docs-color-codes"></div></div>
-  <div class="docs-gradient-container"><div class="docs-gradient docs-gradient-5"></div><div class="docs-color-codes"></div></div>
-  <div class="docs-gradient-container"><div class="docs-gradient docs-gradient-6"></div><div class="docs-color-codes"></div></div>
-  <div class="docs-gradient-container"><div class="docs-gradient docs-gradient-7"></div><div class="docs-color-codes"></div></div>
-  <div class="docs-gradient-container"><div class="docs-gradient docs-gradient-8"></div><div class="docs-color-codes"></div></div>
+<div class="docs-gradients-container">
+  <div class="docs-gradient-item"><div class="docs-gradient docs-gradient-1"></div><div class="docs-color-codes"></div></div>
+  <div class="docs-gradient-item"><div class="docs-gradient docs-gradient-2"></div><div class="docs-color-codes"></div></div>
+  <div class="docs-gradient-item"><div class="docs-gradient docs-gradient-3"></div><div class="docs-color-codes"></div></div>
+  <div class="docs-gradient-item"><div class="docs-gradient docs-gradient-4"></div><div class="docs-color-codes"></div></div>
+  <div class="docs-gradient-item"><div class="docs-gradient docs-gradient-5"></div><div class="docs-color-codes"></div></div>
+  <div class="docs-gradient-item"><div class="docs-gradient docs-gradient-6"></div><div class="docs-color-codes"></div></div>
+  <div class="docs-gradient-item"><div class="docs-gradient docs-gradient-7"></div><div class="docs-color-codes"></div></div>
+  <div class="docs-gradient-item"><div class="docs-gradient docs-gradient-8"></div><div class="docs-color-codes"></div></div>
 </div>
 
 ### UI colors
