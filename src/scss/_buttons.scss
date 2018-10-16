@@ -4,7 +4,7 @@
 // Base styles
 //
 
-.btn {
+.button {
   display: inline-block;
   font-weight: $btn-font-weight;
   text-align: center;
@@ -49,6 +49,16 @@
       @include box-shadow($btn-focus-box-shadow, $btn-active-box-shadow);
     }
   }
+
+
+  background-image: linear-gradient(to right, #251e4c, #1f1840);
+  border: none;
+  color: white !important;
+  padding: 11px 30px 10px 30px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 80%;
 }
 
 // Future-proof disabling of clicks on `<a>` elements
@@ -63,18 +73,13 @@ fieldset:disabled a.btn {
 //
 
 @each $color, $value in $theme-gradients {
-  .btn-#{$color} {
-    //@include button-variant($value, $value); // EEK: this mixin comes from boostrap
+  .button.#{$color} {
     background-image: linear-gradient(to right, nth($value, 1));
-    border: none;
     color: nth($value, 2) !important;
-    padding: 11px 30px 10px 30px;
-    text-transform: uppercase;
-    font-weight: 600;
-    letter-spacing: 1px;
-    font-size: 80%;
   }
 }
+
+
 /*
 @each $color, $value in $theme-colors {
   .btn-outline-#{$color} {

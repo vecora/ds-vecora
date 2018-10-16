@@ -25,17 +25,17 @@ Force specific theme color.
 These buttons won't change with the theme.
 
 {% capture example %}
-<button type="button" class="btn btn-primary">Default</button>
-<a href="#" class="btn btn-warning">Sales</a>
-<a href="#" class="btn btn-info">Corporate</a>
+<button type="button" class="button default">Default</button>
+<a href="#" class="button sales">Sales</a>
+<a href="#" class="button corporate">Corporate</a>
 {% endcapture %}
 {% include example.html content=example %}
 
 Function colors.
 
 {% capture example %}
-<button type="button" class="btn btn-success">Success</button>
-<a href="#" class="btn btn-danger">Danger</a>
+<button type="button" class="button success">Success</button>
+<a href="#" class="button danger">Danger</a>
 {% endcapture %}
 {% include example.html content=example %}
 
