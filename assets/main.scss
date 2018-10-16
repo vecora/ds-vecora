@@ -61,22 +61,27 @@ h3, h4 { margin-top: 50px !important; }
 
 .docs-gradients-container {
   display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
 
   .docs-gradient-item {
-    width: 25%;
+    width: calc(25% - 40px);
+    margin: 20px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgb(0,0,0,0.2);
   }
 
   .docs-gradient {
     height: 200px;
-    margin: 0 20px;
-    &.docs-gradient-1 { background: linear-gradient(#008CFF, #DE00FF, #FF0078); }
-    &.docs-gradient-2 { background: linear-gradient(#FA4024, #FF0078); }
-    &.docs-gradient-3 { background: linear-gradient(#008CFF, #1CFF00); }
-    &.docs-gradient-4 { background: linear-gradient(#DE00FF, #008CFF, #00FFF2); }
-    &.docs-gradient-5 { background: linear-gradient(#DE00FF, #FF0078); }
-    &.docs-gradient-6 { background: linear-gradient(#940A40, #FA4024); }
-    &.docs-gradient-7 { background: linear-gradient(#FF0078, #F5FF00); }
-    &.docs-gradient-8 { background: linear-gradient(#171C59, #FF0078); }
+    &.docs-gradient-1 { background: linear-gradient(45deg, #008CFF, #DE00FF, #FF0078); }
+    &.docs-gradient-2 { background: linear-gradient(45deg, #FA4024, #FF0078); }
+    &.docs-gradient-3 { background: linear-gradient(45deg, #008CFF, #1CFF00); }
+    &.docs-gradient-4 { background: linear-gradient(45deg, #DE00FF, #008CFF, #00FFF2); }
+    &.docs-gradient-5 { background: linear-gradient(45deg, #DE00FF, #FF0078); }
+    &.docs-gradient-6 { background: linear-gradient(45deg, #940A40, #FA4024); }
+    &.docs-gradient-7 { background: linear-gradient(45deg, #FF0078, #F5FF00); }
+    &.docs-gradient-8 { background: linear-gradient(45deg, #171C59, #FF0078); }
   }
 
 }
