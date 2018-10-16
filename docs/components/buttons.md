@@ -7,7 +7,7 @@ description:
 Buttons styles are similar to bootstrap, but are rewritten. Bootstrap styles are not used.
 
 
-
+## Basuc usage
 
 {% capture example %}
 <button type="button" class="btn btn-primary">Primary</button>
@@ -18,6 +18,9 @@ Buttons styles are similar to bootstrap, but are rewritten. Bootstrap styles are
 <a href="#" class="btn btn-info">Info</a>
 {% endcapture %}
 {% include example.html content=example %}
+
+
+## Appear as link
 
 {% capture example %}
 <button type="button" class="btn btn-link">Link</button>
