@@ -49,8 +49,8 @@ $gradients: map-merge((
 
 $theme-gradients: () !default;
 $theme-gradients: map-merge((
-  "primary":    (#008CFF, #00FFF2),
-  "secondary":  $secondary, // should mimic the background of the theme
+  "primary":    (#FA4024, #FF0078),
+  "secondary":  (#1CFF00, #008CFF, #00FFF2), // should mimic the background of the theme
   "success":    (#008CFF, #1CFF00),
   "info":       (#008CFF, #1CFF00),
   "warning":    (#FF0078, #F5FF00),
