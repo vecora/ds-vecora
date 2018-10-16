@@ -7,7 +7,7 @@ description:
 Buttons styles are similar to bootstrap, but are rewritten. Bootstrap styles are not used.
 
 
-## Basuc usage
+## Basic usage
 
 {% capture example %}
 <button type="button" class="btn btn-primary">Primary</button>
