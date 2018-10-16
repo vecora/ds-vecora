@@ -42,8 +42,11 @@ if (document.querySelector("#theme-switcher")) {
 
   // Initialize
   var themeClass = localStorage.getItem('themeClass');
-  document.documentElement.className = themeClass;
+
   $(document).ready(function() {
+
+    document.documentElement.className = themeClass;
+
     switch (themeClass) {
       case "theme-dark":
         document.getElementById('theme-dark').checked = true;
