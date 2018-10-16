@@ -5,6 +5,16 @@ body {
   position: relative;
 }
 
+
+// WARNING: These header margins will unintentionally also affect examples
+h2 {
+  margin-top: 100px;
+}
+
+h3, h4 { margin-top: 50px; }
+
+
+
 .document-nav {
 
   font-size: 80%;
@@ -45,5 +55,4 @@ body {
   padding: 30px;
   border-radius: 4px;
   box-shadow: 0 0 4px #131e3c2e;
-  margin-bottom: 50px; // WARNING: This is a workaround to give margin above new sections
 }
