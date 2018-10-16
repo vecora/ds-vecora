@@ -37,16 +37,16 @@
 })();
 
 
+// Initialize
+var themeClass = localStorage.getItem('themeClass');
+document.documentElement.className = themeClass;
+
 // Theme switcher
 if (document.querySelector("#theme-switcher")) {
 
-  // Initialize
-  var themeClass = localStorage.getItem('themeClass');
+
 
   $(document).ready(function() {
-
-    console.log(themeClass);
-    document.documentElement.className = themeClass;
 
     switch (themeClass) {
       case "theme-dark":
