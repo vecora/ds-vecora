@@ -69,14 +69,14 @@ h3, h4 { margin-top: 50px !important; }
   .docs-gradient {
     height: 200px;
     margin: 0 20px;
-    .docs-gradient-1 { background: linear-gradient(#008CFF, #DE00FF, #FF0078); }
-    .docs-gradient-2 { background: linear-gradient(#FA4024, #FF0078); }
-    .docs-gradient-3 { background: linear-gradient(#008CFF, #1CFF00); }
-    .docs-gradient-4 { background: linear-gradient(#DE00FF, #008CFF, #00FFF2); }
-    .docs-gradient-5 { background: linear-gradient(#DE00FF, #FF0078); }
-    .docs-gradient-6 { background: linear-gradient(#940A40, #FA4024); }
-    .docs-gradient-7 { background: linear-gradient(#FF0078, #F5FF00); }
-    .docs-gradient-8 { background: linear-gradient(#171C59, #FF0078); }
+    &.docs-gradient-1 { background: linear-gradient(#008CFF, #DE00FF, #FF0078); }
+    &.docs-gradient-2 { background: linear-gradient(#FA4024, #FF0078); }
+    &.docs-gradient-3 { background: linear-gradient(#008CFF, #1CFF00); }
+    &.docs-gradient-4 { background: linear-gradient(#DE00FF, #008CFF, #00FFF2); }
+    &.docs-gradient-5 { background: linear-gradient(#DE00FF, #FF0078); }
+    &.docs-gradient-6 { background: linear-gradient(#940A40, #FA4024); }
+    &.docs-gradient-7 { background: linear-gradient(#FF0078, #F5FF00); }
+    &.docs-gradient-8 { background: linear-gradient(#171C59, #FF0078); }
   }
 
 }
