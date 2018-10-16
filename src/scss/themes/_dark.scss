@@ -13,7 +13,21 @@
   @import "../lib/bootstrap/variables";
   @import "../lib/bootstrap/mixins";
   @import "../lib/bootstrap/root";
+
   //@import "../lib/bootstrap/reboot";
+  // this is all we need from reboot
+  body {
+    color: $body-color;
+    background-color: $body-bg; // 2
+  }
+  a {
+    color: $link-color;
+    @include hover {
+      color: $link-hover-color;
+      text-decoration: $link-hover-decoration; // NOTE: possibly not needed?
+    }
+  }
+
   @import "../lib/bootstrap/type";
   @import "../lib/bootstrap/images";
   @import "../lib/bootstrap/tables";
