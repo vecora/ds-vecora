@@ -1,3 +1,4 @@
+/*
 SG.tableToJSON = function('#tableId') {
 
 };
@@ -42,3 +43,5 @@ new Vue({
     }
   }
 });
+
+*/
