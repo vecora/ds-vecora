@@ -10,15 +10,17 @@ Button classes can be applied to `button` or `a` elements.
 
 ## Basic usage
 
-Primary and secondary buttons change with the theme.
+These buttons change with the theme.
 
 {% capture example %}
-<button type="button" class="button focus">Focus</button>
-<button type="button" class="button">Default</button>
+<button type="button" class="button focus">Primary</button>
+<button type="button" class="button">Secondary</button>
 {% endcapture %}
 {% include example.html content=example %}
 
 ## Colors
+
+These buttons don't change with the theme.
 
 {% capture example %}
 <button type="button" class="btn btn-primary">Default</button>
@@ -26,6 +28,8 @@ Primary and secondary buttons change with the theme.
 <a href="#" class="btn btn-info">Corporate</a>
 {% endcapture %}
 {% include example.html content=example %}
+
+Function colors.
 
 {% capture example %}
 <button type="button" class="btn btn-success">Success</button>
