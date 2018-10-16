@@ -68,3 +68,8 @@ shadow
 
 
 #### Accent colors
+
+NOTES:
+blue
+orange
+(only for corporate and sales themes?)
