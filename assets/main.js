@@ -64,6 +64,7 @@ if (document.querySelector("#theme-switcher")) {
   });
 
 
+  // WARNING: May conflict with other vue.js apps soon.
   var themeSwitcherApp = new Vue({
     el: '#theme-switcher',
     methods: {
