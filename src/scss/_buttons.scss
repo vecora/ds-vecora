@@ -72,6 +72,10 @@ fieldset:disabled a.btn {
 // Alternate buttons
 //
 
+.button.primary {
+  background-image: linear-gradient(to right, nth($theme-gradients(default), 1));
+  color: nth($theme-gradients(default), 2) !important;
+}
 @each $color, $value in $theme-gradients {
   .button.#{$color} {
     background-image: linear-gradient(to right, nth($value, 1));
