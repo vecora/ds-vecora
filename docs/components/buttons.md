@@ -11,25 +11,23 @@ Buttons styles are similar to bootstrap, but are rewritten. Bootstrap styles are
 
 {% capture example %}
 <button type="button" class="btn btn-primary">Primary</button>
-<button type="button" class="btn btn-secondary">Secondary</button>
+<button type="button" class="btn btn-secondary">Default</button>
 <button type="button" class="btn btn-success">Success</button>
 <a href="#" class="btn btn-danger">Danger</a>
-<a href="#" class="btn btn-warning">Warning</a>
-<a href="#" class="btn btn-info">Info</a>
+<a href="#" class="btn btn-warning">Sales</a>
+<a href="#" class="btn btn-info">Corporate</a>
 {% endcapture %}
 {% include example.html content=example %}
 
 ## Outline buttons
 
 {% capture example %}
-<button type="button" class="btn btn-outline-primary">Primary</button>
-<button type="button" class="btn btn-outline-secondary">Secondary</button>
-<button type="button" class="btn btn-outline-success">Success</button>
-<button type="button" class="btn btn-outline-danger">Danger</button>
-<button type="button" class="btn btn-outline-warning">Warning</button>
-<button type="button" class="btn btn-outline-info">Info</button>
-<button type="button" class="btn btn-outline-light">Light</button>
-<button type="button" class="btn btn-outline-dark">Dark</button>
+<button type="button" class="button primary outline">Primary</button>
+<button type="button" class="button outline">Default</button>
+<button type="button" class="button success outline">Success</button>
+<a href="#" class="button danger outline">Danger</a>
+<a href="#" class="button sales outline">Sales</a>
+<a href="#" class="button corporate outline">Corporate</a>
 {% endcapture %}
 {% include example.html content=example %}
 
@@ -39,10 +37,10 @@ Buttons styles are similar to bootstrap, but are rewritten. Bootstrap styles are
 ### Large
 
 {% capture example %}
-<button type="button" class="btn btn-primary small">Small button</button>
-<button type="button" class="btn btn-primary">Normal button</button>
-<button type="button" class="btn btn-primary big">Big button</button>
-<button type="button" class="btn btn-primary Massive">Massive button</button>
+<button type="button" class="button small">Small button</button>
+<button type="button" class="button">Normal button</button>
+<button type="button" class="button big">Big button</button>
+<button type="button" class="button massive">Massive button</button>
 {% endcapture %}
 {% include example.html content=example %}
 
