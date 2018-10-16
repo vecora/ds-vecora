@@ -52,8 +52,8 @@ $theme-gradients: map-merge((
   "primary":    (#FA4024, #FF0078),
   "secondary":  (#251e4c, #1f1840), // should mimic the background of the theme
   "success":    (#F5FF00, #1CFF00),
-  "info":       (#008CFF, #1CFF00),
+  "info":       (#008CFF, #00FFF2),
   "warning":    (#FA4024, #F5FF00),
-  "danger":     (#008CFF, #00FFF2)
+  "danger":     (#FA4024, #FA4024)
 ), $theme-gradients);
 // stylelint-enable
