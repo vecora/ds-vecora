@@ -78,6 +78,6 @@ In progress
 ## Fluid
 
 {% capture example %}
-<button type="button" class="button primary fluid">Normal button</button>
+<button type="button" class="button primary fluid">Fluid button</button>
 {% endcapture %}
 {% include example.html content=example %}
