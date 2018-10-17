@@ -55,10 +55,10 @@ Function colors.
 ## Sizes
 
 {% capture example %}
-<button type="button" class="button small">Small button</button>
-<button type="button" class="button">Normal button</button>
-<button type="button" class="button big">Big button</button>
-<button type="button" class="button massive">Massive button</button>
+<button type="button" class="button primary small">Small button</button>
+<button type="button" class="button primary">Normal button</button>
+<button type="button" class="button primary big">Big button</button>
+<button type="button" class="button primary massive">Massive button</button>
 {% endcapture %}
 {% include example.html content=example %}
 
@@ -78,6 +78,6 @@ In progress
 ## Fluid
 
 {% capture example %}
-<button type="button" class="button fluid">Normal button</button>
+<button type="button" class="button primary fluid">Normal button</button>
 {% endcapture %}
 {% include example.html content=example %}
