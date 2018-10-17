@@ -73,8 +73,8 @@ fieldset:disabled a.btn {
 .button.primary {
   background-image: linear-gradient(to right, nth(map-get($theme-gradients, default), 1)) !important;
   color: nth(map-get($theme-gradients, default), 2) !important;
-  &:hover { nth(nth(map-get($theme-gradients, default), 1), 2)
-    outline: 0 0 5px
+  &:hover {
+    outline: 0 0 5px nth(nth(map-get($theme-gradients, default), 1), 2);
   }
 }
 
