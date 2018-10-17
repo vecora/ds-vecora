@@ -22,7 +22,7 @@
   <main>
     <div class="container-fluid">
       <div class="row">
-        <div class="col-2">
+        <div class="col-lg-2">
 
           <nav class="sticky-top document-nav">
             <ul class="list-unstyled list-bold">
@@ -43,14 +43,14 @@
           </nav>
 
         </div>
-        <div class="col-8">
+        <div class="col-lg-8">
 
           <h1>{{ page.title }}</h1>
           <p class="lead">{{ page.description }}</p>
           {{ content }}
 
         </div>
-        <div class="col-2">
+        <div class="col-lg-2 d-lg-none">
           <nav class="sticky-top document-nav nav">
             {% include toc.html html=content %}
           </nav>
