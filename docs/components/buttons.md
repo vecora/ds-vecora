@@ -31,7 +31,7 @@ These buttons won't change with the theme.
 {% endcapture %}
 {% include example.html content=example %}
 
-Function colors.
+Functional colors.
 
 {% capture example %}
 <button type="button" class="button success">Success</button>
