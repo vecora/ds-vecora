@@ -54,8 +54,8 @@ pre[class*="language-"] {
 	margin: .5em 0;
 	overflow: auto;
 	.example & {
-		padding: 30px;
-		margin: 15px -30px -30px -30px;
+		padding: 30px !important;
+		margin: 15px -30px -30px -30px !important;
 	}
 }
 
