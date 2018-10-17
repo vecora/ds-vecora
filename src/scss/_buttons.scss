@@ -59,6 +59,7 @@
   font-weight: 600;
   letter-spacing: 1px;
   font-size: 80%;
+  // margin: 5px 5px;
 }
 
 // Future-proof disabling of clicks on `<a>` elements
@@ -113,6 +114,11 @@ fieldset:disabled a.btn {
   padding: 24px 50px 22px 50px;
   letter-spacing: 2px;
   font-size: 150%;
+}
+
+.button.fluid {
+  display: block;
+  width: 100%;
 }
 
 /*
