@@ -57,7 +57,7 @@ h3, h4 { margin-top: 50px !important; }
   margin-bottom: 30px;
   overflow: hidden;
 
-  @media (max-width: 767px) { margin-left: -15px; margin-right: -15px; }
+  @media (max-width: 767px) { margin-left: -15px; margin-right: -15px; border-radius: 0; }
 
   .theme-dark & {
     background-color: #2E3257;
