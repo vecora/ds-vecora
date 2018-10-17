@@ -51,15 +51,15 @@
   }
 
 
-  background-image: linear-gradient(to right, #251e4c, #1f1840);
+  background-image: linear-gradient(to right, #eee, #f2f2f2);
   border: none;
-  color: white !important;
   padding: 11px 30px 10px 30px;
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 1px;
   font-size: 80%;
   // margin: 5px 5px;
+  & &a { color: white; }
 }
 
 // Future-proof disabling of clicks on `<a>` elements
@@ -120,6 +120,32 @@ fieldset:disabled a.btn {
   display: block;
   width: 100%;
 }
+
+
+.theme-dark {
+  .button {
+    background-image: linear-gradient(to right, #251e4c, #1f1840);
+    & &a { color: white; }
+  }
+}
+
+.theme-corporate {
+  .button.primary {
+    background-image: linear-gradient(to right, nth(map-get($theme-gradients, corporate), 1));
+    color: nth(map-get($theme-gradients, corporate), 2) !important;
+  }
+}
+
+.theme-sales {
+  .button.primary {
+    background-image: linear-gradient(to right, nth(map-get($theme-gradients, sales), 1));
+    color: nth(map-get($theme-gradients, sales), 2) !important;
+  }
+}
+
+
+
+
 
 /*
 @each $color, $value in $theme-colors {
