@@ -60,6 +60,7 @@
   font-size: 80%;
   // margin: 5px 5px;
   &, &a { color: white; }
+  transition: box-shadow 150ms ease-out;
 }
 
 // Future-proof disabling of clicks on `<a>` elements
@@ -74,7 +75,7 @@ fieldset:disabled a.btn {
   background-image: linear-gradient(to right, nth(map-get($theme-gradients, default), 1)) !important;
   color: nth(map-get($theme-gradients, default), 2) !important;
   &:hover {
-    outline: 0 0 5px nth(nth(map-get($theme-gradients, default), 1), 2);
+    box-shadow: 0 0 15px nth(nth(map-get($theme-gradients, default), 1), 2);
   }
 }
 
