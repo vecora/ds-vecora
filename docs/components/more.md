@@ -15,8 +15,8 @@ Should be implemented right before scripts at the end of the `body` element on e
 
 {% capture code %}
 <div class="cookie-message">
-  <button class="button primary float-right">That's okey!</button>
   <p>By using this website you accept that we use information capsules. Read more about how we handle your personal information in our <a href="#">privacy statement</a>.</p>
+  <button class="button primary float-right">That's okey!</button>
 </div>
 {% endcapture %}
 {% include code.html content=code %}
