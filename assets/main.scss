@@ -51,11 +51,18 @@ h3, h4 { margin-top: 50px !important; }
 
 
 .example {
-  background-color: #2E3257;
+  background-color: #f2f2f2;
   padding: 30px;
   border-radius: 4px;
-  box-shadow: 0 0 4px #131e3c2e;
   margin-bottom: 30px;
+
+  .theme-dark & {
+    background-color: #2E3257;
+    box-shadow: 0 0 4px #131e3c2e;
+  }
+  .theme-corporate & {
+    background-color: orange;
+  }
 }
 
 
