@@ -50,10 +50,15 @@ code[class*="language-"]::selection, code[class*="language-"] ::selection {
 
 /* Code blocks */
 pre[class*="language-"] {
-	padding: 15px 30px;
-	margin: 15px -30px;
+	padding: 1em;
+	margin: .5em 0;
 	overflow: auto;
+	.example & {
+		padding: 30px;
+		margin: 15px -30px -30px -30px;
+	}
 }
+
 
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {

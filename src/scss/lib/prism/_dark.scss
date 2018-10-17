@@ -31,15 +31,18 @@ pre[class*="language-"] {
 
 /* Code blocks */
 pre[class*="language-"] {
-	padding: 15px 30px;
-	margin: 15px -30px;
+	padding: 1em;
+	margin: .5em 0;
 	overflow: auto;
-	border-radius: 0.3em;
+	.example & {
+		padding: 30px;
+		margin: 15px -30px -30px -30px;
+	}
 }
 
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
-	background: #272822;
+	background: #231a33;
 }
 
 /* Inline code */
