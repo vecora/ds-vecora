@@ -10,7 +10,7 @@ The style guide itself should also be compatible with IE11.
 
 Based on <a href="https://getbootstrap.com/">Bootstrap 4</a>.
 
-Bootstrap has a class name convention where all classes are prefixed whatever they belong to. We <em>do not</em> use the same class name convention for our own classes [we use something similar to Semantic UI]. 
+Bootstrap has a class name convention where all classes are prefixed whatever they belong to. We <em>do not</em> use the same class name convention for our own classes [we use something similar to Semantic UI].
 
 ## Starter template
 
@@ -38,7 +38,7 @@ Bootstrap has a class name convention where all classes are prefixed whatever th
   </footer>
 
   <div class="cookie-message">
-    <button class="btn btn-primary float-right">That's okey!</button>
+    <button class="button primary float-right">That's okey!</button>
     <p>By using this website you accept that we use information capsules. Read more about how we handle your personal information in our <a href="#">privacy statement</a>.</p>
   </div>
 

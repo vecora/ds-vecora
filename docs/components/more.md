@@ -11,7 +11,7 @@ description:
 
 Should be implemented right before scripts at the end of the `body` element on every page. Everything else is handled automagically by JavaScript.
 
-<button class="btn btn-primary" id="cookieMessageToggle">Activate cookie message</button>
+<button class="button" id="cookieMessageToggle">Activate cookie message</button>
 
 {% capture code %}
 <div class="cookie-message">
