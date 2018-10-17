@@ -69,56 +69,17 @@ fieldset:disabled a.btn {
 }
 
 
-//
-// Alternate buttons
-//
 
 .button.primary {
-  background-image: linear-gradient(to right, nth(map-get($theme-gradients, default), 1));
+  background-image: linear-gradient(to right, nth(map-get($theme-gradients, default), 1)) !important;
   color: nth(map-get($theme-gradients, default), 2) !important;
 }
 
 @each $color, $value in $theme-gradients {
   .button.#{$color} {
-    background-image: linear-gradient(to right, nth($value, 1));
+    background-image: linear-gradient(to right, nth($value, 1)) !important;
     color: nth($value, 2) !important;
   }
-}
-
-.button.outline {
-  background: none;
-  //padding-top: 9px;
-  //padding-bottom: 8px;
-  border: 2px solid white;
-
-  @each $color, $value in $theme-gradients {
-    &.#{$color} {
-      border-image: linear-gradient(to right, nth($value, 1));
-      color: nth(nth($value, 1), 1) !important;
-    }
-  }
-}
-
-.button.small {
-  padding: 8px 20px 7px 20px;
-  letter-spacing: 0.5px;
-  font-size: 60% !important;
-  font-weight: 600 !important;
-}
-.button.big {
-  padding: 16px 40px 14px 40px;
-  letter-spacing: 1.5px;
-  font-size: 120%;
-}
-.button.massive {
-  padding: 24px 50px 22px 50px;
-  letter-spacing: 2px;
-  font-size: 150%;
-}
-
-.button.fluid {
-  display: block;
-  width: 100%;
 }
 
 
@@ -144,6 +105,42 @@ fieldset:disabled a.btn {
 }
 
 
+.button.small {
+  padding: 8px 20px 7px 20px;
+  letter-spacing: 0.5px;
+  font-size: 60% !important;
+  font-weight: 600 !important;
+}
+.button.big {
+  padding: 16px 40px 14px 40px;
+  letter-spacing: 1.5px;
+  font-size: 120%;
+}
+.button.massive {
+  padding: 24px 50px 22px 50px;
+  letter-spacing: 2px;
+  font-size: 150%;
+}
+
+.button.fluid {
+  display: block;
+  width: 100%;
+}
+
+
+.button.outline {
+  background: none;
+  //padding-top: 9px;
+  //padding-bottom: 8px;
+  border: 2px solid white;
+
+  @each $color, $value in $theme-gradients {
+    &.#{$color} {
+      border-image: linear-gradient(to right, nth($value, 1));
+      color: nth(nth($value, 1), 1) !important;
+    }
+  }
+}
 
 
 
