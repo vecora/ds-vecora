@@ -71,4 +71,13 @@ Function colors.
 
 ## States
 
+NOTE:
+Disabled
+In progress
+
 ## Fluid
+
+{% capture example %}
+<button type="button" class="button fluid">Normal button</button>
+{% endcapture %}
+{% include example.html content=example %}
