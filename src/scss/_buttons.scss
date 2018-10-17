@@ -83,7 +83,7 @@ fieldset:disabled a.btn {
 @each $color, $value in $theme-gradients {
   .button.#{$color} {
     background-image: linear-gradient(to right, nth($value, 1)) !important;
-    background-color: nth(nth(map-get($theme-gradients, default), 1), 2);
+    background-color: nth(nth($value, 1), 2);
     color: nth($value, 2) !important;
   }
 }
