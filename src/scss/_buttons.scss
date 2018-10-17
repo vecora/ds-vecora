@@ -60,7 +60,7 @@
   font-size: 80%;
   // margin: 5px 5px;
   &, &a { color: #555; }
-  transition: box-shadow 150ms ease-out;
+  // transition: box-shadow 150ms ease-out;
 }
 
 // Future-proof disabling of clicks on `<a>` elements
@@ -75,9 +75,9 @@ fieldset:disabled a.btn {
   background-image: linear-gradient(to right, nth(map-get($theme-gradients, default), 1)) !important;
   background-color: nth(nth(map-get($theme-gradients, default), 1), 2);
   color: nth(map-get($theme-gradients, default), 2) !important;
-  &:hover {
-    box-shadow: 0 0 15px nth(nth(map-get($theme-gradients, default), 1), 2);
-  }
+  //&:hover {
+  //  box-shadow: 0 0 15px nth(nth(map-get($theme-gradients, default), 1), 2);
+  //}
 }
 
 @each $color, $value in $theme-gradients {
@@ -98,14 +98,14 @@ fieldset:disabled a.btn {
 
 .theme-corporate {
   .button.primary {
-    background-image: linear-gradient(to right, nth(map-get($theme-gradients, corporate), 1));
+    background-image: linear-gradient(to right, nth(map-get($theme-gradients, corporate), 1)) !important;
     color: nth(map-get($theme-gradients, corporate), 2) !important;
   }
 }
 
 .theme-sales {
   .button.primary {
-    background-image: linear-gradient(to right, nth(map-get($theme-gradients, sales), 1));
+    background-image: linear-gradient(to right, nth(map-get($theme-gradients, sales), 1)) !important;
     color: nth(map-get($theme-gradients, sales), 2) !important;
   }
 }
