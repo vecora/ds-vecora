@@ -28,31 +28,29 @@ $red:     #CD1047;
 $orange:  #E8432C;
 // No change yet to $indigo
 
-/*
-$gradients: () !default;
-$gradients: map-merge((
-  "blue":       $blue,
-  "indigo":     $indigo,
-  "purple":     $purple,
-  "pink":       $pink,
-  "red":        $red,
-  "orange":     $orange,
-  "yellow":     $yellow,
-  "green":      $green,
-  "teal":       $teal,
-  "cyan":       $cyan,
-  "white":      $white,
-  "gray":       $gray-600,
-  "gray-dark":  $gray-800
-), $colors);
-*/
+// TODO: all these colors should given by variables, but we are waiting for correct color codes from Maren
+// Gradients base on Marens colors
+$default-gradient: #FA4024, #FF0078;
+$corporate-gradient: #008CFF, #00FFF2;
+$sales-gradient: #fa9124,#faff76;
+$success-gradient: #F5FF00, #1CFF00;
+$danger-gradient: #940A40, #FA4024;
 
+// Text color on the gradients
+$default-color: white;
+$corporate-color: white;
+$sales-color: #322c52;
+$success-color: #322c52;
+$danger-color: white;
+
+
+// NOTE: the logic that depend on this should be reworked to only use the variables above.
 $theme-gradients: () !default;
 $theme-gradients: map-merge((
-  "default":    ((#FA4024, #FF0078) white),
-  "corporate":       ((#008CFF, #00FFF2) white),
-  "success":    ((#F5FF00, #1CFF00) #322c52),
-  "sales":    ((#fa9124,#faff76) #322c52),
-  "danger":     ((#940A40, #FA4024) white)
+  "default": $default-gradient $default-color,
+  "corporate": $corporate-gradient $corporate-color,
+  "sales": $sales-gradient $sales-color,
+  "success": $success-gradient $success-color,
+  "danger": $danger-gradient $danger-color
 ), $theme-gradients);
 // stylelint-enable
