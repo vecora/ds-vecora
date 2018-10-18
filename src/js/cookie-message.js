@@ -3,7 +3,7 @@ CookieMessage = {
     if (CookieMessage.accepted) {
       document.querySelector(".cookie-message").style.display = "none";
     } else {
-      document.querySelector(".cookie-message").style.display = "block";
+      document.querySelector(".cookie-message").style.display = "flex";
     }
   },
   onStatusChange: function() {}, // Used by the docs
