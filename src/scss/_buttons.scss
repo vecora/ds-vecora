@@ -4,6 +4,16 @@
 // Base styles
 //
 
+@mixin button-colorize($colors) {
+  $gradient-colors: nth($colors, 1);
+  $bg-color: nth(nth($colors, 1), 2);
+  $text-color: nth($colors, 2);
+  background-image: linear-gradient(to right, $gradient-colors);
+  background-color: $bg-color;
+  &, &a { color: $text-color }
+}
+
+
 .button {
   display: inline-block;
   font-weight: $btn-font-weight;
@@ -51,7 +61,7 @@
   }
 
 
-  background-image: linear-gradient(to right, #eee, #f2f2f2);
+
   border: none;
   padding: 11px 30px 10px 30px;
   text-transform: uppercase;
@@ -59,7 +69,6 @@
   letter-spacing: 1px;
   font-size: 80%;
   // margin: 5px 5px;
-  &, &a { color: #555; }
   // transition: box-shadow 150ms ease-out;
 }
 
@@ -70,43 +79,13 @@ fieldset:disabled a.btn {
 }
 
 
-
-.button.primary {
-  background-image: linear-gradient(to right, nth(map-get($theme-gradients, default), 1)) !important;
-  background-color: nth(nth(map-get($theme-gradients, default), 1), 2);
-  color: nth(map-get($theme-gradients, default), 2) !important;
-  //&:hover {
-  //  box-shadow: 0 0 15px nth(nth(map-get($theme-gradients, default), 1), 2);
-  //}
+.button {
+  @include button-colorize(map-get($button-colors, secondary));
 }
 
-@each $color, $value in $theme-gradients {
-  .button.#{$color} {
-    background-image: linear-gradient(to right, nth($value, 1)) !important;
-    background-color: nth(nth($value, 1), 2);
-    color: nth($value, 2) !important;
-  }
-}
-
-
-.theme-dark {
-  .button {
-    background-image: linear-gradient(to right, #251e4c, #1f1840);
-    &, &a { color: white; }
-  }
-}
-
-.theme-corporate {
-  .button.primary {
-    background-image: linear-gradient(to right, nth(map-get($theme-gradients, corporate), 1)) !important;
-    color: nth(map-get($theme-gradients, corporate), 2) !important;
-  }
-}
-
-.theme-sales {
-  .button.primary {
-    background-image: linear-gradient(to right, nth(map-get($theme-gradients, sales), 1)) !important;
-    color: nth(map-get($theme-gradients, sales), 2) !important;
+@each $name, $colors in $button-colors {
+  .button.#{$name} {
+    @include button-colorize($colors);
   }
 }
 
@@ -140,7 +119,7 @@ fieldset:disabled a.btn {
   //padding-bottom: 8px;
   border: 2px solid white;
 
-  @each $color, $value in $theme-gradients {
+  @each $color, $value in $button-colors {
     &.#{$color} {
       border-image: linear-gradient(to right, nth($value, 1));
       color: nth(nth($value, 1), 1) !important;

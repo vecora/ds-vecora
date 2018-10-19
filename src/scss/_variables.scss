@@ -19,40 +19,46 @@ $corners: 5px;
 
 
 // Marens colors (in order)
-$pink:    #E71F78;
-$purple:  #731D60;
-$blue:    #427FC1;
-$cyan:    #427FC1;
-$teal:    #6DC5CE;
-$green:   #69B42D;
-$yellow:  #E9E100;
-$red:     #CD1047;
-$orange:  #E8432C;
+$sg-pink:    #E71F78;
+$sg-purple:  #731D60;
+$sg-blue:    #427FC1;
+$sg-cyan:    #427FC1;
+$sg-teal:    #6DC5CE;
+$sg-green:   #69B42D;
+$sg-yellow:  #E9E100;
+$sg-red:     #CD1047;
+$sg-orange:  #E8432C;
 // No change yet to $indigo
 
-// TODO: all these colors should given by variables, but we are waiting for correct color codes from Maren
+// TODO: all these individual colors should given by variables, but we are waiting for correct color codes from Maren
 // Gradients base on Marens colors
-$default-gradient: #FA4024, #FF0078;
-$corporate-gradient: #0066ff, #00d0ff;
-$sales-gradient: #fb8409,#ffdb76;
-$success-gradient: #F5FF00, #1CFF00;
-$danger-gradient: #940A40, #FA4024;
+$gradient-primary: #FA4024, #FF0078; // accent colors
+$gradient-secondary: #eee, #f2f2f2; // mimics ui colors
+// Theme gradients
+$gradient-default: $gradient-primary;
+$gradient-corporate: #0066ff, #00d0ff;
+$gradient-sales: #fb8409,#ffdb76;
+// Gradients for functional purposes
+$gradient-success: #F5FF00, #1CFF00;
+$gradient-danger: #940A40, #FA4024;
 
 // Text color on the gradients
-$default-color: white;
-$corporate-color: white;
-$sales-color: #322c52;
-$success-color: #322c52;
-$danger-color: white;
+$button-text-color: #322c52;
+$button-text-color-secondary: #555;
+$button-text-color-dark: white;
 
 
 // NOTE: the logic that depend on this should be reworked to only use the variables above.
-$theme-gradients: () !default;
-$theme-gradients: map-merge((
-  "default": $default-gradient $default-color,
-  "corporate": $corporate-gradient $corporate-color,
-  "sales": $sales-gradient $sales-color,
-  "success": $success-gradient $success-color,
-  "danger": $danger-gradient $danger-color
-), $theme-gradients);
+$button-colors: () !default;
+$button-colors: map-merge((
+  "primary": $gradient-primary $button-text-color-dark,
+  "secondary": $gradient-secondary $button-text-color-secondary,
+  // theme colors
+  "default": $gradient-default $button-text-color-dark,
+  "corporate": $gradient-corporate $button-text-color-dark,
+  "sales": $gradient-sales $button-text-color,
+  // functional colors
+  "success": $gradient-success $button-text-color,
+  "danger": $gradient-danger $button-text-color-dark
+), $button-colors);
 // stylelint-enable

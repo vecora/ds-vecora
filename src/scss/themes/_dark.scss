@@ -58,12 +58,17 @@
 
 
 
-  // Overrides for additional styles
+  // Overrides for SG styles
   $footer-bg: rgba(0,0,55,0.2);
   $footer-bg-legal: #2b2040;
   $cookie-message-bg: rgba(35,26,51,0.9);
   $grid-lines-color: #444;
   $grid-box-hover-color: #2e2e2e;
+
+
+  $button-colors: map-merge((
+    "secondary": (green, yellow) black,
+  ), $button-colors);
 
 
   // Additional styles
@@ -72,6 +77,7 @@
   @import '../grid';
   // @import '../range';
   @import '../cookie-message-theme';
+  @import '../buttons-theme';
   // @import '../map';
   // @import '../lib/prism/prism';
   // @import '../sections/headers';
