@@ -66,10 +66,9 @@
   $grid-box-hover-color: #2e2e2e;
 
 
-  $button-colors: map-merge((
-    "secondary": (green, yellow) black,
-  ), $button-colors);
+  $button-colors: map-merge($button-colors, ("secondary": (green, yellow) black ));
 
+  @debug $button-colors;
 
   // Additional styles
   @import '../variables';
