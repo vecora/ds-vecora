@@ -58,11 +58,14 @@
   $range-track-left: lighten($blue, 25%);
   $range-knob-color: $blue;
 
+  $button-colors: map-merge($button-colors, ("primary": $gradient-corporate $button-text-color-dark));
+
   // Additional styles
   @import '../variables';
   // @import '../fullpage';
   @import '../range';
   @import '../cookie-message-theme';
+  @import '../buttons-theme';
   // @import '../map';
   // @import '../lib/prism/prism';
   // @import '../sections/headers';

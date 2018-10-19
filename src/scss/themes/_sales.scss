@@ -61,7 +61,10 @@
   // Overrides for additional stylesheet
   //$cookie-message-bg: rgba(230,230,230,0.9);
 
+  $button-colors: map-merge($button-colors, ("primary": $gradient-sales $button-text-color));
+
 
   //@import '../variables';
-  @import '../cookie-message';
+  //@import '../cookie-message';
+  @import '../buttons-theme';
 }
