@@ -4,7 +4,9 @@ title: Design
 description: Themes are meant to, together with layouts, give a greater sense of order while browsing around the site, by visually telling the user what section he is viewing.
 ---
 
-## Classes
+## Themes
+
+### Classes
 
 | Theme     | Class              |
 | --------- |--------------------|
@@ -14,7 +16,6 @@ description: Themes are meant to, together with layouts, give a greater sense of
 | Sales     | `theme-sales`      |
 
 
-## Themes
 
 Theme classes can be applied to any box, and applies to everything inside that box, but not the box itself. To apply the theme to a whole page it must be applied to the `html` element, like so:
 
@@ -85,6 +86,21 @@ orange
 
 Default color is text color.
 
+{% capture example %}
+<div class="logo"></div>
+{% endcapture %}
+{% include example.html content=example %}
+
 ### Outline
 
+{% capture example %}
+<div class="logo outline"></div>
+{% endcapture %}
+{% include example.html content=example %}
+
 ### Sizes
+
+{% capture example %}
+<div class="logo massive"></div>
+{% endcapture %}
+{% include example.html content=example %}
