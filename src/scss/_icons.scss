@@ -1,0 +1,22 @@
+[class^=icon-] {
+  display: block;
+  height: 30px;
+  width: 30px;
+  background-color: $sg-text-color;
+}
+
+.icon-facebook {
+  -webkit-mask-image: url(resources/icon-facebook.svg);
+}
+
+.icon-instagram {
+  -webkit-mask-image: url(resources/icon-instagram.svg);
+}
+
+.icon-linkedin {
+  -webkit-mask-image: url(resources/icon-linkedin.svg);
+}
+
+.icon-github {
+  -webkit-mask-image: url(resources/icon-github.svg);
+}
