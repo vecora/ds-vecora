@@ -18,6 +18,11 @@ footer#footer {
 	}
 }
 
+.social-media-icons {
+	margin-bottom: 30px;
+	.icon { margin-right: 10px;}
+}
+
 footer#footer #legal {
 	background-color: $footer-bg-legal;
 	text-align: center;
