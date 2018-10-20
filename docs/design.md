@@ -104,3 +104,5 @@ Default color is text color.
 <div class="logo massive"></div>
 {% endcapture %}
 {% include example.html content=example %}
+
+### Usage in text
