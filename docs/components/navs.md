@@ -7,7 +7,7 @@ description:
 ## Navbar
 
 {% capture example %}
-<nav class="navbar">
+<nav class="navbar sticky">
   <a href="/">
     <svg width="100%" height="100%" viewBox="0 0 1505 941" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
       <g transform="matrix(4.16667,0,0,4.16667,659.662,940.158)">

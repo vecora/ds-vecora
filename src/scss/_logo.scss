@@ -1,0 +1,17 @@
+.logo {
+  display: block;
+  height: 40px;
+  width: 64px;
+  background-color: $sg-text-color;
+  -webkit-mask-image: url(resources/logo.svg);
+
+  &.outline {
+    -webkit-mask-image: url(resources/logo-outline.svg);
+  }
+
+  // Sizes
+  &.massive {
+    height: 300px;
+    width: 480px;
+  }
+}

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Themes
+title: Design
 description: Themes are meant to, together with layouts, give a greater sense of order while browsing around the site, by visually telling the user what section he is viewing.
 ---
 
@@ -13,13 +13,16 @@ description: Themes are meant to, together with layouts, give a greater sense of
 | Corporate | `theme-corporate`  |
 | Sales     | `theme-sales`      |
 
+
+## Themes
+
 Theme classes can be applied to any box, and applies to everything inside that box, but not the box itself. To apply the theme to a whole page it must be applied to the `html` element, like so:
 
 ```html
 <html lang="en" class="theme-dark">
 ```
 
-## Live switch between themes
+### Live switch between themes
 
 <div id="theme-switcher">
 
@@ -67,6 +70,7 @@ Gradients can be played with [here](https://www.css-gradient.com/).
 NOTES:
 background
 shadow
+Text color [$sg-text-color]
 
 
 #### Accent colors
@@ -75,3 +79,12 @@ NOTES:
 blue
 orange
 (only for corporate and sales themes?)
+
+
+## Logo
+
+Default color is text color.
+
+### Outline
+
+### Sizes

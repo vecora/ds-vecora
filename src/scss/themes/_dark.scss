@@ -64,6 +64,7 @@
   $cookie-message-bg: rgba(35,26,51,0.9);
   $grid-lines-color: #444;
   $grid-box-hover-color: #2e2e2e;
+  $sg-text-color: #C5D2F6;
 
 
   $button-colors: map-merge($button-colors, ("secondary": (rgb(37, 30, 76), rgb(31, 24, 64)) white));
@@ -77,6 +78,7 @@
   // @import '../range';
   @import '../cookie-message-theme';
   @import '../buttons-theme';
+  @import '../logo-theme';
   // @import '../map';
   // @import '../lib/prism/prism';
   // @import '../sections/headers';
