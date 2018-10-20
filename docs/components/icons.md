@@ -15,7 +15,8 @@ Default color is text color.
 {% include example.html content=example %}
 
 
-<div class="icon-facebook"></div>
-<div class="icon-instagram"></div>
-<div class="icon-linkedin"></div>
-<div class="icon-github"></div>
+<div class="icon-facebook" style="display: inline-block; margin: 0 15px 15px 0;"></div>
+<div class="icon-instagram" style="display: inline-block; margin: 0 15px 15px 0;"></div>
+<div class="icon-linkedin" style="display: inline-block; margin: 0 15px 15px 0;"></div>
+<div class="icon-github" style="display: inline-block; margin: 0 15px 15px 0;"></div>
+<div class="icon-youtube" style="display: inline-block; margin: 0 15px 15px 0;"></div>
