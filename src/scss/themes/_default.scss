@@ -38,7 +38,7 @@ $custom-file-text: (
 //@import "../lib/bootstrap/button-group";
 @import "../lib/bootstrap/input-group";
 @import "../lib/bootstrap/custom-forms";
-@import "../lib/bootstrap/nav";
+// @import "../lib/bootstrap/nav";
 // @import "../lib/bootstrap/navbar";
 @import "../lib/bootstrap/card";
 // @import "../lib/bootstrap/breadcrumb";
@@ -65,6 +65,7 @@ $custom-file-text: (
 @import '../content';
 @import '../logo';
 @import '../icons';
+@import '../navbar';
 @import '../buttons';
 @import '../fullpage';
 @import '../rating';

@@ -8,7 +8,7 @@
   $body-bg: white;
   $body-color: $gray-900;
 
-  $blue: #fd7e14;
+  $blue: #fb8409;
   $primary: $blue;
 
   $colors: (
@@ -29,6 +29,15 @@
   @import "../lib/bootstrap/mixins";
   @import "../lib/bootstrap/root";
   //@import "../lib/bootstrap/reboot";
+  // this is all we need from reboot
+  a {
+    color: $link-color;
+    @include hover {
+      color: $link-hover-color;
+      text-decoration: $link-hover-decoration; // NOTE: possibly not needed?
+    }
+  }
+
   @import "../lib/bootstrap/type";
   @import "../lib/bootstrap/images";
   @import "../lib/bootstrap/tables";
@@ -39,7 +48,7 @@
   //@import "../lib/bootstrap/button-group";
   @import "../lib/bootstrap/input-group";
   @import "../lib/bootstrap/custom-forms";
-  @import "../lib/bootstrap/nav";
+  // @import "../lib/bootstrap/nav";
   // @import "../lib/bootstrap/navbar";
   @import "../lib/bootstrap/card";
   // @import "../lib/bootstrap/breadcrumb";
@@ -67,4 +76,5 @@
   //@import '../variables';
   //@import '../cookie-message';
   @import '../buttons-theme';
+  @import '../navbar-theme';
 }
