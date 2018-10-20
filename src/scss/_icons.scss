@@ -1,26 +1,35 @@
-[class^=icon-] {
+.icon {
   display: block;
   height: 30px;
   width: 30px;
   background-color: $sg-text-color;
 }
 
-.icon-facebook {
+// supported inline elements
+a.icon, span.icon {
+  display: inline-block;
+}
+
+a.icon {
+  text-indent: -99999px;
+}
+
+.icon.facebook {
   -webkit-mask-image: url(resources/icon-facebook.svg);
 }
 
-.icon-instagram {
+.icon.instagram {
   -webkit-mask-image: url(resources/icon-instagram.svg);
 }
 
-.icon-linkedin {
+.icon.linkedin {
   -webkit-mask-image: url(resources/icon-linkedin.svg);
 }
 
-.icon-github {
+.icon.github {
   -webkit-mask-image: url(resources/icon-github.svg);
 }
 
-.icon-youtube {
+.icon.youtube {
   -webkit-mask-image: url(resources/icon-youtube.svg);
 }
