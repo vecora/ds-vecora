@@ -66,6 +66,14 @@ Theme classes can be applied to any box, and applies to everything inside that b
 
 Gradients can be played with [here](https://www.css-gradient.com/).
 
+#### Moving gradient background
+
+<div class="docs-gradients-container">
+  <div class="docs-gradient-item">
+    <div class="moving-gradient-bg"></div>
+  </div>
+</div>
+
 ### UI colors
 
 NOTES:
