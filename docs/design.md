@@ -98,7 +98,7 @@ Gradients can be played with [here](https://www.css-gradient.com/).
 #### In logo
 
 {% capture example %}
-<div class="logo massive outline moving-gradient-bg"></div>
+<div class="logo massive outline center moving-gradient-bg"></div>
 {% endcapture %}
 {% include example.html content=example %}
 
@@ -122,7 +122,7 @@ Default color is text color.
 ### Sizes
 
 {% capture example %}
-<div class="logo massive"></div>
+<div class="logo massive center"></div>
 {% endcapture %}
 {% include example.html content=example %}
 
