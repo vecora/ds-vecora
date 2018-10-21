@@ -88,14 +88,14 @@ Gradients can be played with [here](https://www.css-gradient.com/).
   </div>
 </div>
 
-#### Example 1
+#### In text
 
 {% capture example %}
-<h1 class="display-2 moving-gradient-bg">Moving gradient</h1>
+<h1 class="display-2 moving-gradient-bg">Animated gradient</h1>
 {% endcapture %}
 {% include example.html content=example %}
 
-#### Example 2
+#### In logo
 
 {% capture example %}
 <div class="logo massive outline moving-gradient-bg"></div>

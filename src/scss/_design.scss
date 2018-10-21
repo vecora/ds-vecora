@@ -11,7 +11,7 @@
 h1.moving-gradient-bg {
   background-clip: text;
   -webkit-background-clip: text;
-  color: transparent;
+  color: transparent !important;
 }
 
    @-webkit-keyframes Gradient {
