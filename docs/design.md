@@ -80,7 +80,7 @@ orange
 
 Gradients can be played with [here](https://www.css-gradient.com/).
 
-### Moving gradients
+### Animated gradients
 
 <div class="docs-gradients-container">
   <div class="docs-gradient-item">
