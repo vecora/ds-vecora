@@ -49,9 +49,23 @@ Theme classes can be applied to any box, and applies to everything inside that b
 
 ## Colors
 
+### UI colors
+
+NOTES:
+background
+shadow
+Text color [$sg-text-color]
 
 
-### Gradients
+### Accent colors
+
+NOTES:
+blue
+orange
+(only for corporate and sales themes?)
+
+
+## Gradients
 
 <div class="docs-gradients-container">
   <div class="docs-gradient-item"><div class="docs-gradient docs-gradient-1"></div><div class="docs-color-codes"></div></div>
@@ -66,28 +80,27 @@ Theme classes can be applied to any box, and applies to everything inside that b
 
 Gradients can be played with [here](https://www.css-gradient.com/).
 
-#### Moving gradient background
+### Moving gradients
 
 <div class="docs-gradients-container">
   <div class="docs-gradient-item">
-    <div class="moving-gradient-bg"></div>
+    <div class="docs-gradient moving-gradient-bg"></div>
   </div>
 </div>
 
-### UI colors
+#### Example 1
 
-NOTES:
-background
-shadow
-Text color [$sg-text-color]
+{% capture example %}
+<h1 class="display-2 moving-gradient-bg">Moving gradient</h1>
+{% endcapture %}
+{% include example.html content=example %}
 
+#### Example 2
 
-#### Accent colors
-
-NOTES:
-blue
-orange
-(only for corporate and sales themes?)
+{% capture example %}
+<div class="logo massive outline moving-gradient-bg"></div>
+{% endcapture %}
+{% include example.html content=example %}
 
 
 ## Logo

@@ -6,6 +6,11 @@
   -webkit-animation: Gradient 15s ease infinite;
   -moz-animation: Gradient 15s ease infinite;
   animation: Gradient 15s ease infinite;
+
+  h1#{&}, h2#{&}, h3#{&}, h4#{&}, h5#{&}, h6#{&} {
+    background-clip: text;
+    color: transparent;
+  }
 }
 
    @-webkit-keyframes Gradient {
