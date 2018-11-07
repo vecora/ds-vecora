@@ -1,0 +1,47 @@
+.timeline {
+  position: relative;
+
+  &::before {
+      content: '';
+      position: absolute;
+      top:0px;
+      left:50%;
+      bottom:0px;
+      transform:translateX(-50%);
+      width:3px;
+      background-color:#444;
+  }
+
+  .entry {
+  	padding: 30px calc(50% + 30px) 30px 0;
+  	text-align: right;
+
+    h1, h2, h3, h4, h5, h6 {
+      position: relative;
+
+      &::before {
+        content: '';
+        position: absolute;
+        width:20px;
+        height:20px;
+        border:3px solid #444;
+        background-color:white;
+        border-radius:100%;
+        top:50%;
+        transform:translateY(-50%);
+        right:-40px;
+        z-index:1000;
+      }
+    }
+
+    &:nth-child(2n) {
+      padding: 30px 0 30px calc(50% + 30px);
+      text-align: left;
+    }
+
+    h1::before, h2::before, h3::before, h4::before, h5::before, h6::before {
+      left:-40px;
+    }
+  }
+
+}
