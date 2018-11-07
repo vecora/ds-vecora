@@ -16,24 +16,32 @@ Default color is text color.
 
 <div style="display: flex;">
   <div class="text-center">
-    <div class="icon facebook"></div>
-    <p>facebook</p>
+    <div class="icon facebook" style="margin: 0 auto;"></div>
+    <pre class="small" style="margin-top: 10px;">facebook</pre>
   </div>
   <div class="text-center">
-    <div class="icon instagram"></div>
-    <p>facebook</p>
+    <div class="icon instagram" style="margin: 0 auto;"></div>
+    <pre class="small" style="margin-top: 10px;>instagram</pre>
   </div>
   <div class="text-center">
-    <div class="icon linkedin"></div>
-    <p>facebook</p>
+    <div class="icon linkedin" style="margin: 0 auto;"></div>
+    <pre class="small" style="margin-top: 10px;>linkedin</pre>
+  </div>
+  <div class="text-center">
+    <div class="icon github" style="margin: 0 auto;"></div>
+    <pre class="small" style="margin-top: 10px;>github</pre>
+  </div>
+  <div class="text-center">
+    <div class="icon youtube" style="margin: 0 auto;"></div>
+    <pre class="small" style="margin-top: 10px;>youtube</pre>
+  </div>
+  <div class="text-center">
+    <div class="icon slack" style="margin: 0 auto;"></div>
+    <pre class="small" style="margin-top: 10px;>slack</pre>
   </div>
 </div>
 
-<div class="icon instagram" style="display: inline-block; margin: 0 15px 15px 0;"></div>
-<div class="icon linkedin" style="display: inline-block; margin: 0 15px 15px 0;"></div>
-<div class="icon github" style="display: inline-block; margin: 0 15px 15px 0;"></div>
-<div class="icon youtube" style="display: inline-block; margin: 0 15px 15px 0;"></div>
-<div class="icon slack" style="display: inline-block; margin: 0 15px 15px 0;"></div>
+
 
 ## Link
 
