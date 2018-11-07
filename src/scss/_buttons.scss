@@ -10,7 +10,7 @@
   $text-color: nth($colors, 2);
   background-image: linear-gradient(to right, $gradient-colors);
   background-color: $bg-color;
-  &, &a { color: $text-color }
+  &, & a { color: $text-color !important; } // WARNING: !important is set because bootstrap overrides without
 }
 
 
