@@ -1,0 +1,7 @@
+.timeline {
+  &::before { background-color: $sg-text-color; }
+  .entry h1, h2, h3, h4, h5, h6 { &::before {
+    border-color: $sg-text-color;
+    background-color: $sg-bg-color;
+  } }
+}
