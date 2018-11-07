@@ -20,6 +20,7 @@ Default color is text color.
 <div class="icon linkedin" style="display: inline-block; margin: 0 15px 15px 0;"></div>
 <div class="icon github" style="display: inline-block; margin: 0 15px 15px 0;"></div>
 <div class="icon youtube" style="display: inline-block; margin: 0 15px 15px 0;"></div>
+<div class="icon slack" style="display: inline-block; margin: 0 15px 15px 0;"></div>
 
 ## Link
 
