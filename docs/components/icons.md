@@ -20,12 +20,24 @@ Default color is text color.
     <pre class="small" style="margin-top: 10px;">facebook</pre>
   </div>
   <div class="text-center" style="padding: 10px;">
+    <div class="icon facebook-alt" style="margin: 0 auto;"></div>
+    <pre class="small" style="margin-top: 10px;">facebook-alt</pre>
+  </div>
+  <div class="text-center" style="padding: 10px;">
     <div class="icon instagram" style="margin: 0 auto;"></div>
     <pre class="small" style="margin-top: 10px;">instagram</pre>
   </div>
   <div class="text-center" style="padding: 10px;">
+    <div class="icon instagram-alt" style="margin: 0 auto;"></div>
+    <pre class="small" style="margin-top: 10px;">instagram-alt</pre>
+  </div>
+  <div class="text-center" style="padding: 10px;">
     <div class="icon linkedin" style="margin: 0 auto;"></div>
     <pre class="small" style="margin-top: 10px;">linkedin</pre>
+  </div>
+  <div class="text-center" style="padding: 10px;">
+    <div class="icon linkedin-alt" style="margin: 0 auto;"></div>
+    <pre class="small" style="margin-top: 10px;">linkedin-alt</pre>
   </div>
   <div class="text-center" style="padding: 10px;">
     <div class="icon github" style="margin: 0 auto;"></div>

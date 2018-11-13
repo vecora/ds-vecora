@@ -18,12 +18,24 @@ a.icon {
   -webkit-mask-image: url(resources/icon-facebook.svg);
 }
 
+.icon.facebook-alt {
+  -webkit-mask-image: url(resources/icon-facebook-alt.svg);
+}
+
 .icon.instagram {
   -webkit-mask-image: url(resources/icon-instagram.svg);
 }
 
+.icon.instagram-alt {
+  -webkit-mask-image: url(resources/icon-instagram-alt.svg);
+}
+
 .icon.linkedin {
   -webkit-mask-image: url(resources/icon-linkedin.svg);
+}
+
+.icon.linkedin-alt {
+  -webkit-mask-image: url(resources/icon-linkedin-alt.svg);
 }
 
 .icon.github {
