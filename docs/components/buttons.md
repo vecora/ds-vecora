@@ -65,7 +65,7 @@ Functional colors.
 ## Appear as link
 
 {% capture example %}
-<button type="button" class="btn btn-link">Link</button>
+<button type="button" class="button link">Link</button>
 {% endcapture %}
 {% include example.html content=example %}
 
