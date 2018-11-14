@@ -15,16 +15,6 @@
   blockquote {
     margin:0;
 
-    > p::before {
-      content: "\201C";
-      font-size: 180px;
-      float: left;
-      height: 100px;
-      margin-top: -50px;
-      margin-left: -10px;
-      color: #ccc;
-    }
-
     p { margin-top: 10px; }
     footer {
       cite {}
