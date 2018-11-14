@@ -8,3 +8,7 @@
     @include button-colorize($colors);
   }
 }
+
+.button.outline {
+  border-color: $sg-text-color;
+}

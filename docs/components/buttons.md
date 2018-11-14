@@ -39,15 +39,10 @@ Functional colors.
 {% endcapture %}
 {% include example.html content=example %}
 
-## Outline buttons
+## Outline
 
 {% capture example %}
-<button type="button" class="button primary outline">Primary</button>
-<button type="button" class="button outline">Default</button>
-<button type="button" class="button success outline">Success</button>
-<a href="#" class="button danger outline">Danger</a>
-<a href="#" class="button sales outline">Sales</a>
-<a href="#" class="button corporate outline">Corporate</a>
+<button type="button" class="button outline">Primary</button>
 {% endcapture %}
 {% include example.html content=example %}
 
