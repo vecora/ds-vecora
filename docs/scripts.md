@@ -32,10 +32,12 @@ Version: 1.15.0
 
 ## Form validation
 email
+
 company code
+
 phone number
 
-## Company Information
+## Company information
 
 ```
 SG.companyInfo("998800862", function(company) {
