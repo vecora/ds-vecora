@@ -1,20 +1,18 @@
-const gulp = require("gulp");
+const { series, parallel, src, dest, watch } = require("gulp");
 // const imagemin = require("gulp-imagemin"); // not installed
 const uglify = require("gulp-uglify");
 const sass = require("gulp-sass");
 const concat = require("gulp-concat");
 
-/*
-  -- TOP LEVEL FUNCTIONS --
-  gulp.task - Define task
-  gulp.src - Points to files to use
-  gulp.dest - Points to folder to output dist files
-  gulp.watch - Watches files and folders for changes
-*/
+const buildPath = "dist";
+
+function clean (callback) {
+  callback();
+}
 
 
-gulp.task("scripts", function() {
-  gulp.src([
+function combineScripts (callback) {
+  src([
     "src/js/lib/vue-2.5.17.js",
     "src/js/lib/jquery-3.3.1.js",
     "src/js/lib/popper-1.14.3.js",
@@ -25,36 +23,38 @@ gulp.task("scripts", function() {
   ])
     .pipe(concat("scripts.js"))
     .pipe(uglify())
-    .pipe(gulp.dest("dist/"));
-});
+    .pipe(dest("dist/"));
+  callback();
+}
 
 
-gulp.task("sass", function() {
-  gulp.src("src/styles.scss")
+function compileStyles (callback) {
+  src("src/styles.scss")
     .pipe(sass({outputStyle: 'compressed'}).on("error", sass.logError))
-    .pipe(gulp.dest("dist"));
-});
+    .pipe(dest("dist"));
+  callback();
+}
 
-gulp.task("copyWebfonts", function() {
-  gulp.src("src/webfonts/*")
-    .pipe(gulp.dest("dist/webfonts"));
-});
+function copyWebfonts (callback) {
+  src("src/webfonts/*")
+    .pipe(dest("dist/webfonts"));
+  callback();
+}
 
-gulp.task("copyResources", function() {
-  gulp.src([
+function copyResources (callback) {
+  src([
       "!src/*.afdesign",
       "src/resources/*"
     ])
-    .pipe(gulp.dest("dist/resources"));
-});
+    .pipe(dest("dist/resources"));
+  callback();
+}
 
-gulp.task("default", ["sass", "scripts", "copyWebfonts", "copyResources"]);
+exports.watch = function() {
+  watch("src/**/*.scss", { events: "all", ignoreInitial: false }, compileStyles);
+  watch("src/js/**/*.js", { events: "all", ignoreInitial: false }, combineScripts);
+}
 
-
-gulp.task("watch", function() {
-  /*
-  gulp.watch("src/js/*.js", ["scripts"]);
-  gulp.watch("src/*.scss", ["sass"]);
-  gulp.watch("src/webfonts/*", ["copyWebfonts"]);
-  */
-});
+exports.sass = compileStyles;
+exports.scripts = combineScripts;
+exports.default = series(clean, parallel(combineScripts, compileStyles, copyWebfonts, copyResources));

@@ -14,7 +14,7 @@ Read the [documentation](https://vecora.github.io/sg-vecora/docs/) for more info
 
 2. Open Terminal in the folder where the repository is located.
 
-3. Install [Gulp](https://gulpjs.com/) globally, if it's not already installed, by typing `sudo npm install -g gulp`.
+3. Install [Gulp](https://gulpjs.com/) globally, if it's not already installed, by typing `sudo npm install -g gulp-cli`.
 
 4. Install dependencies locally by typing `npm install --save-dev`.
 
