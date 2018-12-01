@@ -15,7 +15,7 @@ description:
 Version: 2.5.17
 [Vue.js](https://vuejs.org/)
 
-### jquery
+### jQuery
 
 Version: 3.3.1
 [jQuery](https://jquery.com/)
