@@ -4,12 +4,9 @@
 
 .theme-corporate {
 
-  // Bootstrap overrides
-  $body-bg: lighten($blue, 40%);
-  $body-color: $gray-900;
+  $sg-bg-color: #edf3ff;
+  $sg-text-color: #5e527f;
 
-  $sg-bg-color: lighten($blue, 40%);
-  $sg-text-color: $gray-900;
 
   @import "../lib/bootstrap/variables";
   @import "../lib/bootstrap/mixins";
@@ -19,8 +16,8 @@
   //@import "../lib/bootstrap/reboot";
   // this is all we need from reboot
   body {
-    //color: $body-color;
-    background-color: $body-bg; // 2
+    color: $sg-text-color;
+    background-color: $sg-bg-color;
   }
 
 
