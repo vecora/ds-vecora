@@ -44,9 +44,3 @@ This component relies on [Accounting.js](http://openexchangerates.github.io/acco
 {% include example.html content=example %}
 
 Add the class `money-show-decimals` to show decimals.
-
-### Observe
-
-Format numbers as currency on the fly. Other scripts can just read or write raw numbers from `innerHTML`.
-
-TODO: Add an interactive example
