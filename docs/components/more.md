@@ -39,7 +39,7 @@ Can also be toggled from the console by setting `localStorage.cookieMessageStatu
 This component relies on [Accounting.js](http://openexchangerates.github.io/accounting.js/).
 
 {% capture example %}
-<span class="money" data-amount="1995.25">1995.25</span>
+<sg-currency v-bind:amount="1995.25"></sg-currency>
 {% endcapture %}
 {% include example.html content=example %}
 
