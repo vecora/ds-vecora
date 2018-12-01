@@ -29,3 +29,20 @@ Version: 0.4.2
 
 Version: 1.15.0
 [Prism](https://prismjs.com/)
+
+## Form validation
+email
+company code
+phone number
+
+## Company Information
+
+```
+SG.companyInfo("998800862", function(company) {
+  company.code;
+  company.name;
+  company.address;
+  company.postalCode;
+  company.city;
+});
+```
