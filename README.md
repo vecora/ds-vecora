@@ -21,3 +21,15 @@ Read the [documentation](https://vecora.github.io/sg-vecora/docs/) for more info
 5. Type `gulp` to build. Build files are located in the `dist` folder. Alternatively type `gulp watch` to watch for changes in the `src` folder and build continuously as files are changed.
 
 ### Building the documentation
+
+#### macOS Mojave
+
+1. `sudo xcode-select --install`
+
+2. `open /Library/Developer/CommandLineTools/Packages/macOS_SDK_headers_for_macOS_10.14.pkg`
+
+3. `gem install bundler jekyll` (locally. no sudo)
+
+4. `bundle install`
+
+5. `bundle exec jekyll serve`
