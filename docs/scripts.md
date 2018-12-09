@@ -30,6 +30,8 @@ Version: 0.4.2
 Version: 1.15.0
 [Prism](https://prismjs.com/)
 
+### GSAP
+
 ## Form validation
 email
 
