@@ -28,8 +28,16 @@ Read the [documentation](https://vecora.github.io/sg-vecora/docs/) for more info
 
 2. `open /Library/Developer/CommandLineTools/Packages/macOS_SDK_headers_for_macOS_10.14.pkg`
 
-3. `gem install bundler jekyll` (locally. no sudo)
+3. 
+```
+echo '# Install Ruby Gems to ~/gems' >> ~/.bashrc
+echo 'export GEM_HOME=$HOME/gems' >> ~/.bashrc
+echo 'export PATH=$HOME/gems/bin:$PATH' >> ~/.bashrc
+source ~/.bashrc
+```
 
-4. `bundle install`
+4. `gem install bundler jekyll` (locally. no sudo)
 
-5. `bundle exec jekyll serve`
+5. `bundle install`
+
+6. `bundle exec jekyll serve`
