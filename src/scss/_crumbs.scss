@@ -1,19 +1,23 @@
-nav.crumbs {
-  background-color: red;
+nav.crumbs ul {
   list-style: none;
   padding: 0;
 
   li {
     display: inline;
+    font-size: 80%;
+
+    a { color: #aaa; }
 
     &::after {
       content: " ";
-      border: solid black;
-      border-width: 0 3px 3px 0;
+      border: solid #ccc;
+      border-width: 0 2px 2px 0;
       display: inline-block;
-      padding: 3px;
+      padding: 0.25em;
       transform: rotate(-45deg);
       -webkit-transform: rotate(-45deg);
     }
+
+    &:last-child::after { content: none; }
   }
 }
