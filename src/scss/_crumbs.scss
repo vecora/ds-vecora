@@ -6,7 +6,12 @@ nav.crumbs ul {
     display: inline;
     font-size: 80%;
 
-    a { color: #aaa; }
+    a {
+      color: #aaa;
+      &:hover {
+        color: $link-hover-decoration;
+      }
+    }
 
     &::after {
       content: " ";
@@ -16,6 +21,7 @@ nav.crumbs ul {
       padding: 0.25em;
       transform: rotate(-45deg);
       -webkit-transform: rotate(-45deg);
+      margin: 0 8px;
     }
 
     &:last-child::after { content: none; }
