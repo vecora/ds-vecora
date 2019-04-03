@@ -1,0 +1,19 @@
+.status {
+  width: 0.5em;
+  height: 0.5em;
+  border-radius: 1em;
+  line-height: 60%;
+  vertical-align: baseline;
+
+  &.success {
+    background-color: #48d66e;
+  }
+
+  &.warning {
+    background-color: #ffaf33;
+  }
+
+  &.danger {
+    background-color: #ff3357;
+  }
+}
