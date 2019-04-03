@@ -1,9 +1,8 @@
 .status {
+  display: inline-block;
   width: 0.5em;
   height: 0.5em;
   border-radius: 1em;
-  line-height: 60%;
-  vertical-align: baseline;
 
   &.success {
     background-color: #48d66e;
