@@ -1,0 +1,21 @@
+nav.sidenav {
+
+  font-size: 80%;
+  font-weight: 400;
+  margin-top: -20px;
+  padding-top: 20px;
+
+  ul {
+    list-style: none;
+    margin-left: none;
+    padding-left: 0;
+
+    ul {
+      margin-left: 20px;
+    }
+  }
+
+  .active {
+    font-weight: bold;
+  }
+}
