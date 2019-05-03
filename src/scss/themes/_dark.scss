@@ -70,8 +70,6 @@
 
   $button-colors: map-merge($button-colors, ("secondary": (rgb(37, 30, 76), rgb(31, 24, 64)) white));
 
-  @debug $button-colors;
-
   // Additional styles
   @import '../variables';
   // @import '../fullpage';

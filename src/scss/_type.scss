@@ -1,0 +1,6 @@
+
+@mixin capitalized() {
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.09em;
+}

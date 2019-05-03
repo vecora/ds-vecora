@@ -1,0 +1,66 @@
+// TODO: Apply styles to HubSpot forms
+
+.hbspt-form {
+
+  .hs-button {
+    // Primary buttons also have the classes 'primary' and 'large'
+    @extend .button;
+  }
+
+  .hs-fieldtype-textarea label, .hs-fieldtype-text label {
+    font-weight: 700;
+  }
+
+  label .hs-form-required { display: none; }
+
+  .hs-fieldtype-textarea textarea, .hs-fieldtype-text input {
+      // NOTE: HubSpot adds the classes 'invalid' and 'error' when required fields loose focus with invalid value
+
+      $border-width: 0px;
+
+      width: 100%;
+      border: none;
+      background: rgba(0,0,0,0.02);
+      color: #444;
+      border-radius: $unit;
+      &:focus {
+        outline: none;
+        box-shadow: -4px 0 0 0 #FA4024;
+      }
+      position: relative;
+
+      $line-height: 6 * $unit;
+      $cap-height: 3 * $unit;
+
+      padding-top: 6 * $unit - ($line-height / 2 - $cap-height * 0.1) - $border-width;
+      padding-bottom: 4 * $unit - ($line-height / 2 - $cap-height * 0.3286) - $border-width;
+      padding-left: 4 * $unit - $border-width;
+      padding-right: 4 * $unit - $border-width;
+
+      font-size: $cap-height * 1.4286;
+      line-height: $line-height;
+  }
+  .hs-fieldtype-textarea textarea {
+    resize:none;
+    height: 60 * $unit;
+  }
+
+  .hs-fieldtype-booleancheckbox {
+    ul {
+      margin:0;
+      padding: 0;
+      list-style: none;
+    }
+    p { display: inline; }
+  }
+
+  .legal-consent-container {
+
+    .hs-richtext {
+      $line-height: 6 * $unit;
+      $cap-height: 3 * $unit;
+      font-size: $cap-height * 1.4286;
+      line-height: $line-height;
+    }
+  }
+}
