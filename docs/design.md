@@ -132,6 +132,7 @@ Default color is text color.
 | `huge`     |  256px | 160px |
 | `massive`  |  512px | 320px |
 
+Pixels sizes assumes 1 [unit](docs/introduction/#eight-point-grid) = 8px.
 
 {% capture example %}
 <div class="vecora logo huge center"></div>

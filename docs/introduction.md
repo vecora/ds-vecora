@@ -49,3 +49,7 @@ Bootstrap has a class name convention where all classes are prefixed whatever th
 </html>
 {% endcapture %}
 {% include code.html content=code %}
+
+## Eight point grid
+
+We use the variable `$unit` to set sizes and margins, etc. 1 unit = 8px. Half units may be used for UI design, and in other places where increments of 8px simply doesn't work.
