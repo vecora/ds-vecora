@@ -98,7 +98,7 @@ Gradients can be played with [here](https://www.css-gradient.com/).
 #### In logo
 
 {% capture example %}
-<div class="logo massive outline center moving-gradient-bg"></div>
+<div class="vecora logo huge outline center moving-gradient-bg"></div>
 {% endcapture %}
 {% include example.html content=example %}
 
@@ -108,21 +108,33 @@ Gradients can be played with [here](https://www.css-gradient.com/).
 Default color is text color.
 
 {% capture example %}
-<div class="logo"></div>
+<div class="vecora logo"></div>
 {% endcapture %}
 {% include example.html content=example %}
 
 ### Outline
 
 {% capture example %}
-<div class="logo outline"></div>
+<div class="vecora logo outline"></div>
 {% endcapture %}
 {% include example.html content=example %}
 
 ### Sizes
 
+| Class      | Height | Width |
+| ---------- | ------ | ------|
+| `nano`     |   24px |  15px |
+| `tiny`     |   32px |  20px |
+| `small`    |   48px |  30px |
+| _no class_ |   64px |  40px |
+| `large`    |   96px |  60px |
+| `big`      |  128px |  80px |
+| `huge`     |  256px | 160px |
+| `massive`  |  512px | 320px |
+
+
 {% capture example %}
-<div class="logo massive center"></div>
+<div class="vecora logo huge center"></div>
 {% endcapture %}
 {% include example.html content=example %}
 

@@ -1,7 +1,16 @@
-.logo {
+.vecora.logo {
+
+  @function height($width) {
+    @return $width / 8 * 5;
+  }
+
   display: block;
-  height: 40px;
-  width: 64px;
+
+  // 64 x 40
+  $width: 8 * $unit;
+  height: height($width);
+  width: $width;
+
   background-color: $sg-text-color;
   -webkit-mask-image: url(resources/logo.svg);
 
@@ -10,10 +19,49 @@
   }
 
   // Sizes
-  &.massive {
-    height: 300px;
-    width: 480px;
+  &.nano {
+    // 24 x 15
+    $width: 3 * $unit;
+    height: height($width);
+    width: $width;
   }
+  &.tiny {
+    // 32 x 20
+    $width: 4 * $unit;
+    height: height($width);
+    width: $width;
+  }
+  &.small {
+    // 48 x 30
+    $width: 6 * $unit;
+    height: height($width);
+    width: $width;
+  }
+  &.large {
+    // 96 x 60
+    $width: 12 * $unit;
+    height: height($width);
+    width: $width;
+  }
+  &.big {
+    // 128 x 80
+    $width: 16 * $unit;
+    height: height($width);
+    width: $width;
+  }
+  &.huge {
+    // 256 x 160
+    $width: 32 * $unit;
+    height: height($width);
+    width: $width;
+  }
+  &.massive {
+    // 512 x 320
+    $width: 64 * $unit;
+    height: height($width);
+    width: $width;
+  }
+  // &.enormous {}
 
   &.center {
     margin-left: auto;
