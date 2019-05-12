@@ -1,11 +1,13 @@
-.navbar {
+.vecora.navbar {
+
   padding: 30px 0;
-  &, & .container { position: relative; }
-  height: 100px;
+  //&, & .container { position: relative; }
+  height: 20 * $unit;
   .logo {
     position: absolute;
     left: 0;
   }
+
   ul {
     position: absolute;
     right: 0;
@@ -37,6 +39,8 @@
   background-color: white;
   height: 100px;
 }
+
+
 
 .subnav {
   padding: 0;

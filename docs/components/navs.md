@@ -9,7 +9,7 @@ description:
 [Alts for blog and legal]
 
 {% capture example %}
-<nav class="navbar">
+<nav class="vecora navbar">
   <div class="container">
     <a href="/" class="logo">Hjem</a>
   	<ul>
