@@ -63,12 +63,12 @@
 
   border: none;
 
-  $cap-height: 3 * $unit;
+  $cap-height: 1.5 * $unit;
 
-  padding-top: 4 * $unit - ($cap-height * 0.1);
-  padding-bottom: 4 * $unit - ($cap-height * 0.3286); 
-  padding-left: 7 * $unit;
-  padding-right: 7 * $unit;
+  padding-top: 2 * $unit - ($cap-height * 0.1);
+  padding-bottom: 2 * $unit - ($cap-height * 0.3286);
+  padding-left: 3.5 * $unit;
+  padding-right: 3.5 * $unit;
 
   font-size: $cap-height * 1.4286;
   line-height: 1em;
