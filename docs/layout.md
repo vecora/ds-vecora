@@ -19,3 +19,10 @@ Helper classes to provide wider containers than the grid system allows, but stil
 
 
 ### Grid borders
+
+
+## Positioning
+
+### Sticky
+
+[Demo](docs/demos/sticky.html)

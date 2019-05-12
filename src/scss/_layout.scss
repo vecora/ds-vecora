@@ -1,0 +1,7 @@
+.vecora.sticky {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+
+  &.top { top: 0; }
+  &.bottom { bottom: 0; }
+}
