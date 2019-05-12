@@ -6,7 +6,7 @@ description:
 
 ## Navbar
 
-[Alts for blog and legal]
+[Alts for blog and legal] [Demo](docs/demos/navbar.html)
 
 {% capture example %}
 <nav class="vecora navbar">
