@@ -30,6 +30,11 @@ Version: 0.4.2
 Version: 1.15.0
 [Prism](https://prismjs.com/)
 
+### ScrollTrigger
+
+Version: 2019.05.13
+[ScrollTrigger](https://github.com/terwanerik/ScrollTrigger)
+
 ### GSAP
 
 ## Form validation

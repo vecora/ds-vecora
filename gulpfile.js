@@ -19,6 +19,7 @@ function combineScripts (callback) {
     "src/js/lib/bootstrap-4.0.0.js",
     "src/js/lib/accounting-0.4.2.js",
     "src/js/lib/prism-1.15.0.min.js",
+    "src/js/lib/ScrollTrigger.min.js",
     "src/js/vue-components/*.js",
     "src/js/*.js"
   ])

@@ -1,0 +1,66 @@
+// NOTE: Relies on .visible and .invisible classes set by ScrollTrigger https://github.com/terwanerik/ScrollTrigger
+.vecora.invisible {
+  transition: opacity 0.5s ease;
+  opacity: 0.0;
+  visibility: visible !important;
+}
+
+.vecora.visible .vecora.animate {
+
+  animation-duration: 1s;
+
+  &.top { animation-name: vecora-animate-top; }
+  &.right { animation-name: vecora-animate-right; }
+  &.bottom { animation-name: vecora-animate-bottom; }
+  &.left { animation-name: vecora-animate-left; }
+
+  &.delayed {
+    animation-delay: 250ms;
+    animation-fill-mode: backwards;
+  }
+
+}
+
+@keyframes vecora-animate-top {
+    from {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+}
+
+@keyframes vecora-animate-right {
+    from {
+      transform: translateX(50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0px);
+      opacity: 1;
+    }
+}
+
+@keyframes vecora-animate-bottom {
+    from {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+}
+
+@keyframes vecora-animate-left {
+    from {
+      transform: translateX(-50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0px);
+      opacity: 1;
+    }
+}

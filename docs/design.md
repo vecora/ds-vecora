@@ -153,3 +153,16 @@ Pixels sizes assumes 1 [unit](docs/introduction/#eight-point-grid) = 8px.
 </div>
 {% endcapture %}
 {% include example.html content=example %}
+
+
+## Animation
+
+### Scroll trigger
+
+{% capture example %}
+<div data-scroll class="vecora">
+  <h1 class="vecora animate left">Triggered headline</h1>
+  <p class="vecora animate right delayed">Lorem ipsum triggered paragraph.</p>
+</div>
+{% endcapture %}
+{% include example.html content=example %}
