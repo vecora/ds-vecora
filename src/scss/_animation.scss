@@ -9,21 +9,74 @@
 
   animation-duration: 1s;
 
-  &.top { animation-name: vecora-animate-top; }
-  &.right { animation-name: vecora-animate-right; }
-  &.bottom { animation-name: vecora-animate-bottom; }
-  &.left { animation-name: vecora-animate-left; }
+  &.top { animation-name: vecora-animate-top-96; }
+  &.right { animation-name: vecora-animate-right-96; }
+  &.bottom { animation-name: vecora-animate-bottom-96; }
+  &.left { animation-name: vecora-animate-left-96; }
 
-  &.delayed {
-    animation-delay: 250ms;
+  &.short-distance {
+    &.top { animation-name: vecora-animate-top-24; }
+    &.right { animation-name: vecora-animate-right-24; }
+    &.bottom { animation-name: vecora-animate-bottom-24; }
+    &.left { animation-name: vecora-animate-left-24; }
+  }
+
+  &.shorter-distance {
+    &.top { animation-name: vecora-animate-top-48; }
+    &.right { animation-name: vecora-animate-right-48; }
+    &.bottom { animation-name: vecora-animate-bottom-48; }
+    &.left { animation-name: vecora-animate-left-48; }
+  }
+
+  &.longer-distance {
+    &.top { animation-name: vecora-animate-top-256; }
+    &.right { animation-name: vecora-animate-right-256; }
+    &.bottom { animation-name: vecora-animate-bottom-256; }
+    &.left { animation-name: vecora-animate-left-256; }
+  }
+
+  &.long-distance {
+    &.top { animation-name: vecora-animate-top-512; }
+    &.right { animation-name: vecora-animate-right-512; }
+    &.bottom { animation-name: vecora-animate-bottom-512; }
+    &.left { animation-name: vecora-animate-left-512; }
+  }
+
+  &[class*="delay"] {
     animation-fill-mode: backwards;
   }
 
+  &.short-delay, &.short-delay-1 { animation-delay: 100ms; }
+  &.short-delay-2 { animation-delay: 200ms; }
+  &.short-delay-3 { animation-delay: 300ms; }
+  &.short-delay-4 { animation-delay: 400ms; }
+
+  &.shorter-delay, &.shorter-delay-1 { animation-delay: 250ms; }
+  &.shorter-delay-2 { animation-delay: 500ms; }
+  &.shorter-delay-3 { animation-delay: 750ms; }
+  &.shorter-delay-4 { animation-delay: 1000ms; }
+
+  &.delay, &.delay-1 { animation-delay: 500ms; }
+  &.delay-2 { animation-delay: 1000ms; }
+  &.delay-3 { animation-delay: 1500ms; }
+  &.delay-4 { animation-delay: 2000ms; }
+
+  &.longer-delay, &.longer-delay-1 { animation-delay: 1s; }
+  &.longer-delay-2 { animation-delay: 2s; }
+  &.longer-delay-3 { animation-delay: 3s; }
+  &.longer-delay-4 { animation-delay: 4s; }
+
+  &.long-delay, &.long-delay-1 { animation-delay: 2s; }
+  &.long-delay-2 { animation-delay: 4s; }
+  &.long-delay-3 { animation-delay: 6s; }
+  &.long-delay-4 { animation-delay: 8s; }
+
+
 }
 
-@keyframes vecora-animate-top {
+@keyframes vecora-animate-top-24 {
     from {
-      transform: translateY(-50px);
+      transform: translateY(-24px);
       opacity: 0;
     }
     to {
@@ -32,9 +85,10 @@
     }
 }
 
-@keyframes vecora-animate-right {
+
+@keyframes vecora-animate-right-24 {
     from {
-      transform: translateX(50px);
+      transform: translateX(24px);
       opacity: 0;
     }
     to {
@@ -43,9 +97,9 @@
     }
 }
 
-@keyframes vecora-animate-bottom {
+@keyframes vecora-animate-bottom-24 {
     from {
-      transform: translateY(50px);
+      transform: translateY(24px);
       opacity: 0;
     }
     to {
@@ -54,9 +108,192 @@
     }
 }
 
-@keyframes vecora-animate-left {
+@keyframes vecora-animate-left-24 {
     from {
-      transform: translateX(-50px);
+      transform: translateX(-24px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0px);
+      opacity: 1;
+    }
+}
+
+
+@keyframes vecora-animate-top-48 {
+    from {
+      transform: translateY(-48px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+}
+
+@keyframes vecora-animate-right-48 {
+    from {
+      transform: translateX(48px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0px);
+      opacity: 1;
+    }
+}
+
+@keyframes vecora-animate-bottom-48 {
+    from {
+      transform: translateY(48px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+}
+
+@keyframes vecora-animate-left-48 {
+    from {
+      transform: translateX(-48px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0px);
+      opacity: 1;
+    }
+}
+
+
+@keyframes vecora-animate-top-96 {
+    from {
+      transform: translateY(-96px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+}
+
+@keyframes vecora-animate-right-96 {
+    from {
+      transform: translateX(96px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0px);
+      opacity: 1;
+    }
+}
+
+@keyframes vecora-animate-bottom-96 {
+    from {
+      transform: translateY(96px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+}
+
+@keyframes vecora-animate-left-96 {
+    from {
+      transform: translateX(-96px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0px);
+      opacity: 1;
+    }
+}
+
+
+
+
+@keyframes vecora-animate-top-256 {
+    from {
+      transform: translateY(-256px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+}
+
+@keyframes vecora-animate-right-256 {
+    from {
+      transform: translateX(256px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0px);
+      opacity: 1;
+    }
+}
+
+@keyframes vecora-animate-bottom-256 {
+    from {
+      transform: translateY(256px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+}
+
+@keyframes vecora-animate-left-256 {
+    from {
+      transform: translateX(-256px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0px);
+      opacity: 1;
+    }
+}
+
+
+
+@keyframes vecora-animate-top-512 {
+    from {
+      transform: translateY(-512px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+}
+
+@keyframes vecora-animate-right-512 {
+    from {
+      transform: translateX(512px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0px);
+      opacity: 1;
+    }
+}
+
+@keyframes vecora-animate-bottom-512 {
+    from {
+      transform: translateY(512px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+}
+
+@keyframes vecora-animate-left-512 {
+    from {
+      transform: translateX(-512px);
       opacity: 0;
     }
     to {
