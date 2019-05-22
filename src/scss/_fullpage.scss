@@ -1,19 +1,28 @@
-// This should be renamed. It is full height, but not full page.
+.vecora.fullpage {
 
-.fullpage .fullpage-section {
-	height: 100vh;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	position: relative;
-	background: linear-gradient(white, #fcfcfc);
-}
+	.section {
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 
-.fullpage .fullpage-content {
-	width: 60vw;
-}
+		background: linear-gradient(white, #fcfcfc);
 
-.fullpage .next-section {
-	position: absolute;
-	bottom: 5vh;
+		&.simple {
+			h2, p {
+				width: 60vw;
+			}
+
+			.button {}
+		}
+
+		.next {
+			position: absolute;
+			bottom: 5vh;
+
+			.label {}
+			.arrow {}
+		}
+	}
+
 }

@@ -1,0 +1,67 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="no">
+  <head>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  	<title>Sticky example &mdash; Vecora Style Guide for web</title>
+    <base href="../../">
+  	<link rel="stylesheet" href="dist/styles.css">
+    <script src="dist/scripts.js"></script>
+  	<link rel="icon" type="image/png" href="favicon.png">
+  </head>
+
+  <body>
+
+    <main>
+
+      <div class="vecora fullpage" id="fullpage">
+
+        <div class="section simple" data-tooltip="Slide 1">
+    			<h2 class="display-2">Heading</h2>
+    			<p class="lead">Lorem ipsum dolor sit amet.</p>
+    			<a href="#" class="vecora button primary massive">Massive button</a>
+
+    			<a href="#slide-2" class="next">
+    				<div class="label">Slide 2</div>
+    				<div class="arrow"></div>
+    			</a>
+    		</div>
+
+        <div class="section split" data-tooltip="Slide 2">
+    			<div class="left">
+    				<img src="http://placekitten.com/400/400">
+    			</div>
+    			<div class="right">
+    				<h2 class="display-2">Heading</h2>
+    				<p class="lead">Lorem ipsum dolor sit amet.</p>
+    			</div>
+
+    			<a href="#slide-3" class="next">
+    				<div class="label">Slide 3</div>
+    				<div class="arrow"></div>
+    			</a>
+    		</div>
+
+      </div>
+
+    </main>
+
+    <script>
+      new fullpage('#fullpage', {
+      	licenseKey: "36818E3E-74FB4546-808156E2-35FA6296",
+      	autoScrolling: true,
+      	navigation: true,
+      	anchors: [
+      		'slide-1',
+      		'slide-2',
+      		'slide-3'
+      	],
+      	menu: '#fullpage-menu',
+      	scrollOverflow: true,
+      	scrollHorizontally: true
+      });
+    </script>
+
+  </body>
+
+</html>
