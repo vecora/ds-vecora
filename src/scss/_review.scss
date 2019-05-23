@@ -1,24 +1,23 @@
 
-.review {
-  //position: relative;
-  display: flex;
-  flex-flow: row;
-  align-items: center;
-
-  img {
-    border-radius: 50%;
-    width: 200px;
-    margin-right: 40px; // should equal 2 x gutter??
-    margin-left: 20px;
-  }
+.vecora.review {
 
   blockquote {
     margin:0;
 
     p { margin-top: 10px; }
+
     footer {
-      cite {}
+      display: flex;
+      flex-flow: row;
+      align-items: center;
+      justify-content: center;
+
       p {margin:0;}
+      img {
+        border-radius: 50%;
+        width: 8 * $unit;
+        margin-right: 3 * $unit;
+      }
     }
   }
 }
