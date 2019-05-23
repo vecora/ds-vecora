@@ -7,6 +7,8 @@
 		justify-content: center;
 		flex-direction: column;
 		height: 100%;
+		padding-left: 10%;
+		padding-right: 10%;
 
 		background: linear-gradient(white, #fcfcfc);
 
@@ -36,8 +38,16 @@
 			position: absolute;
 			bottom: 5vh;
 
-			.label {}
-			.arrow {}
+			.label {
+				@include capitalized();
+				color: black;
+				margin-top: 1 * $unit;
+				font-size: 16px;
+			}
+			.icon {
+				margin-left: auto;
+				margin-right: auto;
+			}
 		}
 	}
 
