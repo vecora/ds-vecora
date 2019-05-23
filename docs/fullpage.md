@@ -17,8 +17,4 @@ Include from CDN:
 
 [Demo](docs/demos/fullpage.html)
 
-## Simple
-
 ## Split
-
-## Tripartite

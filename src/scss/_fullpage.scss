@@ -31,8 +31,18 @@
 				align-items: center;
 				justify-content: center;
 				flex-direction: column;
+
+				&.overflow-left {
+					position: relative;
+					height: 100%;
+					img {
+						position: absolute;
+						right: 0;
+					}
+				}
 			}
 		}
+
 
 		.next {
 			position: absolute;
