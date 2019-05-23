@@ -16,30 +16,54 @@
 
       <div class="vecora fullpage" id="fullpage">
 
-        <div class="section simple" data-tooltip="Slide 1">
-    			<h2 class="display-2">Heading</h2>
-    			<p class="lead">Lorem ipsum dolor sit amet.</p>
-    			<a href="#" class="vecora button primary massive">Massive button</a>
+        <div class="section" data-tooltip="Slide 1">
+          <div class="content">
+      			<h2 class="display-2">Heading</h2>
+      			<p class="lead">Lorem ipsum dolor sit amet.</p>
+      			<a href="#" class="vecora button primary massive">Massive button</a>
 
-    			<a href="#slide-2" class="next">
-    				<div class="label">Slide 2</div>
-    				<div class="arrow"></div>
-    			</a>
+      			<a href="#slide-2" class="next">
+      				<div class="label">Slide 2</div>
+      				<div class="arrow"></div>
+      			</a>
+          </div>
     		</div>
 
         <div class="section split" data-tooltip="Slide 2">
-    			<div class="left">
-    				<img src="http://placekitten.com/400/400">
-    			</div>
-    			<div class="right">
-    				<h2 class="display-2">Heading</h2>
-    				<p class="lead">Lorem ipsum dolor sit amet.</p>
-    			</div>
+          <div class="content split">
+      			<div class="column">
+      				<img src="http://placekitten.com/400/400">
+      			</div>
+      			<div class="column">
+      				<h2 class="display-2">Heading</h2>
+      				<p class="lead">Lorem ipsum dolor sit amet.</p>
+      			</div>
 
-    			<a href="#slide-3" class="next">
-    				<div class="label">Slide 3</div>
-    				<div class="arrow"></div>
-    			</a>
+      			<a href="#slide-3" class="next">
+      				<div class="label">Slide 3</div>
+      				<div class="arrow"></div>
+      			</a>
+          </div>
+    		</div>
+
+        <div class="section split" data-tooltip="Slide 3">
+          <div class="content split">
+      			<div class="column">
+      				<img src="http://placekitten.com/300/300">
+              <h2 class="display-2">Heading</h2>
+      				<p class="lead">Lorem ipsum dolor sit amet.</p>
+      			</div>
+      			<div class="column">
+      				<h2 class="display-2">Heading</h2>
+      				<p class="lead">Lorem ipsum dolor sit amet.</p>
+              <img src="http://placekitten.com/300/300">
+      			</div>
+            <div class="column">
+      				<img src="http://placekitten.com/300/300">
+              <h2 class="display-2">Heading</h2>
+      				<p class="lead">Lorem ipsum dolor sit amet.</p>
+      			</div>
+          </div>
     		</div>
 
       </div>
@@ -58,7 +82,10 @@
       	],
       	menu: '#fullpage-menu',
       	scrollOverflow: true,
-      	scrollHorizontally: true
+      	scrollHorizontally: true,
+        responsiveSlides: true,
+        responsiveWidth: 600,
+        responsiveHeight: 500
       });
     </script>
 

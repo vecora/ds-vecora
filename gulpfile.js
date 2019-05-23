@@ -21,7 +21,7 @@ function combineScripts (callback) {
     "src/js/lib/prism-1.15.0.min.js",
     "src/js/lib/ScrollTrigger.min.js",
     "src/js/lib/scrolloverflow.js",
-    "src/js/lib/fullpage.js",
+    "src/js/lib/fullpage.extensions.min.js",
     "src/js/vue-components/*.js",
     "src/js/*.js"
   ])

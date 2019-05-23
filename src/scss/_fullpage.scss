@@ -1,19 +1,35 @@
 .vecora.fullpage {
 
-	.section {
+	.content {
 		position: relative;
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		flex-direction: column;
+		height: 100%;
 
 		background: linear-gradient(white, #fcfcfc);
 
-		&.simple {
-			h2, p {
-				width: 60vw;
-			}
+		h2, p {
+			max-width: 60vw;
+			text-align: center;
+		}
 
-			.button {}
+		.button.massive {
+			margin-top: 40px;
+		}
+
+		&.split {
+			flex-direction: row;
+
+			.column {
+				flex-basis: 0;
+				flex-grow: 1;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				flex-direction: column;
+			}
 		}
 
 		.next {
@@ -25,4 +41,12 @@
 		}
 	}
 
+}
+
+/* Overrides of fullPage styles */
+#fp-nav .fp-tooltip {
+	// TODO: Set these using variables!!!
+	// WARNING: This is affected by theming.
+	font-family: Gilroy !important;
+	color: black !important;
 }
