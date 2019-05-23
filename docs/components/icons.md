@@ -51,6 +51,10 @@ Default color is text color.
     <div class="icon slack" style="margin: 0 auto;"></div>
     <pre class="small" style="margin-top: 10px;">slack</pre>
   </div>
+  <div class="text-center" style="padding: 10px;">
+    <div class="icon circle-arrow-down" style="margin: 0 auto;"></div>
+    <pre class="small" style="margin-top: 10px;">circle-arrow-down</pre>
+  </div>
 </div>
 
 
