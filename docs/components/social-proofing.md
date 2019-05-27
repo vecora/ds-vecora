@@ -15,10 +15,10 @@ Rating goes from 0 to 5 with increments of 0.5.
 {% include example.html content=example %}
 
 
-## Review
+## Referral
 
 {% capture example %}
-<div class="vecora review">
+<div class="vecora referral">
   <blockquote>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     <footer>

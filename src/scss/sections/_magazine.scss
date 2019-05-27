@@ -1,0 +1,115 @@
+// TODO: Look into https://developer.mozilla.org/en-US/docs/Web/CSS/@media/aspect-ratio
+.vecora.magazine {
+  position: relative;
+
+  .article {
+    margin-left: 50%;
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
+
+  .cover {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    overflow: hidden;
+
+    // Hack to make visit website button centered
+    display: flex;
+    justify-content: center;
+    .content { width: 100%; }
+
+
+    .photo {
+      position: absolute;
+      top: 0; right: 0; bottom: 0; left: 0;
+      background-size: cover;
+      background-position: center;
+      transform: scale(1.02);
+      transition: transform 200ms ease;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0; right: 0; bottom: 0; left: 0;
+        background-image: linear-gradient(rgba(255,255,255,0.6) 0%, rgba(255,255,255,0) 80%),
+      }
+    }
+    &:hover > .photo {
+      transform: scale(1);
+    }
+
+    .content, & > .button {
+      position: absolute;
+      z-index: 10;
+    }
+
+    .content {
+      padding: 40px;
+
+      .heading {
+        top: 40px;
+        left: 40px;
+        color: black;
+        font-size: 6.5vw;
+        font-family: 'Gilroy Heavy';
+        text-transform: uppercase;
+        line-height: 0.9em;
+      }
+
+      .tagline {
+        color: black;
+        font-size: 4vw;
+        margin-top: 24px;
+      }
+    }
+
+    .button {
+      position: absolute;
+      bottom: -50px;
+      background-color: white !important;
+      color: black !important;
+      opacity: 0.5;
+      transition: 200ms ease;
+      //transition-delay: 100ms;
+    }
+    &:hover .button {
+      bottom: 40px;
+      opacity: 1;
+    }
+
+    &.dark {
+      .photo::after {
+        background-image: linear-gradient(rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 80%),
+      }
+      .content {
+        .heading { color: white; }
+        .tagline { color: white; }
+      }
+      .prev {
+        background-color: white;
+      }
+    }
+
+  }
+
+  .prev, .next {
+    position: fixed;
+    z-index: 30;
+    @extend a.icon, .icon;
+    top: calc(50vh - 25px);
+    height: 48px;
+    width: 48px;
+  }
+  .prev {
+    left: 20px;
+    @extend .icon.circle-arrow-left;
+  }
+  .next {
+    right: 20px;
+    @extend .icon.circle-arrow-right;
+  }
+
+}

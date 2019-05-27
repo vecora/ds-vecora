@@ -9,22 +9,42 @@ description:
 [Alts for blog and legal] [Demo](docs/demos/navbar.html)
 
 {% capture example %}
-<nav class="vecora navbar">
-  <div class="container">
-    <a href="/" class="logo">Hjem</a>
-  	<ul>
-      <li class="active"><a href="#">Services</a></li>
-  		<li><a href="#">Works</a></li>
-      <li><a href="#">Support</a></li>
-      <li><a href="#">Contact</a></li>
-  	</ul>
-  </div>
+<nav class="vecora navbar" role="navigation">
+  <div class="toggler" data-label-open="Menu" data-label-close="Close"></div>
+  <a href="/" class="brand">Hjem</a>
+  <ul>
+    <li class="active"><a href="#">Services</a></li>
+    <li><a href="#">Works</a></li>
+    <li><a href="#">Support</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
 </nav>
 {% endcapture %}
 {% include example.html content=example %}
 
-### Fixed
+### Force responsive mode
 
+[Demo](docs/demos/magazine.html)
+
+{% capture example %}
+<nav class="vecora navbar force-responsive-mode" role="navigation">
+  <div class="toggler" data-label-open="Menu" data-label-close="Close"></div>
+  <a href="/" class="brand">Hjem</a>
+  <ul>
+    <li class="active"><a href="#">Services</a></li>
+    <li><a href="#">Works</a></li>
+    <li><a href="#">Support</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
+{% endcapture %}
+{% include example.html content=example %}
+
+*NOTE:* The burger doesn't show up because the mutation observer in _navbar.js_ only listens for one navbar.
+
+### Sticky
+
+The `sticky` class may be applied. For reasons explained [here](https://medium.com/@elad/css-position-sticky-how-it-really-works-54cd01dc2d46), `sticky` doesn't necessarily go on the navbar itself. It may go on the header, for example.
 
 ## Breadcrumbs
 

@@ -1,12 +1,12 @@
 .vecora.fullpage {
 
-	.content {
+	[class*=fp-] > .content {
 		position: relative;
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		flex-direction: column;
-		height: 100%;
+		height: 100vh;
 		padding-left: 10%;
 		padding-right: 10%;
 

@@ -55,6 +55,14 @@ Default color is text color.
     <div class="icon circle-arrow-down" style="margin: 0 auto;"></div>
     <pre class="small" style="margin-top: 10px;">circle-arrow-down</pre>
   </div>
+  <div class="text-center" style="padding: 10px;">
+    <div class="icon circle-arrow-left" style="margin: 0 auto;"></div>
+    <pre class="small" style="margin-top: 10px;">circle-arrow-left</pre>
+  </div>
+  <div class="text-center" style="padding: 10px;">
+    <div class="icon circle-arrow-right" style="margin: 0 auto;"></div>
+    <pre class="small" style="margin-top: 10px;">circle-arrow-right</pre>
+  </div>
 </div>
 
 

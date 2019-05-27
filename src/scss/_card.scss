@@ -1,0 +1,74 @@
+.vecora.card {
+  $cardUnit: 40 * $unit;
+
+  display: flex;
+  flex-direction: row;
+
+  width: 2 * $cardUnit;
+
+  .cover {
+    width: $cardUnit;
+    height: $cardUnit;
+    position: relative;
+    overflow: hidden;
+
+    .photo {
+      position: absolute;
+      top: 0; right: 0; bottom: 0; left: 0;
+      background-size: cover;
+      background-position: center;
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0; right: 0; bottom: 0; left: 0;
+        background-image: linear-gradient(rgba(255,255,255,0.6) 0%, rgba(255,255,255,0) 80%),
+      }
+    }
+
+    .content {
+      position: absolute;
+      top: 3 * $unit; right: 3 * $unit; bottom: 3 * $unit; left: 3 * $unit;
+      .heading {
+        text-transform: uppercase;
+        font-family: "Gilroy Heavy";
+        margin: 0 !important;
+        color: black;
+      }
+      .tagline {
+        margin: 0 !important;
+        color: black;
+      }
+    }
+  }
+
+  &:hover {
+    .cover {
+      .content {
+        .heading {
+          color: black;
+        }
+        .tagline {
+          color: black;
+        }
+      }
+    }
+  }
+
+  .article {
+    width: $cardUnit;
+    height: $cardUnit;
+    background-color: #eee;
+    padding: 3 * $unit;
+    background-color: #222;
+    .excerpt {
+      font-size: 18px;
+      color: white;
+      &:hover { color: white; }
+    }
+  }
+
+  &.folded {
+    width: 1 * $cardUnit;
+    .article { display: none;}
+  }
+}

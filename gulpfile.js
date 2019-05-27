@@ -11,21 +11,31 @@ function clean (callback) {
 }
 
 
-function combineScripts (callback) {
+function combineMainScripts (callback) {
   src([
-    "src/js/lib/vue-2.5.17.js",
-    "src/js/lib/jquery-3.3.1.js",
-    "src/js/lib/popper-1.14.3.js",
-    "src/js/lib/bootstrap-4.0.0.js",
-    "src/js/lib/accounting-0.4.2.js",
-    "src/js/lib/prism-1.15.0.min.js",
-    "src/js/lib/ScrollTrigger.min.js",
-    "src/js/lib/scrolloverflow.js",
-    "src/js/lib/fullpage.extensions.min.js",
-    "src/js/vue-components/*.js",
-    "src/js/*.js"
+    "src/js/main/lib/vue-2.5.17.js",
+    "src/js/main/lib/jquery-3.3.1.js",
+    "src/js/main/lib/popper-1.14.3.js",
+    "src/js/main/lib/bootstrap-4.0.0.js",
+    "src/js/main/lib/accounting-0.4.2.js",
+    "src/js/main/lib/prism-1.15.0.min.js",
+    "src/js/main/lib/ScrollTrigger.min.js",
+    "src/js/main/lib/scrolloverflow.js",
+    "src/js/main/lib/fullpage.extensions.min.js",
+    "src/js/main/vue-components/*.js",
+    "src/js/main/*.js"
   ])
-    .pipe(concat("scripts.js"))
+    .pipe(concat("main.js"))
+    .pipe(uglify())
+    .pipe(dest("dist/"));
+  callback();
+}
+
+function combineHeadScripts (callback) {
+  src([
+    "src/js/head/*.js"
+  ])
+    .pipe(concat("head.js"))
     .pipe(uglify())
     .pipe(dest("dist/"));
   callback();
@@ -56,9 +66,10 @@ function copyResources (callback) {
 
 exports.watch = function() {
   watch("src/**/*.scss", { events: "all", ignoreInitial: false }, compileStyles);
-  watch("src/js/**/*.js", { events: "all", ignoreInitial: false }, combineScripts);
+  //watch("src/js/**/*.js", { events: "all", ignoreInitial: false }, combineMainScripts);
+  watch("src/js/**/*.js", { events: "all", ignoreInitial: false }, combineHeadScripts);
 }
 
 exports.sass = compileStyles;
-exports.scripts = combineScripts;
-exports.default = series(clean, parallel(combineScripts, compileStyles, copyWebfonts, copyResources));
+exports.scripts = parallel(combineMainScripts, combineHeadScripts);
+exports.default = series(clean, parallel(combineMainScripts, combineHeadScripts, compileStyles, copyWebfonts, copyResources));

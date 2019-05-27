@@ -1,0 +1,23 @@
+
+.vecora.referral {
+
+  blockquote {
+    margin:0;
+
+    p { margin-top: 10px; }
+
+    footer {
+      display: flex;
+      flex-flow: row;
+      align-items: center;
+      justify-content: center;
+
+      p {margin:0;}
+      img {
+        border-radius: 50%;
+        width: 8 * $unit;
+        margin-right: 3 * $unit;
+      }
+    }
+  }
+}

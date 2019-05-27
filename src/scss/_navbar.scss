@@ -1,53 +1,167 @@
+$navbarHeight: 12 * $unit; // =96px
+$navbarContentMargin: 3.5 * $unit; // =28px // used for top and bottom spacing
+$navbarContentHeight: $navbarHeight - (2 * $navbarContentMargin); // =40px
+$responsiveBreakPoint: 800px; // WARNING: This should be system wide, and not set here??
+
 .vecora.navbar {
 
-  $height: 12 * $unit; // 96px
-  $bread: 3.5 * $unit; // 28px // top and bottom spacing
-  $meat: $height - (2 * $bread); // 40px
-
+  // TODO: Replace bootstrap container with our own grid system.
   &, & .container { position: relative; }
 
-  height: $height;
+  height: $navbarHeight;
+  background-color: white;
 
-  .logo {
+
+  /* Brand */
+  .brand {
     @extend .vecora.logo; // was @extend .vecora.logo, .vecora.logo.small;
     position: absolute;
     left: 0;
-    top: $bread;
-    text-indent: -9999px;
+    top: $navbarContentMargin;
+    text-indent: -99999px;
+  }
+  .brand.alt {
+    @extend .vecora.logo.alt-3;
   }
 
-  ul {
+
+
+  /* Burger */
+  .toggler {
+    // Use these vars to alter dimensions
+    $burgerHeight: 3 * $unit;
+    $burgerWidth: 4 * $unit;
+    $barHeight: $unit / 2;
+    // WARNING: Leave these calculations to themselves.
+    $barSpacing: ($burgerHeight - ($barHeight * 3)) / 2;
+    $crossTranslation: (1.41421356237 * (($burgerHeight - $barHeight) / 2)) / 2;
+
     position: absolute;
-    right: 0;
-    top: $bread;
-    li {
-      $margin: 2 * $unit;
+    right: 0; top: ($navbarHeight - $burgerHeight) / 2;
+    cursor: pointer;
+    width: $burgerWidth;
+
+    // Label
+    // ::before is the close label and ::after is the open (menu) label
+    &::after { content: attr(data-label-open); }
+    &::before { content: attr(data-label-close); opacity: 0; transform: scale(0.2, 0.2); }
+    &::after, &::before {
+      position: absolute;
+      top: 0;
+      right: $burgerWidth;
+      padding-right: 1 * $unit;
+      // TODO: Center cap height
+      text-transform: uppercase; // QUESTION: Use same mixin as we use elsewhere?
+      transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                  opacity 0.55s ease;
+      transform-origin: center right;
+    }
+    &.toggled::after {
+      opacity: 0;
+      transform: scale(0.2, 0.2);
+    }
+    &.toggled::before {
+      opacity: 1;
+      transform: scale(1, 1);
+    }
+
+    // Burger (bars)
+    span {
+      pointer-events: none;
+      display: block;
+      width: $burgerWidth;
+      height: $barHeight;
       position: relative;
-      display: inline-block;
-      a {
-        display: inline-block;
-        height: $meat;
-        line-height: $meat;
-        padding-left: $margin;
-        padding-right: $margin;
-
-        @include capitalized();
-        font-size: 16px; // TODO: Baseline this!
-        color: black;
-      }
-
-      &.active::after {
-        content: "";
-        position: absolute;
-        bottom: 0px;
-        left: $margin;
-        right: $margin;
-        height: 3px;
-        background-color: $sg-red;
+      background: black;
+      transform-origin: center center;
+      transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                  opacity 0.55s ease;
+      // Give the spacing to the middle bar (on both sides)
+      &:nth-last-child(2) {
+        margin-top: $barSpacing;
+        margin-bottom: $barSpacing;
       }
     }
+
+    // Transition burger into cross
+    &.toggled {
+      span {
+        transform: rotate(45deg) translate($crossTranslation, $crossTranslation);
+      }
+      span:nth-last-child(2) {
+        opacity: 0;
+        transform: scale(0.2, 0.2);
+      }
+      span:last-child {
+        transform: rotate(-45deg) translate($crossTranslation, -$crossTranslation);
+      }
+    }
+
   }
+
+
+
+  /* Items */
+  ul { display: none; }
+
 }
+
+// Full mode
+@media (min-width: $responsiveBreakPoint) {
+
+  .vecora.navbar:not(.force-responsive-mode) {
+
+    .toggler {
+      // TODO: Should be set to closed through JS.
+      display: none;
+    }
+
+    ul {
+      display: block;
+      position: absolute;
+      right: 0;
+      top: $navbarContentMargin;
+      li {
+        $margin: 2 * $unit;
+        position: relative;
+        display: inline-block;
+        a {
+          display: inline-block;
+          height: $navbarContentHeight;
+          line-height: $navbarContentHeight;
+          padding-left: $margin;
+          padding-right: $margin;
+
+          @include capitalized();
+          font-size: 16px; // TODO: Baseline this!
+          color: black;
+        }
+
+        &.active::after {
+          content: "";
+          position: absolute;
+          bottom: 0px;
+          left: $margin;
+          right: $margin;
+          height: 3px;
+          background-color: $sg-red;
+        }
+      }
+    }
+
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
 
 .navbar.fixed {
   position: fixed;

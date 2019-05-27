@@ -1,3 +1,15 @@
+.vecora#header {
+  z-index: 1000;
+  background-color: white;
+
+  &.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+}
+
 header#header, header#blog-header {
 
 
@@ -6,8 +18,3 @@ header#header, header#blog-header {
 header#blog-header {
 
 }
-
-
-// Dark theme
-
-// Blue theme

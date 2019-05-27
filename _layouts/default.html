@@ -8,6 +8,7 @@
   <base href="{{ site.baseurl }}/">
   <link rel="stylesheet" href="dist/styles.css">
   <link rel="stylesheet" href="assets/main.css">
+  <script src="dist/head.js"></script>
   <title>{{ page.title }}</title>
 </head>
 
@@ -33,6 +34,7 @@
               <li><a href="{{ site.baseurl }}{% link docs/components/index.md %}">Components</a>
                 <ul>
                   <li><a href="{{ site.baseurl }}{% link docs/components/buttons.md %}">Buttons</a></li>
+                  <li><a href="{{ site.baseurl }}{% link docs/components/card.md %}">Card</a></li>
                   <li><a href="{{ site.baseurl }}{% link docs/components/forms.md %}">Forms</a></li>
                   <li><a href="{{ site.baseurl }}{% link docs/components/icons.md %}">Icons</a></li>
                   <li><a href="{{ site.baseurl }}{% link docs/components/navs.md %}">Navs</a></li>
@@ -73,7 +75,7 @@
     <button class="button primary">That's okey!</button>
   </div>
 
-  <script src="dist/scripts.js"></script>
+  <script src="dist/main.js"></script>
   <script async defer src="//maps.googleapis.com/maps/api/js?key=AIzaSyDAC2otWTUAVKGqsOyNNOgztuH64LFBNQs&callback=Maps.init"></script>
   <script src="assets/main.js"></script>
 </body>
