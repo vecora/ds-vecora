@@ -35,19 +35,6 @@
     }
   }
 
-  &:hover {
-    .cover {
-      .content {
-        .heading {
-          color: black;
-        }
-        .tagline {
-          color: black;
-        }
-      }
-    }
-  }
-
   .article {
     width: $cardUnit;
     height: $cardUnit;
