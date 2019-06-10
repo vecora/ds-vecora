@@ -86,6 +86,7 @@
   .prev {
     left: 20px;
     @extend .icon.circle-arrow-left;
+    background-color: white;
   }
   .next {
     right: 20px;
