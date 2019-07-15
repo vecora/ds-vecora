@@ -10,7 +10,7 @@ The style guide itself should also be compatible with IE11.
 
 Based on <a href="https://getbootstrap.com/">Bootstrap 4</a>.
 
-Bootstrap has a class name convention where all classes are prefixed whatever they belong to. We <em>do not</em> use the same class name convention for our own classes [we use something similar to Semantic UI].
+Bootstrap has a class name convention where all classes are prefixed whatever they belong to. We <em>do not</em> use the same class name convention for our own classes [we use something similar to Semantic UI]. <- Bootstrap will be phased out and naming convention will be transitioned to BEM.
 
 ## Starter template
 
@@ -50,6 +50,12 @@ Bootstrap has a class name convention where all classes are prefixed whatever th
 {% endcapture %}
 {% include code.html content=code %}
 
-## Eight point grid
+## BEM
 
-We use the variable `$unit` to set sizes and margins, etc. 1 unit = 8px. Half units may be used for UI design, and in other places where increments of 8px simply doesn't work.
+[BEM](http://getbem.com/)
+
+[Read tutorial at CSS Tricks](https://css-tricks.com/bem-101/)
+
+## 8 point grid
+
+We use the variable `$unit` to set sizes and margins, etc. 1 unit = 8px. Half units may be used for UI design, and in other places where increments of 8px simply are too large.
