@@ -84,21 +84,21 @@ Gradients can be played with [here](https://www.css-gradient.com/).
 
 <div class="docs-gradients-container">
   <div class="docs-gradient-item">
-    <div class="docs-gradient moving-gradient-bg"></div>
+    <div class="docs-gradient --moving-background-gradient"></div>
   </div>
 </div>
 
 #### In text
 
 {% capture example %}
-<h1 class="display-2 moving-gradient-bg">Animated gradient</h1>
+<h1 class="display-2 --moving-background-gradient">Animated gradient</h1>
 {% endcapture %}
 {% include example.html content=example %}
 
 #### In logo
 
 {% capture example %}
-<div class="vecora logo huge outline center moving-gradient-bg"></div>
+<div class="logo logo--huge logo--outline logo--center --moving-background-gradient"></div>
 {% endcapture %}
 {% include example.html content=example %}
 
@@ -108,34 +108,54 @@ Gradients can be played with [here](https://www.css-gradient.com/).
 Default color is text color.
 
 {% capture example %}
-<div class="vecora logo"></div>
+<div class="logo"></div>
 {% endcapture %}
 {% include example.html content=example %}
 
 ### Outline
 
 {% capture example %}
-<div class="vecora logo outline"></div>
+<div class="logo logo--outline"></div>
 {% endcapture %}
 {% include example.html content=example %}
 
 ### Sizes
 
-| Class      | Height | Width |
-| ---------- | ------ | ------|
-| `nano`     |   24px |  15px |
-| `tiny`     |   32px |  20px |
-| `small`    |   48px |  30px |
-| _no class_ |   64px |  40px |
-| `large`    |   96px |  60px |
-| `big`      |  128px |  80px |
-| `huge`     |  256px | 160px |
-| `massive`  |  512px | 320px |
+| Class            | Height | Width |
+| ---------------- | ------ | ------|
+| `logo--nano`     |   24px |  15px |
+| `logo--tiny`     |   32px |  20px |
+| `logo--small`    |   48px |  30px |
+| _no class_       |   64px |  40px |
+| `logo--large`    |   96px |  60px |
+| `logo--big`      |  128px |  80px |
+| `logo--huge`     |  256px | 160px |
+| `logo--massive`  |  512px | 320px |
 
 Pixels sizes assumes 1 [unit](docs/introduction/#eight-point-grid) = 8px.
 
 {% capture example %}
-<div class="vecora logo huge center"></div>
+<div class="logo logo--huge logo--center"></div>
+{% endcapture %}
+{% include example.html content=example %}
+
+### Art logos
+
+{% capture example %}
+<div class="logo logo--large logo--art_glitch"></div><br>
+<div class="logo logo--large logo--art_stripes-2"></div><br>
+<div class="logo logo--large logo--art_3d-shadow"></div><br>
+<div class="logo logo--large logo--art_stripes"></div>
+{% endcapture %}
+{% include example.html content=example %}
+
+#### With colors
+
+{% capture example %}
+<div class="logo logo--large logo--art_glitch_color"></div><br>
+<div class="logo logo--large logo--art_stripes-2_color"></div><br>
+<div class="logo logo--large logo--art_3d-shadow_color"></div><br>
+<div class="logo logo--large logo--art_stripes_color"></div>
 {% endcapture %}
 {% include example.html content=example %}
 

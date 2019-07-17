@@ -1,4 +1,35 @@
 
+body {
+  font-weight: 400;
+}
+
+a {
+  font-weight: 600;
+  border-bottom: 2px dashed $sg-text-color;
+  padding-bottom: 2px;
+  color: $sg-text-color;
+
+  &:hover {
+    color: $sg-text-color;
+  }
+}
+
+body.--on-color {
+  color: white;
+}
+.--on-color {
+  h1 {
+    font-weight: 300;
+  }
+  a {
+    color: white;
+    border-color: white;
+    &:hover {
+      color: white;
+    }
+  }
+}
+
 @mixin capitalized() {
   text-transform: uppercase;
   font-weight: 600;

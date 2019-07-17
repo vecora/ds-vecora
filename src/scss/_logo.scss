@@ -1,8 +1,18 @@
-.vecora.logo {
+.logo {
 
   @function height($width) {
     @return $width / 8 * 5;
   }
+
+  $sizes: (
+    "nano": 3,
+    "tiny": 4,
+    "small": 6,
+    "large": 12,
+    "big": 16,
+    "huge": 32,
+    "massive": 64
+  );
 
   display: block;
 
@@ -15,62 +25,123 @@
   -webkit-mask-image: url(resources/logo.svg);
   -webkit-mask-repeat: no-repeat;
 
-  &.alt-3 {
+  @at-root .logo--alt-3 {
     width: height($width) * 4.25;
     -webkit-mask-image: url(resources/logo-alt-3.svg);
   }
 
-  &.outline {
+  @at-root .logo--outline {
     -webkit-mask-image: url(resources/logo-outline.svg);
   }
 
-  // Sizes
-  &.nano {
-    // 24 x 15
-    $width: 3 * $unit;
-    height: height($width);
-    width: $width;
-  }
-  &.tiny {
-    // 32 x 20
-    $width: 4 * $unit;
-    height: height($width);
-    width: $width;
-  }
-  &.small {
-    // 48 x 30
-    $width: 6 * $unit;
-    height: height($width);
-    width: $width;
-  }
-  &.large {
-    // 96 x 60
-    $width: 12 * $unit;
-    height: height($width);
-    width: $width;
-  }
-  &.big {
-    // 128 x 80
-    $width: 16 * $unit;
-    height: height($width);
-    width: $width;
-  }
-  &.huge {
-    // 256 x 160
-    $width: 32 * $unit;
-    height: height($width);
-    width: $width;
-  }
-  &.massive {
-    // 512 x 320
-    $width: 64 * $unit;
-    height: height($width);
-    width: $width;
-  }
-  // &.enormous {}
-
-  &.center {
+  @at-root .logo--center {
     margin-left: auto;
     margin-right: auto;
   }
+
+  // Generate sizes
+  @each $name, $multiplier in $sizes {
+    @at-root .logo--#{$name} {
+      $width: $multiplier * $unit;
+      height: height($width);
+      width: $width;
+    }
+  }
+
+
+  // Art logos
+
+  @at-root [class*=logo--art] {
+    background-color: transparent;
+    -webkit-mask: none;
+    mask: none;
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      background-color: $sg-text-color;
+      pointer-events: none;
+    }
+
+    @each $name, $multiplier in $sizes {
+      @at-root .logo.logo--#{$name}::after {
+        $margin: $multiplier * 2 * -1px;
+        top: $margin;
+        right: $margin;
+        bottom: $margin;
+        left: $margin;
+      }
+    }
+    // Repeat for normal size (has no class)
+    @at-root .logo::after {
+      $margin: 5 * 2 * -1px;
+      top: $margin;
+      right: $margin;
+      bottom: $margin;
+      left: $margin;
+    }
+  }
+
+  @at-root .logo--art_glitch::after {
+    -webkit-mask-image: url(resources/logo-glitch.png);
+    mask-image: url(resources/logo-glitch.png);
+    -webkit-mask-size: 100%;
+    mask-size: 100%;
+  }
+
+  @at-root .logo--art_3d-shadow::after {
+    -webkit-mask-image: url(resources/logo-3d-shadow.svg);
+    mask-image: url(resources/logo-3d-shadow.svg);
+  }
+
+  @at-root .logo--art_stripes::after {
+    -webkit-mask-image: url(resources/logo-stripes.svg);
+    mask-image: url(resources/logo-stripes.svg);
+  }
+
+  @at-root .logo--art_stripes-2::after {
+    -webkit-mask-image: url(resources/logo-stripes-2.svg);
+    mask-image: url(resources/logo-stripes-2.svg);
+  }
+
+  // Colored logos
+
+  @at-root .logo--art_glitch_color::after {
+    background-image: url(resources/logo-glitch-color.png);
+    background-size: 100%;
+    background-color: transparent;
+  }
+
+  @at-root .logo--art_3d-shadow_color::after {
+    background-image: url(resources/logo-3d-shadow-color.png);
+    background-size: 100%;
+    background-color: transparent;
+  }
+
+  @at-root .logo--art_stripes_color::after {
+    background-image: url(resources/logo-stripes-color.png);
+    background-size: 100%;
+    background-color: transparent;
+  }
+
+  @at-root .logo--art_stripes-2_color::after {
+    background-image: url(resources/logo-stripes-2-color.png);
+    background-size: 100%;
+    background-color: transparent;
+  }
+
+
+  // On color
+
+  @at-root .--on-color .logo {
+    background-color: white;
+  }
+
+  @at-root .--on-color [class*=logo--art] {
+    background-color: transparent;
+    &::after {
+      background-color: white;
+    }
+  }
+
 }

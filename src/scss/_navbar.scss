@@ -14,14 +14,14 @@ $responsiveBreakPoint: 800px; // WARNING: This should be system wide, and not se
 
   /* Brand */
   .brand {
-    @extend .vecora.logo; // was @extend .vecora.logo, .vecora.logo.small;
+    @extend .logo; // was @extend .vecora.logo, .vecora.logo.small;
     position: absolute;
     left: 0;
     top: $navbarContentMargin;
     text-indent: -99999px;
   }
   .brand.alt {
-    @extend .vecora.logo.alt-3;
+    @extend .logo--alt-3;
   }
 
 

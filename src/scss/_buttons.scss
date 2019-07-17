@@ -23,6 +23,7 @@
   //border: $btn-border-width solid transparent;
   // @include button-size($btn-padding-y, $btn-padding-x, $font-size-base, $btn-line-height, $btn-border-radius);
   // @include transition($btn-transition);
+  font-weight: 500 !important;
 
   // Share hover and focus styles
   @include hover-focus {
@@ -119,7 +120,21 @@ fieldset:disabled a.btn {
   //padding-top: 9px;
   //padding-bottom: 8px;
   border: 2px solid $sg-text-color;
-  color: $sg-text-color;
+  color: $sg-text-color !important;
+  transition: color 100ms, background-color 100ms;
+  &:hover {
+    background-color: $sg-text-color !important;
+    color: white !important;
+  }
+
+  &.negative {
+    border-color: white;
+    color: white !important;
+    &:hover {
+      background-color: white !important;
+      color: $sg-text-color !important;
+    }
+  }
 }
 
 

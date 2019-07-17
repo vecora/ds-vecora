@@ -5,3 +5,28 @@
 
   &.bottom { bottom: 0; }
 }
+
+
+
+.container-100vh {
+  height: 100vh;
+  position: relative;
+
+  // TODO: These should be part of the new .container-fluid
+  padding-left: 4 * $unit;
+  padding-right: 4 * $unit;
+
+  &.container-100vh--center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .container-100vh__footer {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    padding-left: 4 * $unit;
+    padding-right: 4 * $unit;
+  }
+}

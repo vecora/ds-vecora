@@ -10,42 +10,42 @@
   <title>{{ page.title }}</title>
 </head>
 
-<body data-spy="scroll" data-target="#document-nav" data-offset="0" class="docs-frontpage">
+<body data-spy="scroll" data-target="#document-nav" data-offset="0" class="docs-frontpage --moving-background-gradient --on-color">
 
   <main>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-2">
+    <div class="container-100vh container-100vh--center">
 
-
-        </div>
-        <div class="col-8 text-center">
+          <div class="logo logo--huge logo--center logo--art_glitch"></div>
 
           <br><br>
-          <div class="logo outline massive center"></div>
+          <h1  class="text-center">{{ page.title }}</h1>
 
-          <br><br>
-          <h1>{{ page.title }}</h1>
-          <p class="lead">{{ page.description }}</p>
-          {{ content }}
+          <br>
 
-          <a href="https://vecora.github.io/sg-vecora/docs/introduction" class="button massive outline">Read the documentation</a>
-
-          <br><br>
-
-          <a href="https://github.com/vecora/sg-vecora" class="button massive outline">Download from GitHub</a>
-
+        <div class="text-center">
+          <a href="https://vecora.github.io/sg-vecora/docs/introduction" class="button huge outline negative">Read the documentation</a>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="https://github.com/vecora/sg-vecora" class="button huge outline negative">Download from GitHub</a>
         </div>
-        <div class="col-2">
 
-
+        <div class="container-100vh__footer">
+          <p class="text-center">Created by <a href="https://www.vecora.com">Vecora in Norway</a>. Licensed under <a href="http://www.gnu.org/licenses/gpl-3.0.html">GPLv3</a>.</p>
         </div>
-      </div>
+
     </div>
   </main>
 
-  <footer>
+  <footer class="vecora" id="footer">
 
+    <section id="legal">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+                          2018 – 2019 © Vecora AS. Vecora® is a registered trademark in EU and other countries.
+                      </div>
+        </div>
+      </div>
+    </section>
   </footer>
 
   <div class="cookie-message">
