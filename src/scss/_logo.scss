@@ -104,6 +104,21 @@
     mask-image: url(resources/logo-stripes-2.svg);
   }
 
+  @at-root .logo--art_3d-stripes::after {
+    -webkit-mask-image: url(resources/logo-3d-stripes.svg);
+    mask-image: url(resources/logo-3d-stripes.svg);
+  }
+
+  @at-root .logo--art_3d-stripes-2::after {
+    -webkit-mask-image: url(resources/logo-3d-stripes-2.svg);
+    mask-image: url(resources/logo-3d-stripes-2.svg);
+  }
+
+  @at-root .logo--art_pixelated::after {
+    -webkit-mask-image: url(resources/logo-pixelated.svg);
+    mask-image: url(resources/logo-pixelated.svg);
+  }
+
   // Colored logos
 
   @at-root .logo--art_glitch_color::after {
@@ -126,6 +141,22 @@
 
   @at-root .logo--art_stripes-2_color::after {
     background-image: url(resources/logo-stripes-2-color.png);
+    background-size: 100%;
+    background-color: transparent;
+  }
+
+  @at-root .logo--art_3d-stripes_color::after {
+    background-image: url(resources/logo-3d-stripes-color.svg);
+    background-color: transparent;
+  }
+
+  @at-root .logo--art_3d-stripes-2_color::after {
+    background-image: url(resources/logo-3d-stripes-2-color.svg);
+    background-color: transparent;
+  }
+
+  @at-root .logo--art_sticker_color::after {
+    background-image: url(resources/logo-sticker-color.png);
     background-size: 100%;
     background-color: transparent;
   }

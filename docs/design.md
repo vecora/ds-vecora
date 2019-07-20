@@ -142,20 +142,26 @@ Pixels sizes assumes 1 [unit](docs/introduction/#eight-point-grid) = 8px.
 ### Art logos
 
 {% capture example %}
+<div class="logo logo--large logo--art_3d-stripes"></div><br>
 <div class="logo logo--large logo--art_glitch"></div><br>
 <div class="logo logo--large logo--art_stripes-2"></div><br>
 <div class="logo logo--large logo--art_3d-shadow"></div><br>
-<div class="logo logo--large logo--art_stripes"></div>
+<div class="logo logo--large logo--art_stripes"></div><br>
+<div class="logo logo--large logo--art_3d-stripes-2"></div><br>
+<div class="logo logo--large logo--art_pixelated"></div>
 {% endcapture %}
 {% include example.html content=example %}
 
 #### With colors
 
 {% capture example %}
+<div class="logo logo--large logo--art_3d-stripes_color"></div><br>
 <div class="logo logo--large logo--art_glitch_color"></div><br>
 <div class="logo logo--large logo--art_stripes-2_color"></div><br>
 <div class="logo logo--large logo--art_3d-shadow_color"></div><br>
-<div class="logo logo--large logo--art_stripes_color"></div>
+<div class="logo logo--large logo--art_stripes_color"></div><br>
+<div class="logo logo--large logo--art_sticker_color"></div><br>
+<div class="logo logo--large logo--art_3d-stripes-2_color"></div>
 {% endcapture %}
 {% include example.html content=example %}
 
