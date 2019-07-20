@@ -11,7 +11,7 @@ description:
 {% capture example %}
 <nav class="vecora navbar" role="navigation">
   <div class="toggler" data-label-open="Menu" data-label-close="Close"></div>
-  <a href="/" class="brand">Hjem</a>
+  <a href="/" class="logo">Hjem</a>
   <ul>
     <li class="active"><a href="#">Services</a></li>
     <li><a href="#">Works</a></li>
@@ -29,7 +29,7 @@ description:
 {% capture example %}
 <nav class="vecora navbar force-responsive-mode" role="navigation">
   <div class="toggler" data-label-open="Menu" data-label-close="Close"></div>
-  <a href="/" class="brand">Hjem</a>
+  <a href="/" class="logo">Hjem</a>
   <ul>
     <li class="active"><a href="#">Services</a></li>
     <li><a href="#">Works</a></li>

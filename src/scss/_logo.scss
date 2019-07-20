@@ -176,3 +176,10 @@
   }
 
 }
+
+a.logo {
+  text-indent: -9999px;
+
+  // Cancel out link border
+  border-bottom: none;
+}
