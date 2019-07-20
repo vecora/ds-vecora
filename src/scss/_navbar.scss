@@ -152,7 +152,17 @@ $responsiveBreakPoint: 800px; // WARNING: This should be system wide, and not se
 }
 
 
-
+.--on-color .vecora.navbar {
+  background-color: transparent;
+  .toggler {
+    &::after, &::before {
+      color: white;
+    }
+    span {
+      background: white;
+    }
+  }
+}
 
 
 
