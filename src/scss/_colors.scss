@@ -2,7 +2,7 @@
 // NOTE: This is a modifier to blocks and elements, but independent of any spesific block or element.
 .--moving-background-gradient {
   background: linear-gradient(270deg, #FF0078, #FA4024);
-  background-size: 400% 400%;
+  background-size: 200% 200%;
   -webkit-animation: moving-background-gradient 15s ease infinite alternate;
   -moz-animation: moving-background-gradient 15s ease infinite alternate;
   animation: moving-background-gradient 15s ease infinite alternate;
