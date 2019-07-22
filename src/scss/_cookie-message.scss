@@ -11,6 +11,13 @@
   p { margin: 0; }
   background-color: $cookie-message-bg;
 
+  @supports (backdrop-filter: blur(50px)) or (-webkit-backdrop-filter: blur(50px)) {
+    -webkit-backdrop-filter: blur(50px);
+    backdrop-filter: blur(50px);
+    background-color: transparent;
+  }
+
+
   // xs
   flex-direction: column;
   width: 100%;
