@@ -3,10 +3,11 @@ function applyIcon (type) {
     link.type = 'image/x-icon';
     link.rel = 'shortcut icon';
 
+    var baseUrl = document.querySelector('base').href;
     if (type === "dark") {
-        link.href = '/favicon--dark.png';
+        link.href = baseUrl + 'favicon--dark.png';
     } else {
-        link.href = '/favicon.png';
+        link.href = baseUrl + 'favicon.png';
     }
 
     document.getElementsByTagName('head')[0].appendChild(link);
