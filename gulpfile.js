@@ -55,6 +55,15 @@ function copyWebfonts (callback) {
   callback();
 }
 
+function copyFavicons (callback) {
+  src([
+      "src/favicon.png",
+      "src/favicon--dark.png"
+    ])
+    .pipe(dest("dist"));
+  callback();
+}
+
 function copyResources (callback) {
   src([
       "!src/*.afdesign",
@@ -72,4 +81,4 @@ exports.watch = function() {
 
 exports.sass = compileStyles;
 exports.scripts = parallel(combineMainScripts, combineHeadScripts);
-exports.default = series(clean, parallel(combineMainScripts, combineHeadScripts, compileStyles, copyWebfonts, copyResources));
+exports.default = series(clean, parallel(combineMainScripts, combineHeadScripts, compileStyles, copyWebfonts, copyFavicons, copyResources));
