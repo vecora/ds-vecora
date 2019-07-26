@@ -8,3 +8,9 @@
 
 @import 'scss/lib/fullpage/fullpage';
 @import 'scss/fullpage';
+
+
+html, body {
+  overflow-x: hidden;
+  // position: relative;
+}
