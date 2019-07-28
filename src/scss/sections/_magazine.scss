@@ -1,6 +1,9 @@
 // TODO: Look into https://developer.mozilla.org/en-US/docs/Web/CSS/@media/aspect-ratio
 .vecora.magazine {
   position: relative;
+  background-image: radial-gradient(#FFC374, #FDAD46); background-position: top left; background-size: 100%; background-attachment: fixed;
+
+  color: white;
 
   .article {
     margin-left: 50%;
@@ -45,7 +48,9 @@
       .heading {
         top: 40px;
         left: 40px;
-        color: white;
+        color: transparent;
+        -webkit-text-outline: 2px white;
+        text-outline: 2px white;
         font-size: 6.5vw;
         font-family: 'Gilroy Heavy';
         text-transform: uppercase;
