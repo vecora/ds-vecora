@@ -33,7 +33,7 @@ $navPanelWidth: 400px;
     // Use these vars to alter dimensions
     $burgerHeight: 3 * $unit;
     $burgerWidth: 4 * $unit;
-    $barHeight: $unit / 2;
+    $barHeight: $unit / 2; 
     // WARNING: Leave these calculations alone!
     $barSpacing: ($burgerHeight - ($barHeight * 3)) / 2;
     $crossTranslation: (1.41421356237 * (($burgerHeight - $barHeight) / 2)) / 2;
@@ -76,6 +76,7 @@ $navPanelWidth: 400px;
       height: $barHeight;
       position: relative;
       background: black;
+      border-radius: $barHeight / 2;
       transform-origin: center center;
       transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
                   opacity 0.55s ease;
@@ -84,6 +85,13 @@ $navPanelWidth: 400px;
         margin-top: $barSpacing;
         margin-bottom: $barSpacing;
       }
+    }
+    span:last-child {
+      width: $burgerWidth / 3 * 2;
+      transition: width 200ms;
+    }
+    &.navbar__toggler--active span:last-child, &.navbar__toggler:hover span:last-child{
+      width: $burgerWidth;
     }
 
     // Transition burger into cross
@@ -291,5 +299,7 @@ $navPanelWidth: 400px;
 
 
 .--on-color .navbar {
-
+  .navbar__toggler--active {
+    color: black;
+  }
 }
