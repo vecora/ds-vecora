@@ -18,7 +18,7 @@ Read the [documentation](https://vecora.github.io/sg-vecora/docs/) for more info
 
 4. Install dependencies locally by typing `npm install --save-dev`.
 
-5. Type `gulp` to build. Build files are located in the `dist` folder. Alternatively type `gulp watch` to watch for changes in the `src` folder and build continuously as files are changed.
+5. Type `gulp` to build. Build files are located in the `dist` folder. Alternatively type `gulp watch` to watch for changes in the `src` folder and build continuously as files are changed. You can type `gulp watch --cp [path]` to automatically copy the built files somewhere. *Warling:* if you provide the `--cp` option and do not provide a path the files are automatically copied to `../craft-vecora.no/web/`. This behaviour is obviously subject to change in future updates.
 
 ### Building the documentation
 
@@ -28,7 +28,7 @@ Read the [documentation](https://vecora.github.io/sg-vecora/docs/) for more info
 
 2. `open /Library/Developer/CommandLineTools/Packages/macOS_SDK_headers_for_macOS_10.14.pkg`
 
-3. 
+3.
 ```
 echo '# Install Ruby Gems to ~/gems' >> ~/.bashrc
 echo 'export GEM_HOME=$HOME/gems' >> ~/.bashrc

@@ -3,8 +3,20 @@ const { series, parallel, src, dest, watch } = require("gulp");
 const uglify = require("gulp-uglify");
 const sass = require("gulp-sass");
 const concat = require("gulp-concat");
+const args   = require('yargs').argv;
+const fs = require('fs');
 
 const buildPath = "dist";
+
+var cp = false;
+var cp_dir = "../craft-vecora.no/web/";
+
+function copy (filename) {
+  if (cp) {
+    fs.createReadStream(buildPath + "/" + filename).pipe(fs.createWriteStream(cp_dir + filename));
+    console.log("copied");
+  }
+}
 
 function clean (callback) {
   callback();
@@ -29,6 +41,7 @@ function combineMainScripts (callback) {
     .pipe(uglify())
     .pipe(dest("dist/"));
   callback();
+  copy("main.js");
 }
 
 function combineHeadScripts (callback) {
@@ -39,6 +52,7 @@ function combineHeadScripts (callback) {
     .pipe(uglify())
     .pipe(dest("dist/"));
   callback();
+  copy("head.js");
 }
 
 
@@ -47,6 +61,7 @@ function compileStyles (callback) {
     .pipe(sass({outputStyle: 'compressed'}).on("error", sass.logError))
     .pipe(dest("dist"));
   callback();
+  copy("styles.css");
 }
 
 function copyWebfonts (callback) {
@@ -77,6 +92,12 @@ exports.watch = function() {
   watch("src/**/*.scss", { events: "all", ignoreInitial: false }, compileStyles);
   //watch("src/js/**/*.js", { events: "all", ignoreInitial: false }, combineMainScripts);
   watch("src/js/**/*.js", { events: "all", ignoreInitial: false }, combineHeadScripts);
+  if (args.cp) {
+    cp = true;
+    if (args.cp === typeof stringValue) {
+      cp_dir = args.cp;
+    }
+  }
 }
 
 exports.sass = compileStyles;
