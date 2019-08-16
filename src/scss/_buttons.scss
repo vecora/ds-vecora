@@ -100,6 +100,9 @@ fieldset:disabled a.btn {
   font-size: 60% !important;
   font-weight: 600 !important;
 }
+.button.small.outline {
+  border-width: 1px;
+}
 .button.big {
   padding: 16px 40px 14px 40px;
   font-size: 120%;
@@ -136,6 +139,17 @@ fieldset:disabled a.btn {
     }
   }
 }
+/*
+.--on-color {
+  .button.outline {
+    border-color: white;
+    color: white !important;
+    &:hover {
+      background-color: white !important;
+      color: $sg-text-color !important;
+    }
+  }
+}*/
 
 
 

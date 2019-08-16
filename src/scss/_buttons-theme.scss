@@ -11,5 +11,9 @@
 
 .button.outline {
   border-color: $sg-text-color;
-  color: $sg-text-color;
+  color: $sg-text-color !important;
+  &:hover {
+    background-color: $sg-text-color !important;
+    color: white !important;
+  }
 }

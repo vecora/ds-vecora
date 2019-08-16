@@ -5,6 +5,9 @@ const sass = require("gulp-sass");
 const concat = require("gulp-concat");
 const args   = require('yargs').argv;
 const fs = require('fs');
+const through = require('through2');
+
+
 
 const buildPath = "dist";
 
@@ -39,9 +42,9 @@ function combineMainScripts (callback) {
   ])
     .pipe(concat("main.js"))
     .pipe(uglify())
-    .pipe(dest("dist/"));
+    .pipe(dest("dist/"))
+    ; //.on("end", copy => copy("main.js"));
   callback();
-  copy("main.js");
 }
 
 function combineHeadScripts (callback) {
@@ -59,9 +62,12 @@ function combineHeadScripts (callback) {
 function compileStyles (callback) {
   src("src/styles.scss")
     .pipe(sass({outputStyle: 'compressed'}).on("error", sass.logError))
-    .pipe(dest("dist"));
+    .pipe(dest("dist"))
+    .pipe(through.obj(function (chunk, enc, cb) {
+      copy("styles.css");
+      cb(null, chunk);
+    }));
   callback();
-  copy("styles.css");
 }
 
 function copyWebfonts (callback) {

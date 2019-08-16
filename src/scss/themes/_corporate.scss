@@ -4,8 +4,8 @@
 
 .theme-corporate {
 
-  $sg-bg-color: #edf3ff;
-  $sg-text-color: #5e527f;
+  $sg-bg-color: white;
+  $sg-text-color: #0000ff;
 
 
   @import "../lib/bootstrap/variables";
@@ -66,7 +66,10 @@
   @import '../range';
   @import '../cookie-message-theme';
   @import '../buttons-theme';
+  @import '../logo-theme';
+  @import '../icons-theme';
   @import '../timeline-theme';
+  @import '../type-theme';
   // @import '../map';
   // @import '../lib/prism/prism';
   // @import '../sections/headers';
