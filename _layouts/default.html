@@ -22,12 +22,10 @@
   </header>
 
   <main>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-2">
+    <div class="container flex break-small max-width-fhd">
+      <div class="column">
 
-          <nav class="sticky-top document-nav">
-            <ul class="list-unstyled list-bold">
+          <nav class="sticky-top sidenav">
               <li><a href="{{ site.baseurl }}{% link docs/introduction.md %}">Introduction</a></li>
               <li><a href="{{ site.baseurl }}{% link docs/design.md %}">Design</a>
                 <ul>
@@ -65,12 +63,12 @@
           {{ content }}
 
         </div>
-        <div class="col-lg-2 d-none d-lg-block">
+        <div class="column">
           <nav class="sticky-top document-nav nav">
             {% include toc.html html=content %}
           </nav>
         </div>
-      </div>
+
     </div>
   </main>
 

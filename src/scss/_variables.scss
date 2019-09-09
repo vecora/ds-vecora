@@ -1,4 +1,29 @@
+// TODO: Split this file into stuff that may be edited, and stuff that should be off limits.
+
 $unit: 8px;
+
+$screen-resolutions: (
+  3xs: ( width: 480px, height: 320px ),
+  2xs: ( width: 640px, height: 480px ),
+  xs: ( width: 800px, height: 600px ),
+  small: ( width: 1024px, height: 768px ),
+  medium: ( width: 1280px, height: 800px ),
+  large: ( width: 1440px, height: 900px ),
+  xl: ( width: 1680px, height: 1050px ),
+  2xl: ( width: 1920px, height: 1080px ),
+  3xl: ( width: 2560px, height: 1440px ),
+
+  hd: ( width: 1280px, height: 720px ),
+  fhd: ( width: 1920px, height: 1080px ),
+  uhd: ( width: 3840px, height: 2160px ),
+  2k: ( width: 2048px, height: 1080px ),
+  4k: ( width: 4096px, height: 2160px ),
+  5k: ( width: 5120px, height: 2880px )
+);
+
+
+$gutter: 4 * $unit;
+
 
 // Given font height is 1
 $font-ascender-height: 0.07;

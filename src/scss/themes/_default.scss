@@ -29,7 +29,6 @@ $custom-file-text: (
 @import "../lib/bootstrap/type";
 @import "../lib/bootstrap/images";
 // @import "../lib/bootstrap/code";
-@import "../lib/bootstrap/grid";
 @import "../lib/bootstrap/tables";
 @import "../lib/bootstrap/forms";
 //@import "../lib/bootstrap/buttons";
@@ -62,8 +61,8 @@ $custom-file-text: (
 // Additional styles
 @import '../variables';
 @import '../colors';
-@import '../grid';
 @import '../layout';
+@import '../flex';
 @import '../type';
 @import '../content';
 @import '../design';

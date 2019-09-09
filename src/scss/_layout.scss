@@ -1,4 +1,7 @@
-.vecora.sticky {
+/*
+ * Global modifier
+ */
+.--sticky {
   position: -webkit-sticky !important; /* Safari */
   position: sticky !important;
   top: 0;
