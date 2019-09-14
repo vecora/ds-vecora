@@ -1,5 +1,5 @@
-/*
- * Block
+/**
+ * .contaier block
  */
 .container {
   margin-left: auto;
@@ -7,19 +7,9 @@
   padding-left: $gutter;
   padding-right: $gutter;
 
-  /*
-   * Modifier
-   */
-  .no-gutters {
-    padding-left: 0;
-    padding-right: 0;
-    // Q: does this affect the boxes gutters as well???
-  }
-
   /**
-   * Modifiers
-   *
-   * max-width-*
+   * .max-width-* MODIFIER
+   * * can be any screen resolution class name segment
    */
   @each $label, $screen-resolution in $screen-resolutions {
     $width: map-get($screen-resolution, width);
@@ -28,20 +18,42 @@
 }
 
 
-/*
- * Block
- * Dependancies: .container
- */
-.container.flex, .column.flex {
 
+
+/**
+ * .no-margins modifier for .container and .container.flex
+ */
+.container.no-margins {
+  // remove container margins
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/**
+ * .margins modifier for .container and .container.flex
+ */
+.container.margins {
+  // reinstate container margins
+  padding-left: 4 * $unit;
+  padding-right: 4 * $unit;
+}
+
+
+
+
+/**
+ * .container.column block
+ *   relies upon .container
+ */
+.container.columns,
+.container.columns .column.columns {
   padding-left: $gutter / 2;
   padding-right: $gutter / 2;
-
   display: flex;
   flex-wrap: nowrap; // possibly unessecary
 
   /**
-   * Element
+   * .column Element
    */
   .column {
     flex-grow: 1;
@@ -50,7 +62,8 @@
 
     // These ensure that the growth system works, by disregarding content and forcing size.
     flex-basis: 0;
-    overflow: hidden;
+    width: 0;
+
 
     /**
      * Modifiers
@@ -78,51 +91,231 @@
       &.break-#{$label} {
         flex-wrap: wrap;
         .column {
-          width: 100%;
+          width: calc(100% - #{$gutter});
           flex-basis: auto;
         }
       }
     }
   }
 
-  // what is this for???
-  /*
-   * Modifier
-   */
-  &.center { justify-content: center; }
+}
 
 
-  /*
-   * Element
+/**
+ * .container.grid block
+ *   relies upon .container
+ */
+.container.grid,
+.container.grid .cell.grid {
+  padding-left: $gutter / 2;
+  padding-right: $gutter / 2;
+  display: flex;
+  flex-wrap: wrap;
+
+  /**
+   * .cell element
    */
-  .box {
-    flex-grow: 1;
+  .cell {
     margin-left: $gutter / 2;
     margin-right: $gutter / 2;
+    width: 100%;
   }
   /**
    * Modifier applied to .container that affects .box (indirectly)
    *
    * .column-*-*
    */
-  [class^=column-] {
-    flex-wrap: wrap;
-    .box {
-      width: 100%;
+  @each $label, $screen-resolution in $screen-resolutions {
+    $width: map-get($screen-resolution, width);
+    @media (min-width: $width) {
+      @for $i from 2 through 6 { // $i is number of columns.
+        &.columns-#{$label}-#{$i} .cell {
+          width: calc((100% / #{$i}) - #{$gutter});
+        }
+      }
     }
   }
-  @each $label, $screen-resolution in $screen-resolutions {
 
+}
+
+
+/**
+ * .container.flex block
+ *   relies upon .container
+ */
+.container.flex,
+.container.flex .box.flex {
+  padding-left: $gutter / 2;
+  padding-right: $gutter / 2;
+  display: flex;
+
+  /**
+   * .box element
+   */
+  .box {
+    margin-left: $gutter / 2;
+    margin-right: $gutter / 2;
+  }
+
+}
+
+
+/**
+ * .no-gaps modifier for .container.columns and .container.grid
+ *   affects .column and .cell
+ *   also automatically applied to .inner-borders
+ */
+.container.columns.no-gaps,
+.container.grid.no-gaps,
+.container.grid.inner-borders {
+
+  // reinstate full margins, if they are supposed to be there
+  &:not(.no-margin) {
+    padding-left: $gutter;
+    padding-right: $gutter;
+  }
+
+  // remove column and box gaps
+  .column, .cell {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  // recalculate box widths
+  @each $label, $screen-resolution in $screen-resolutions {
     $width: map-get($screen-resolution, width);
 
     @media (min-width: $width) {
       @for $i from 2 through 6 { // $i is number of columns.
-        &.columns-#{$label}-#{$i} .box {
-          width: calc((100% / $i) - #{$gutter});
+        &.columns-#{$label}-#{$i} .cell {
+          width: calc((100% / #{$i}));
         }
       }
     }
 
   }
+}
 
+/**
+ * .gaps modifier for .container.columns, .container.grid, and .container.flex
+ *   affects .column, .cell, and .box
+ */
+.container.columns.gaps,
+.container.grid.gaps,
+.container.flex.gaps {
+
+  // reinstate column and box gaps
+  .column, .cell, .box {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  // recalculate box widths
+  @each $label, $screen-resolution in $screen-resolutions {
+    $width: map-get($screen-resolution, width);
+    @media (min-width: $width) {
+      @for $i from 2 through 6 { // $i is number of columns.
+        &.columns-#{$label}-#{$i} .cell {
+          width: calc((100% / #{$i}) - #{$gutter});
+        }
+      }
+    }
+  }
+
+}
+
+
+/**
+ * .inset modifier for .container.grid
+ *   affects .cell
+ */
+.container.grid.inset,
+.container.grid.inner-borders {
+  .cell {
+    padding: $gutter;
+  }
+}
+
+/**
+ * .no-inset modifier for .container.grid
+ *   affects .cell
+ */
+.container.grid.no-inset {
+  .cell {
+    padding: 0;
+  }
+}
+
+/**
+ * .inner-borders modifier for .container.grid
+ *   affects .cell
+ */
+.container.grid.inner-borders {
+
+  $border-width: 1px;
+
+  .cell {
+    // borders are applied here and the subtracted after, to simplify the theme file
+    border-color: $sg-text-color;
+    border-style: solid;
+    border-width: 0; // overrides some weird 3px default in chrome
+    border-top-width: $border-width;
+  }
+
+  &[class*=columns-] {
+    .cell:first-child { border-top: 0; }
+  }
+  @each $label, $screen-resolution in $screen-resolutions {
+    $width: map-get($screen-resolution, width);
+
+    @media (min-width: $width) {
+      // horizontal lines
+      &.columns-#{$label}-2,
+      &.columns-#{$label}-3,
+      &.columns-#{$label}-4,
+      &.columns-#{$label}-5,
+      &.columns-#{$label}-6 {
+        .cell:nth-child(2) { border-top: 0; }
+      }
+      &.columns-#{$label}-3,
+      &.columns-#{$label}-4,
+      &.columns-#{$label}-5,
+      &.columns-#{$label}-6 {
+        .cell:nth-child(3) { border-top: 0; }
+      }
+      &.columns-#{$label}-4,
+      &.columns-#{$label}-5,
+      &.columns-#{$label}-6 {
+        .cell:nth-child(4) { border-top: 0; }
+      }
+      &.columns-#{$label}-5,
+      &.columns-#{$label}-6 {
+        .cell:nth-child(5) { border-top: 0; }
+      }
+      &.columns-#{$label}-6 {
+        .cell:nth-child(6) { border-top: 0; }
+      }
+      // vertical lines
+      &.columns-#{$label}-2 {
+        .cell:nth-child(odd) { border-right-width: $border-width; }
+        .cell:last-child { border-right-width: 0; }
+      }
+      &.columns-#{$label}-3 {
+        .cell:nth-child(3n+1), .cell:nth-child(3n+2) { border-right-width: $border-width; } // resett
+        .cell:nth-child(3n), .cell:last-child { border-right-width: 0; }
+      }
+      &.columns-#{$label}-4 {
+        .cell:nth-child(4n+1), .cell:nth-child(4n+2), .cell:nth-child(4n+3) { border-right-width: $border-width; } // resett
+        .cell:nth-child(4n), .cell:last-child { border-right-width: 0; }
+      }
+      &.columns-#{$label}-5 {
+        .cell:nth-child(5n+1), .cell:nth-child(5n+2), .cell:nth-child(5n+3), .cell:nth-child(5n+4) { border-right-width: $border-width; } // resett
+        .cell:nth-child(5n), .cell:last-child { border-right-width: 0; }
+      }
+      &.columns-#{$label}-6 {
+        .cell:nth-child(6n+1), .cell:nth-child(6n+2), .cell:nth-child(6n+3), .cell:nth-child(6n+4), .cell:nth-child(6n+5) { border-right-width: $border-width; } // resett
+        .cell:nth-child(6n), .cell:last-child { border-right-width: 0; }
+      }
+    }
+  }
 }

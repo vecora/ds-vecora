@@ -11,6 +11,5 @@
 
 
 html, body {
-  overflow-x: hidden;
-  // position: relative;
+  // overflow-x: hidden; // this turns off support for position: sticky !!
 }
