@@ -1,25 +1,116 @@
+// basic styles are already set in _reboot.scss
 
-body {
-  font-weight: 400;
+.lead {
+  @include font(20px, 2, map-get($fonts, gilroy));
+}
+.small {
+  @include font(12px, 2, map-get($fonts, gilroy));
 }
 
-a {
-  font-weight: 600;
-  border-bottom: 2px dashed $sg-text-color;
-  padding-bottom: 2px;
-  color: $sg-text-color;
+.size-25 {
+  @include font(25px, 2, map-get($fonts, gilroy));
+}
+.size-20 {
+  @include font(20px, 2, map-get($fonts, gilroy));
+}
+.size-16 {
+  @include font(16px, 2, map-get($fonts, gilroy));
+}
+.size-15 {
+  @include font(15px, 2, map-get($fonts, gilroy));
+}
+.size-12 {
+  @include font(12px, 2, map-get($fonts, gilroy));
+}
+.size-9 {
+  @include font(9px, 2, map-get($fonts, gilroy));
+}
 
-  &:hover {
-    color: $sg-text-color;
+
+// TODO: Responsive text font-size
+// TODO: cap height and 8 point grid
+
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+
+p, ul, ol {
+  .no-margin {
+    // remove bottom margins
   }
 }
+
+em {
+  font-weight: 900;
+}
+
+q:lang(no),
+q:lang(nb),
+q:lang(nn),
+q:lang(nb-NO),
+q:lang(nn-NO) {
+  quotes: "«" "»"; // no double quotes
+
+  &::before {
+    content: open-quote;
+  }
+
+  &::after {
+    content: close-quote;
+  }
+}
+
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6,
+.display-1, .display-2, .display-3, .display-4, .display-5, .display-6 {
+  margin-top: 0;
+  margin-bottom: .5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.h1 { @extend h1; }
+.h2 { @extend h2; }
+.h3 { @extend h3; }
+.h4 { @extend h4; }
+.h5 { @extend h5; }
+.h6 { @extend h6; }
+
+
+
+.display-1, .display-2 {
+  text-align: center;
+}
+
+
+
+ul.list-unstyled {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+  margin-block-end: 0;
+}
+
+ul.list-inline {
+  @extend .list-unstyled;
+  li, ol { display: inline-block; }
+  li:not(:last-child), ol:not(:last-child) {
+    margin-right: .5rem;
+  }
+}
+
+
 
 body.--on-color, .--on-color {
   color: white;
 }
 .--on-color {
   h1 {
-    font-weight: 300;
+    font-weight: 400;
   }
   a {
     color: white;

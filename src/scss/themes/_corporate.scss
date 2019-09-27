@@ -1,52 +1,21 @@
-
-
-
-
 .theme-corporate {
 
+
+
   $sg-bg-color: white;
-  $sg-text-color: #0000ff;
+
+  $text-color: $blue;
+  $sg-text-color: $text-color; // legacy
 
 
-  @import "../lib/bootstrap/variables";
-  @import "../lib/bootstrap/mixins";
-  @import "../lib/bootstrap/root";
 
 
   //@import "../lib/bootstrap/reboot";
   // this is all we need from reboot
   body {
-    color: $sg-text-color;
+    color: $text-color;
     background-color: $sg-bg-color;
   }
-
-
-  @import "../lib/bootstrap/type";
-  @import "../lib/bootstrap/images";
-  @import "../lib/bootstrap/tables";
-  @import "../lib/bootstrap/forms";
-  //@import "../lib/bootstrap/buttons";
-  @import "../lib/bootstrap/transitions";
-  @import "../lib/bootstrap/dropdown";
-  //@import "../lib/bootstrap/button-group";
-  @import "../lib/bootstrap/input-group";
-  @import "../lib/bootstrap/custom-forms";
-  // @import "../lib/bootstrap/nav";
-  // @import "../lib/bootstrap/navbar";
-  @import "../lib/bootstrap/card";
-  // @import "../lib/bootstrap/breadcrumb";
-  @import "../lib/bootstrap/pagination";
-  @import "../lib/bootstrap/badge";
-  // @import "../lib/bootstrap/jumbotron";
-  @import "../lib/bootstrap/alert";
-  // @import "../lib/bootstrap/progress";
-  @import "../lib/bootstrap/media";
-  @import "../lib/bootstrap/list-group";
-  @import "../lib/bootstrap/close";
-  // @import "../lib/bootstrap/modal";
-  @import "../lib/bootstrap/tooltip";
-  @import "../lib/bootstrap/popover";
-  // @import "../lib/bootstrap/carousel";
 
 
   // Overrides for additional styles
@@ -64,7 +33,6 @@
   @import '../variables';
   // @import '../fullpage';
   @import '../range';
-  @import '../cookie-message-theme';
   @import '../buttons-theme';
   @import '../logo-theme';
   @import '../icons-theme';

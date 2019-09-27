@@ -25,6 +25,12 @@
   -webkit-mask-image: url(resources/logo.svg);
   -webkit-mask-repeat: no-repeat;
 
+  @media (max-width: 384px) {
+    max-width: 66.666vw;
+    max-height: 41.666vw;
+  }
+
+
   @at-root .logo--alt-2 {
     width: 80px; height: 80px;
     -webkit-mask-image: url(resources/logo-alt-2.svg);
@@ -64,13 +70,13 @@
     &::after {
       content: '';
       position: absolute;
-      background-color: $sg-text-color;
+      background-color: $text-color;
       pointer-events: none;
     }
 
     @each $name, $multiplier in $sizes {
       @at-root .logo.logo--#{$name}::after {
-        $margin: $multiplier * 2 * -1px;
+        $margin: -25%;
         top: $margin;
         right: $margin;
         bottom: $margin;
@@ -79,7 +85,7 @@
     }
     // Repeat for normal size (has no class)
     @at-root .logo::after {
-      $margin: 5 * 2 * -1px;
+      $margin: -25%;
       top: $margin;
       right: $margin;
       bottom: $margin;

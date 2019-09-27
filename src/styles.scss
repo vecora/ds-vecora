@@ -1,15 +1,58 @@
+
 @import 'scss/webfonts';
 
+@import 'scss/variables';
+@import 'scss/functions';
+@import 'scss/mixins';
+@import 'scss/templates.scss';
+@import 'scss/reboot.scss';
+
+
+@import 'scss/layout';
+@import 'scss/flex';
+
+// themable styles
+@import 'scss/spacers';
+@import 'scss/colors';
+@import 'scss/type';
+@import 'scss/design';
+@import 'scss/card';
+@import 'scss/logo';
+@import 'scss/icons';
+@import 'scss/navbar';
+@import 'scss/sidenav';
+@import 'scss/crumbs';
+@import 'scss/buttons';
+@import 'scss/rating';
+@import 'scss/referral';
+@import 'scss/range';
+@import 'scss/timeline';
+@import 'scss/cookie-message';
+@import 'scss/map';
+@import 'scss/status';
+@import 'scss/hubspot';
+@import 'scss/lib/prism/default';
+
+@import 'scss/sections/magazine';
+@import 'scss/sections/headers';
+@import 'scss/sections/footers';
+@import 'scss/sections/contact';
+
+@import 'scss/animation';
+
+
+
+// include themes
 @import 'scss/themes/default';
 @import 'scss/themes/dark';
 @import 'scss/themes/corporate';
 @import 'scss/themes/sales';
 
 
+
+// not currently in use
 @import 'scss/lib/fullpage/fullpage';
 @import 'scss/fullpage';
 
 
-html, body {
-  // overflow-x: hidden; // this turns off support for position: sticky !!
-}
+// html, body { overflow-x: } // this turns off support for position: sticky !!

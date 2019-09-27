@@ -1,0 +1,4 @@
+@function computed-font-size($cap-height, $font) {
+  $result: $cap-height / map-get($font, cap-height);
+  @return $result;
+}

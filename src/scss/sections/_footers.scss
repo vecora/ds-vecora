@@ -31,7 +31,7 @@
 .compact-footer {
 	margin-top: 10 * $unit;
 	.compact-footer__links {
-		margin-bottom: 2 * $unit;
+		margin-bottom: 3 * $unit;
 	}
 	#legal {
 		padding-top: 2 * $unit;
@@ -42,4 +42,8 @@
 	}
 }
 
-.--on-color .compact-footer #legal { background-color: #AF003C; }
+.--on-color .compact-footer #legal {
+	background-color: transparent;
+	-webkit-backdrop-filter: brightness(60%) saturate(120%);
+	backdrop-filter: brightness(60%) saturate(120%);
+}

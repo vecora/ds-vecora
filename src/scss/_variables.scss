@@ -22,13 +22,58 @@ $screen-resolutions: (
 );
 
 
-$gutter: 4 * $unit;
+$spacer: 4 * $unit;
+$gutter: $spacer;
 
 
-// Given font height is 1
-$font-ascender-height: 0.07;
-$font-cap-height: 0.7;
-$font-descent-height: 0.23;
+// these metrics are specific to each font, and can be found using FontForge (see https://iamvdo.me/en/blog/css-font-metrics-line-height-and-vertical-align)
+$fonts: (
+  gilroy: (
+    family: "Gilroy",
+    cap-height: 0.7,
+    ascender: 0.971,
+    descender: 0.277
+  )
+);
+
+
+
+$font-ascender-height: 0.07; // legacy
+$font-descent-height: 0.23; // legacy
+
+// new 2020 colors
+$fawn: #FFAE5C;
+$orange: #FE7333;
+$red: #FA4024;
+$pink: #F71D52; // primary color
+$rose: #F0027B;
+$magenta: #E412C5;
+$blue: #0B4EEC;
+$gray: #8D94A0;
+$dark-gray: #323945;
+
+$text-color: $dark-gray !default;
+$sg-text-color: $text-color !default; // legacy
+$backgorund-color: white !default;
+$sg-bg-color: $backgorund-color !default; // legacy
+$body-bg: $backgorund-color !default;
+$link-color: $text-color;
+$link-hover-color: $link-color;
+
+// Marens colors (in order)
+$sg-red:     #F71D52;
+$sg-green:   #A2E000;
+$sg-blue:    #0066D2;
+$sg-cyan:    #00BEE4;
+$sg-indigo:  #8F6BE4;
+$sg-yellow:  #FFE300;
+$sg-orange:  #FF7A00;
+
+
+
+
+
+
 
 
 
@@ -49,7 +94,7 @@ $grid-box-hover-color: #fafafa !default;
 $v-angle-left: 69.1deg;
 $v-angle-right: 110.9deg;
 
-$corners: 5px;
+$corners: 8px;
 
 $sg-bg-color: #F8FAFA !default;
 $sg-text-color: #212529 !default;

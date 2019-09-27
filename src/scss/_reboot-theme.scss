@@ -1,0 +1,8 @@
+a {
+  border-bottom-color: $text-color;
+  color: $text-color;
+
+  &:hover {
+    color: $link-hover-color;
+  }
+}

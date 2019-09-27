@@ -1,0 +1,10 @@
+%panel {
+  $backdrop-filter: saturate(180%) blur(20px);
+  background-color: white; // fallback
+  @supports (backdrop-filter: $backdrop-filter) or (-webkit-backdrop-filter: $backdrop-filter) {
+    -webkit-backdrop-filter: $backdrop-filter;
+    backdrop-filter: $backdrop-filter;
+    background-color: rgba(255,255,255,0.7);
+  }
+  box-shadow: 0 0 3px rgba(32,39,45,0.3); 
+}

@@ -1,6 +1,0 @@
-.cookie-message {
-  background-color: $cookie-message-bg;
-  @supports (backdrop-filter: blur(50px)) or (-webkit-backdrop-filter: blur(50px)) {
-    background-color: transparent;
-  }
-}

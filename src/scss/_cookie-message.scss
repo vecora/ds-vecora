@@ -8,15 +8,12 @@
   position: fixed;
   z-index: 9999;
   align-items: center;
-  padding: 30px;
+  padding: 4 * $unit;
   p { margin: 0; }
-  background-color: $cookie-message-bg;
+  font-size: 16px;
+  line-height: 1.5em;
 
-  @supports (backdrop-filter: blur(50px)) or (-webkit-backdrop-filter: blur(50px)) {
-    -webkit-backdrop-filter: blur(50px);
-    backdrop-filter: blur(50px);
-    background-color: transparent;
-  }
+  @extend %panel;
 
 
   // xs
@@ -25,30 +22,26 @@
   text-align: center;
   bottom: 0;
   button {
-    margin: 30px 0 0 0;
+    margin: $spacer 0 0 0;
   }
 
-  // md
-  @include media-breakpoint-up(md) {
-    flex-direction: row;
-    width: calc(100% - 60px);
-    max-width: 768px - 60px;
-    bottom: 30px;
+  $breakpoint: #{map-get(map-get($screen-resolutions, 2xs), width)};
+  @media (min-width: $breakpoint) {
+    width: calc(100% - 2 * #{$spacer});
+    max-width: calc(#{$breakpoint} - 2 * #{$spacer});
+    bottom: $spacer;
     left: 50%; transform: translate(-50%, 0);
     border-radius: $corners;
-    box-shadow: 0 0 3px rgba(63,63,63,0.2); // TODO: Use variable
-    button {
-      margin: 0 0 0 30px;
-    }
-    p {
-      text-align: left;
-    }
   }
+
 
 }
 
+
+
+
+
 .--on-color .cookie-message {
-  background-color: white;
-  color: #444;
-  a { color: #444; }
+  color: $dark-gray;
+  a { color: $dark-gray; border-bottom-color: $dark-gray; }
 }

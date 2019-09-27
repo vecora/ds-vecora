@@ -1,16 +1,27 @@
-.icon {
+.icon, .smiley {
   display: block;
-  height: 30px;
-  width: 30px;
-  background-color: $sg-text-color;
+  height: 4 * $unit;
+  width: 4 * $unit;
+  background-color: $text-color;
+
+  &.inline {
+    height: 1.2em; width: 1.2em;
+    vertical-align: text-bottom;
+  }
+
+  &.large {
+    height: 6 * $unit;
+    width: 6 * $unit;
+  }
 }
 
 // supported inline elements
-a.icon, span.icon {
+a.icon, span.icon, a.smiley, span.smiley {
   display: inline-block;
 }
 
-a.icon {
+
+a.icon, a.smiley {
   text-indent: -99999px;
 }
 
@@ -60,4 +71,8 @@ a.icon {
 
 .icon.circle-arrow-right {
   -webkit-mask-image: url(resources/icon-circle-arrow-right.svg);
+}
+
+.smiley.rolling-eyes {
+  -webkit-mask-image: url(resources/smiley-rolling-eyes.svg);
 }
