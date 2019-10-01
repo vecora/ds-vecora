@@ -1,0 +1,23 @@
+
+// sizes are relative to $spacer
+// $spacer is defined in variables, and should be 32px or 4 times $unit, which is 8px
+$spacers: (
+  1u: 0.25,
+  2u: 0.5,
+  3u: 0.75,
+  1: 1,
+  6u: 1.5,
+  2: 2,
+  3: 3,
+  4: 4,
+  8: 8
+);
+
+.--spacing-before { margin-top: var(--spacer); }
+.--spacing-after { margin-bottom: var(--spacer); }
+
+
+@each $label, $size in $spacers {
+  .--spacing-before-#{$label} { margin-top: calc(#{$size} * var(--spacer)); }
+  .--spacing-after-#{$label} { margin-bottom: calc(#{$size} * var(--spacer)); }
+}

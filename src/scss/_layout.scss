@@ -6,11 +6,11 @@
   position: sticky !important;
   top: 0;
 
-  &.margin { top: 4 * $unit; } // undocumented feature used in docs
+  &.margin { top: var(--spacer); } // undocumented feature used in docs
   &.bottom {
     top: auto;
     bottom: 0;
-    &.margin { bottom: 4 * $unit; } // undocumented feature (unused?)
+    &.margin { bottom: var(--spacer); } // undocumented feature (unused?)
   }
 }
 
@@ -38,8 +38,8 @@
   position: relative;
 
   // TODO: These should be part of the new .container-fluid
-  padding-left: 4 * $unit;
-  padding-right: 4 * $unit;
+  padding-left: var(--spacer);
+  padding-right: var(--spacer);
 
   &.container-100vh--center {
     display: flex;
@@ -51,7 +51,7 @@
   .container-100vh__footer {
     position: absolute;
     bottom: 0; left: 0; right: 0;
-    padding-left: 4 * $unit;
-    padding-right: 4 * $unit;
+    padding-left: var(--spacer);
+    padding-right: var(--spacer);
   }
 }

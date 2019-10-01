@@ -1,31 +1,22 @@
 // basic styles are already set in _reboot.scss
 
 .lead {
-  @include font(20px, 2, map-get($fonts, gilroy));
+  // @include font(20px, 2, map-get($fonts, gilroy));
+  font-size: calc-font-size(2.5, map-get($fonts, gilroy));
+  line-height: calc-line-height(2, 2.5, map-get($fonts, gilroy));
 }
-.small {
-  @include font(12px, 2, map-get($fonts, gilroy));
-}
-
-.size-25 {
-  @include font(25px, 2, map-get($fonts, gilroy));
-}
-.size-20 {
-  @include font(20px, 2, map-get($fonts, gilroy));
-}
-.size-16 {
-  @include font(16px, 2, map-get($fonts, gilroy));
-}
-.size-15 {
-  @include font(15px, 2, map-get($fonts, gilroy));
-}
-.size-12 {
-  @include font(12px, 2, map-get($fonts, gilroy));
-}
-.size-9 {
-  @include font(9px, 2, map-get($fonts, gilroy));
+small, .small, .small p {
+  // @include font(12px, 2, map-get($fonts, gilroy));
+  font-size: calc-font-size(1.5, map-get($fonts, gilroy));
+  line-height: calc-line-height(2, 1.5, map-get($fonts, gilroy));
 }
 
+.justify {
+  text-align: justify;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto; // shouldn't really support non chromium edge
+  hyphens: auto;
+}
 
 // TODO: Responsive text font-size
 // TODO: cap height and 8 point grid
@@ -120,6 +111,22 @@ body.--on-color, .--on-color {
     }
   }
 }
+
+
+a.pronounced {
+  font-weight: 500;
+  border-bottom: 2px dashed var(--text-color);
+  padding-bottom: 2px;
+  color: var(--text-color);
+  text-decoration: none;
+
+  &:hover {
+    color: var(--text-color);
+    text-decoration: none;
+  }
+}
+
+
 
 @mixin capitalized() {
   text-transform: uppercase;

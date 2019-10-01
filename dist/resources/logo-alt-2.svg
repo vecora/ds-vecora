@@ -1,13 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg width="100%" height="100%" viewBox="0 0 1362 1359" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+<svg width="100%" height="100%" viewBox="0 0 1362 1359" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
     <g transform="matrix(5.55556,0,0,5.55556,-1901.31,-967.173)">
-        <text x="388.376px" y="418.196px" style="font-family:'Gilroy-ExtraBold', 'Gilroy';font-weight:800;font-size:31.783px;">V</text>
-        <text x="413.753px" y="418.196px" style="font-family:'Gilroy-ExtraBold', 'Gilroy';font-weight:800;font-size:31.783px;">E</text>
-        <text x="434.939px" y="418.196px" style="font-family:'Gilroy-ExtraBold', 'Gilroy';font-weight:800;font-size:31.783px;">C</text>
-        <text x="461.556px" y="418.196px" style="font-family:'Gilroy-ExtraBold', 'Gilroy';font-weight:800;font-size:31.783px;">O</text>
-        <text x="491.101px" y="418.196px" style="font-family:'Gilroy-ExtraBold', 'Gilroy';font-weight:800;font-size:31.783px;">R</text>
-        <text x="515.048px" y="418.196px" style="font-family:'Gilroy-ExtraBold', 'Gilroy';font-weight:800;font-size:31.783px;">A</text>
+        <g transform="matrix(31.783,0,0,31.783,388.376,418.196)">
+            <path d="M0.228,0L0.432,0L0.66,-0.7L0.485,-0.7L0.33,-0.185L0.175,-0.7L0,-0.7L0.228,0Z" style="fill-rule:nonzero;"/>
+        </g>
+        <g transform="matrix(31.783,0,0,31.783,413.753,418.196)">
+            <path d="M0.22,-0.154L0.22,-0.278L0.47,-0.278L0.47,-0.43L0.22,-0.43L0.22,-0.546L0.495,-0.546L0.495,-0.7L0.06,-0.7L0.06,0L0.5,0L0.5,-0.154L0.22,-0.154Z" style="fill-rule:nonzero;"/>
+        </g>
+        <g transform="matrix(31.783,0,0,31.783,434.939,418.196)">
+            <path d="M0.394,0.014C0.522,0.014 0.634,-0.049 0.694,-0.148L0.556,-0.228C0.526,-0.174 0.465,-0.142 0.394,-0.142C0.27,-0.142 0.19,-0.225 0.19,-0.35C0.19,-0.475 0.27,-0.558 0.394,-0.558C0.465,-0.558 0.525,-0.526 0.556,-0.472L0.694,-0.552C0.633,-0.651 0.521,-0.714 0.394,-0.714C0.183,-0.714 0.03,-0.556 0.03,-0.35C0.03,-0.144 0.183,0.014 0.394,0.014Z" style="fill-rule:nonzero;"/>
+        </g>
+        <g transform="matrix(31.783,0,0,31.783,461.556,418.196)">
+            <path d="M0.394,0.014C0.595,0.014 0.758,-0.144 0.758,-0.35C0.758,-0.556 0.595,-0.714 0.394,-0.714C0.193,-0.714 0.03,-0.556 0.03,-0.35C0.03,-0.144 0.193,0.014 0.394,0.014ZM0.394,-0.142C0.28,-0.142 0.19,-0.225 0.19,-0.35C0.19,-0.475 0.28,-0.558 0.394,-0.558C0.508,-0.558 0.598,-0.475 0.598,-0.35C0.598,-0.225 0.508,-0.142 0.394,-0.142Z" style="fill-rule:nonzero;"/>
+        </g>
+        <g transform="matrix(31.783,0,0,31.783,491.101,418.196)">
+            <path d="M0.428,0L0.6,0L0.451,-0.257C0.528,-0.296 0.58,-0.374 0.58,-0.46C0.58,-0.593 0.473,-0.7 0.34,-0.7L0.06,-0.7L0.06,0L0.22,0L0.22,-0.23L0.296,-0.23L0.428,0ZM0.22,-0.55L0.34,-0.55C0.384,-0.55 0.42,-0.511 0.42,-0.46C0.42,-0.409 0.384,-0.37 0.34,-0.37L0.22,-0.37L0.22,-0.55Z" style="fill-rule:nonzero;"/>
+        </g>
+        <g transform="matrix(31.783,0,0,31.783,515.048,418.196)">
+            <path d="M0.505,0L0.68,0L0.442,-0.7L0.238,-0.7L0,0L0.175,0L0.21,-0.11L0.47,-0.11L0.505,0ZM0.258,-0.26L0.34,-0.517L0.422,-0.26L0.258,-0.26Z" style="fill-rule:nonzero;"/>
+        </g>
     </g>
     <g transform="matrix(5.55556,0,0,5.55556,595.633,850.906)">
         <path d="M0,-153.163L-30.632,-84.882L-61.265,-153.163L-107.214,-153.163L-30.632,0L45.949,-153.163L0,-153.163Z" style="fill-rule:nonzero;"/>

@@ -13,8 +13,8 @@ Button classes can be applied to `button` or `a` elements.
 These buttons change with the theme.
 
 {% capture example %}
-<button type="button" class="button primary">Primary</button>
-<button type="button" class="button">Secondary</button>
+<button class=" primary">Primary</button>
+<button>Default</button>
 {% endcapture %}
 {% include example.html content=example %}
 
@@ -50,10 +50,10 @@ Functional colors.
 ## Sizes
 
 {% capture example %}
-<button type="button" class="button primary small">Small button</button>
-<button type="button" class="button primary">Normal button</button>
-<button type="button" class="button primary big">Big button</button>
-<button type="button" class="button primary massive">Massive button</button>
+<button class="primary small">Small button</button>
+<button class="primary">Normal button</button>
+<button class="primary big">Big button</button>
+<button class="primary massive">Massive button</button>
 {% endcapture %}
 {% include example.html content=example %}
 

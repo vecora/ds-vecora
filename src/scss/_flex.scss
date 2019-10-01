@@ -4,8 +4,8 @@
 .container {
   margin-left: auto;
   margin-right: auto;
-  padding-left: $gutter;
-  padding-right: $gutter;
+  padding-left:  var(--spacer);
+  padding-right: var(--spacer);
 
   /**
    * .max-width-* MODIFIER
@@ -14,6 +14,7 @@
   @each $label, $screen-resolution in $screen-resolutions {
     $width: map-get($screen-resolution, width);
     &.max-width-#{$label} { max-width: $width; }
+    &.max-width-#{$label}-relative { max-width: calc(#{strip($width) / 8} * var(--unit)); }
   }
 }
 
@@ -34,8 +35,8 @@
  */
 .container.margins {
   // reinstate container margins
-  padding-left: 4 * $unit;
-  padding-right: 4 * $unit;
+  padding-left: var(--spacer);
+  padding-right: var(--spacer);
 }
 
 
@@ -47,8 +48,8 @@
  */
 .container.columns,
 .container.columns .column.columns {
-  padding-left: $gutter / 2;
-  padding-right: $gutter / 2;
+  padding-left: calc(var(--spacer) / 2);
+  padding-right: calc(var(--spacer) / 2);
   display: flex;
   flex-wrap: nowrap; // possibly unessecary
 
@@ -57,8 +58,8 @@
    */
   .column {
     flex-grow: 1;
-    margin-left: $gutter / 2;
-    margin-right: $gutter / 2;
+    margin-left: calc(var(--spacer) / 2);
+    margin-right: calc(var(--spacer) / 2);
 
     // These ensure that the growth system works, by disregarding content and forcing size.
     flex-basis: 0;
@@ -91,7 +92,7 @@
       &.break-#{$label} {
         flex-wrap: wrap;
         .column {
-          width: calc(100% - #{$gutter});
+          width: calc(100% - var(--spacer));
           flex-basis: auto;
         }
       }
@@ -107,8 +108,8 @@
  */
 .container.grid,
 .container.grid .cell.grid {
-  padding-left: $gutter / 2;
-  padding-right: $gutter / 2;
+  padding-left: calc(var(--spacer) / 2);
+  padding-right: calc(var(--spacer) / 2);
   display: flex;
   flex-wrap: wrap;
 
@@ -116,8 +117,8 @@
    * .cell element
    */
   .cell {
-    margin-left: $gutter / 2;
-    margin-right: $gutter / 2;
+    margin-left: calc(var(--spacer) / 2);
+    margin-right: calc(var(--spacer) / 2);
     width: 100%;
   }
   /**
@@ -130,7 +131,7 @@
     @media (min-width: $width) {
       @for $i from 2 through 6 { // $i is number of columns.
         &.columns-#{$label}-#{$i} .cell {
-          width: calc((100% / #{$i}) - #{$gutter});
+          width: calc((100% / #{$i}) - var(--spacer));
         }
       }
     }
@@ -145,16 +146,16 @@
  */
 .container.flex,
 .container.flex .box.flex {
-  padding-left: $gutter / 2;
-  padding-right: $gutter / 2;
+  padding-left: calc(var(--spacer) / 2);
+  padding-right: calc(var(--spacer) / 2);
   display: flex;
 
   /**
    * .box element
    */
   .box {
-    margin-left: $gutter / 2;
-    margin-right: $gutter / 2;
+    margin-left: calc(var(--spacer) / 2);
+    margin-right: calc(var(--spacer) / 2);
   }
 
 }
@@ -171,8 +172,8 @@
 
   // reinstate full margins, if they are supposed to be there
   &:not(.no-margin) {
-    padding-left: $gutter;
-    padding-right: $gutter;
+    padding-left: var(--spacer);
+    padding-right: var(--spacer);
   }
 
   // remove column and box gaps
@@ -216,7 +217,7 @@
     @media (min-width: $width) {
       @for $i from 2 through 6 { // $i is number of columns.
         &.columns-#{$label}-#{$i} .cell {
-          width: calc((100% / #{$i}) - #{$gutter});
+          width: calc((100% / #{$i}) - var(--spacer));
         }
       }
     }
@@ -232,7 +233,7 @@
 .container.grid.inset,
 .container.grid.inner-borders {
   .cell {
-    padding: $gutter;
+    padding: var(--spacer);
   }
 }
 
@@ -256,7 +257,7 @@
 
   .cell {
     // borders are applied here and the subtracted after, to simplify the theme file
-    border-color: $sg-text-color;
+    border-color: $text-color;
     border-style: solid;
     border-width: 0; // overrides some weird 3px default in chrome
     border-top-width: $border-width;

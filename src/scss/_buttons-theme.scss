@@ -1,13 +1,6 @@
 
-.button {
-  @include button-colorize(map-get($button-colors, secondary));
-}
 
-@each $name, $colors in $button-colors {
-  .button.#{$name} {
-    @include button-colorize($colors);
-  }
-}
+
 
 .button.outline {
   border-color: $sg-text-color;

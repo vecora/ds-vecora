@@ -1,6 +1,6 @@
 // $line-height is a numeral where 1 = $cap-height
 @mixin font($cap-height, $line-height, $font) {
-
+/*
   $font-family: map-get($font, name);
 
   $computed-font-size: computed-font-size($cap-height, $font);
@@ -10,5 +10,5 @@
   margin-top: -($distance-top * $computed-font-size);
 
   line-height: $cap-height * $line-height;
-
+*/
 }

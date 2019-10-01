@@ -1,47 +1,20 @@
-// stylelint-disable selector-no-qualifying-type
-
-//
-// Base styles
-//
-
-@mixin button-colorize($colors) {
-  $gradient-colors: nth($colors, 1);
-  $bg-color: nth(nth($colors, 1), 2);
-  $text-color: nth($colors, 2);
-  background-image: linear-gradient(to right, $gradient-colors);
-  background-color: $bg-color;
-  &, & a { color: $text-color !important; } // WARNING: !important is set because bootstrap overrides without
-}
-
-
-.button {
+input[type=button], input[type=submit], input[type=reset], button, a.button {
   display: inline-block;
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
   user-select: none;
-  //border: $btn-border-width solid transparent;
-  // @include button-size($btn-padding-y, $btn-padding-x, $font-size-base, $btn-line-height, $btn-border-radius);
-  // @include transition($btn-transition);
-  font-weight: 500 !important;
 
 
-
-  border-radius: 50px; // TODO: figure out the height and set this to half the height
-
-
-
-
-  // Opinionated: add "hand" cursor to non-disabled .btn elements
+  // add "hand" cursor to non-disabled .button elements
   &:not(:disabled):not(.disabled) {
     cursor: pointer;
   }
 
 
-
-
   border: none;
 
+/*
   $cap-height: 1.5 * $unit;
 
   padding-top: 2 * $unit - ($cap-height * 0.1);
@@ -50,50 +23,53 @@
   padding-right: 3.5 * $unit;
 
   font-size: $cap-height * 1.4286;
-  line-height: 1em;
+  line-height: 1em;*/
   @include capitalized();
+  font-weight: 500 !important;
+
+
+  @include button(1.5, map-get($fonts, gilroy));
+
+  color: var(--text-color);
+  background-color: $light-gray;
+
+  &.primary {
+    color: white;
+    background-color: var(--accent-color);
+  }
+
+
+
+  &.small {
+    @include button(1, map-get($fonts, gilroy));
+  }
+  &.big {
+    @include button(2, map-get($fonts, gilroy));
+  }
+  &.massive {
+    @include button(2.5, map-get($fonts, gilroy));
+  }
+
+  &.fluid {
+    display: block;
+    width: 100%;
+  }
 
 }
 
 // Future-proof disabling of clicks on `<a>` elements
-a.btn.disabled,
-fieldset:disabled a.btn {
+a.button.disabled,
+fieldset:disabled a.button {
   pointer-events: none;
 }
 
 
-.button {
-  @include button-colorize(map-get($button-colors, secondary));
-}
-
-@each $name, $colors in $button-colors {
-  .button.#{$name} {
-    @include button-colorize($colors);
-  }
-}
 
 
-.button.small {
-  padding: 8px 20px 7px 20px;
-  font-size: 60% !important;
-  font-weight: 600 !important;
-}
 .button.small.outline {
   border-width: 1px;
 }
-.button.big {
-  padding: 16px 40px 14px 40px;
-  font-size: 120%;
-}
-.button.massive {
-  padding: 24px 50px 22px 50px;
-  font-size: 150%;
-}
 
-.button.fluid {
-  display: block;
-  width: 100%;
-}
 
 
 .button.outline {

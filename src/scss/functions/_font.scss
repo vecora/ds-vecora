@@ -1,4 +1,8 @@
-@function computed-font-size($cap-height, $font) {
-  $result: $cap-height / map-get($font, cap-height);
+@function calc-font-size($cap-height, $font) {
+  $result: calc(#{$cap-height / map-get($font, cap-height)} * var(--unit));
+  @return $result;
+}
+@function calc-line-height($line-height, $cap-height, $font) {
+  $result: calc(#{$line-height * $cap-height} * var(--unit));
   @return $result;
 }

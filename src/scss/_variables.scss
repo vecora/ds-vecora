@@ -1,6 +1,43 @@
 // TODO: Split this file into stuff that may be edited, and stuff that should be off limits.
 
-$unit: 8px;
+// new 2020 colors
+$fawn: #FFAE5C;
+$orange: #FE7333;
+$red: #FA4024;
+$pink: #F71D52; // primary color
+$rose: #F0027B;
+$magenta: #E412C5;
+$blue: #0B4EEC;
+$light-gray: #D8DCE2;
+$gray: #8D94A0;
+$dark-gray: #323945;
+
+$text-color: $dark-gray !default;
+$backgorund-color: white !default;
+$body-bg: $backgorund-color !default;
+$link-color: $text-color;
+$link-hover-color: $link-color;
+
+:root {
+  --unit: 6px;
+  --spacer: calc(4 * var(--unit));
+  --accent-color: #{$pink};
+  --text-color: #{$dark-gray};
+  --link-color: #{$pink};
+}
+
+@media screen and (min-width: 600px) { // don't change the value
+  :root {
+    --unit: 8px;
+  }
+}
+
+@media screen and (min-width: 1921px) {
+  :root {
+    --unit: 10px;
+  }
+}
+
 
 $screen-resolutions: (
   3xs: ( width: 480px, height: 320px ),
@@ -22,8 +59,7 @@ $screen-resolutions: (
 );
 
 
-$spacer: 4 * $unit;
-$gutter: $spacer;
+
 
 
 // these metrics are specific to each font, and can be found using FontForge (see https://iamvdo.me/en/blog/css-font-metrics-line-height-and-vertical-align)
@@ -37,25 +73,15 @@ $fonts: (
 );
 
 
-
+$unit: 8px; // legacy
 $font-ascender-height: 0.07; // legacy
 $font-descent-height: 0.23; // legacy
 
-// new 2020 colors
-$fawn: #FFAE5C;
-$orange: #FE7333;
-$red: #FA4024;
-$pink: #F71D52; // primary color
-$rose: #F0027B;
-$magenta: #E412C5;
-$blue: #0B4EEC;
-$gray: #8D94A0;
-$dark-gray: #323945;
 
-$text-color: $dark-gray !default;
+
 $sg-text-color: $text-color !default; // legacy
-$backgorund-color: white !default;
 $sg-bg-color: $backgorund-color !default; // legacy
+
 $body-bg: $backgorund-color !default;
 $link-color: $text-color;
 $link-hover-color: $link-color;

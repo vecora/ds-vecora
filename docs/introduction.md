@@ -4,13 +4,11 @@ title: Introduction
 description:
 ---
 
-The documentation should be compatible and tested towards modern browsers &mdash; newest versions of Chrome, Firefox, Safari, and Edge, on all platforms.
-
-The style guide itself should also be compatible with IE11.
-
-Based on <a href="https://getbootstrap.com/">Bootstrap 4</a>.
+This style guide is compatible and tested towards the newsest versions of modern browsers &mdash; Safari, Firefox, and the Chromium family of browsers. It is incompatible with Internet Explorer.
 
 Bootstrap has a class name convention where all classes are prefixed whatever they belong to. We <em>do not</em> use the same class name convention for our own classes [we use something similar to Semantic UI]. <- Bootstrap will be phased out and naming convention will be transitioned to BEM.
+
+[ [The Atomic Workflow](http://atomicdesign.bradfrost.com/chapter-4/) ]
 
 ## Starter template
 
@@ -35,10 +33,11 @@ Bootstrap has a class name convention where all classes are prefixed whatever th
   </main>
 
   <footer id="footer">
+    <!-- Sticks to the bottom automagically. -->
   </footer>
 
   <div class="cookie-message">
-    <button class="button primary float-right">That's okey!</button>
+    <button class="primary float-right">That's okey!</button>
     <p>By using this website you accept that we use information capsules. Read more about how we handle your personal information in our <a href="#">privacy statement</a>.</p>
   </div>
 

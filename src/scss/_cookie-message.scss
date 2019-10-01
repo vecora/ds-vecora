@@ -8,10 +8,11 @@
   position: fixed;
   z-index: 9999;
   align-items: center;
-  padding: 4 * $unit;
+  padding: var(--spacer);
   p { margin: 0; }
-  font-size: 16px;
-  line-height: 1.5em;
+
+  font-size: calc-font-size(1.5, map-get($fonts, gilroy));
+  line-height: calc-line-height(2, 1.5, map-get($fonts, gilroy));
 
   @extend %panel;
 
@@ -22,16 +23,17 @@
   text-align: center;
   bottom: 0;
   button {
-    margin: $spacer 0 0 0;
+    margin: var(--spacer) 0 0 0;
   }
 
-  $breakpoint: #{map-get(map-get($screen-resolutions, 2xs), width)};
+  $breakpoint: 600px; //#{map-get(map-get($screen-resolutions, 3xs), width)};
   @media (min-width: $breakpoint) {
-    width: calc(100% - 2 * #{$spacer});
-    max-width: calc(#{$breakpoint} - 2 * #{$spacer});
-    bottom: $spacer;
+    width: calc(100% - 2 * var(--spacer));
+    max-width: calc(#{strip($breakpoint) / 8 } * var(--unit) - 2 * var(--spacer));
+    bottom: var(--spacer);
     left: 50%; transform: translate(-50%, 0);
     border-radius: $corners;
+    test: #{strip($breakpoint)};
   }
 
 

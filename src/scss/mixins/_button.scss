@@ -1,0 +1,8 @@
+@mixin button($size, $font) {
+  $height: calc(#{$size * 1.33333 * 2 + $size} * var(--unit));
+  font-size: calc-font-size($size, $font);
+  line-height: $height;
+  height: $height;
+  border-radius: calc(#{$height} / 2);
+  padding: 0 calc(#{$size * 1.33333 * 2} * var(--unit));
+}

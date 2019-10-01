@@ -38,6 +38,13 @@ Three layout systems: columns, grid, and flex. All layout systems currently use 
 {% endcapture %}
 {% include code.html content=code %}
 
+`max-width-*-relative` sets the max width relative to unit. The absolute resolution is the same as above when unit is eight pixels. 
+
+{% capture code %}
+<div class="container max-width-xs-relative"></div>
+{% endcapture %}
+{% include code.html content=code %}
+
 ### ?Height?
 
 ?not implemented?
@@ -225,3 +232,25 @@ Global modifiers `hide-below-*` and `hide-above-*`
 | `2k`           | 2048px | 1080px | 2K     |       |
 | `4k`           | 4096px | 2160px | 4K     |       |
 | `5k`           | 5120px | 2880px | 5K     |       |
+
+Note that these values are in absolute pixels, and not units.
+
+## Spacing
+
+Spacing applies to the vertical margins. They affect the `margin-top` and `margin-bottom` properties respectivly. These are global modifiers, and may be applied to any block element.
+
+`--spacing-before-*` `--spacing-after-*`
+
+Internally one spacer is `4 * unit`. The size of a spacer is a multiple of the internal spacer.
+
+| Class Segment | Size   | Comment   |
+|---------------|--------|-----------|
+| `1u`          | 0.25   |  One unit |
+| `2u`          | 0.5    |           |
+| `3u`          | 0.75   |           |
+| `1`           | 1      |           |
+| `6u`          | 1.5    |           |
+| `2`           | 2      |           |
+| `3`           | 3      |           |
+| `4`           | 4      |           |
+| `8`           | 8      |           |

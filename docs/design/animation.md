@@ -36,3 +36,9 @@ All these classes can be follow by an integer `delay-*`. The delay will then be 
 | _no class_         |     96px |
 | `longer-distance`  |    256px |
 | `long-distance`    |    512px |
+
+## SVG animation
+
+[ [CSS-Tricks' A Guide to SVG Animations (SMIL)](https://css-tricks.com/guide-svg-animations-smil/) ]
+
+[ [Snap.svg](http://snapsvg.io) ]

@@ -3,7 +3,7 @@ function applyIcon (type) {
     link.type = 'image/x-icon';
     link.rel = 'shortcut icon';
 
-    var baseUrl = document.querySelector('base').href;
+    var baseUrl = document.querySelector('base').dataset.global;
     if (type === "dark") {
         link.href = baseUrl + 'favicon--dark.png';
     } else {

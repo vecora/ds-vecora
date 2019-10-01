@@ -31,7 +31,6 @@ function combineMainScripts (callback) {
     "src/js/main/lib/vue-2.5.17.js",
     "src/js/main/lib/jquery-3.3.1.js",
     "src/js/main/lib/popper-1.14.3.js",
-    "src/js/main/lib/bootstrap-4.0.0.js",
     "src/js/main/lib/accounting-0.4.2.js",
     "src/js/main/lib/prism-1.15.0.min.js",
     "src/js/main/lib/ScrollTrigger.min.js",
