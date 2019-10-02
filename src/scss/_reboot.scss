@@ -30,7 +30,7 @@ body {
   line-height: calc-line-height(2, 2, map-get($fonts, gilroy));
 
   font-weight: 400;
-  color: $text-color;
+  color: var(--text-color);
   text-align: left;
   background-color: white; // 2
   -webkit-text-size-adjust: 100%; // 3
@@ -257,6 +257,7 @@ figure {
 
 img {
   vertical-align: middle;
+  width: 100%;
 }
 
 // 1. Workaround for the SVG overflow bug in IE 11 is still required.

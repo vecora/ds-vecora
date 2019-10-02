@@ -2,7 +2,7 @@
   display: block;
   height: calc(4 * var(--unit));
   width: calc(4 * var(--unit));
-  background-color: $text-color;
+  background-color: var(--text-color);
 
   &.inline {
     height: 1.2em; width: 1.2em;

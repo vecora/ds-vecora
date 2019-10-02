@@ -17,6 +17,10 @@
     &.max-width-#{$label} { max-width: $width; }
     &.max-width-#{$label}-relative { max-width: calc(#{strip($width) / 8} * var(--unit)); }
   }
+
+  // not documented. not used. unfinished.
+  &.fill { min-height: 100%; }
+  &.fill-viewport { min-height: 100vh; }
 }
 
 
@@ -25,7 +29,10 @@
 /**
  * .no-margins modifier for .container and .container.flex
  */
-.container.no-margins {
+.container.no-margins,
+.container .columns.no-margins,
+.container .grid.no-margins,
+.container .flex.no-margins {
   // remove container margins
   padding-left: 0;
   padding-right: 0;
@@ -34,12 +41,14 @@
 /**
  * .margins modifier for .container and .container.flex
  */
-.container.margins {
+.container.margins,
+.container .columns.margins,
+.container .grid.margins,
+.container .flex.margins {
   // reinstate container margins
   padding-left: var(--spacer);
   padding-right: var(--spacer);
 }
-
 
 
 
@@ -48,7 +57,7 @@
  *   relies upon .container
  */
 .container.columns,
-.container.columns .column.columns {
+.container .columns {
   padding-left: calc(var(--spacer) / 2);
   padding-right: calc(var(--spacer) / 2);
   display: flex;
@@ -108,7 +117,7 @@
  *   relies upon .container
  */
 .container.grid,
-.container.grid .cell.grid {
+.container .grid {
   padding-left: calc(var(--spacer) / 2);
   padding-right: calc(var(--spacer) / 2);
   display: flex;
@@ -146,7 +155,7 @@
  *   relies upon .container
  */
 .container.flex,
-.container.flex .box.flex {
+.container .flex {
   padding-left: calc(var(--spacer) / 2);
   padding-right: calc(var(--spacer) / 2);
   display: flex;
@@ -158,6 +167,14 @@
     margin-left: calc(var(--spacer) / 2);
     margin-right: calc(var(--spacer) / 2);
   }
+
+  .box.grow {
+    flex-grow: 1;
+  }
+
+  .box.align-center { align-self: center; }
+  .box.align-top { align-self: flex-start; }
+  .box.align-bottom { align-self: flex-end; }
 
 }
 

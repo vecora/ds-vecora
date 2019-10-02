@@ -168,9 +168,13 @@ Shorthands for common responsive column layouts.
 {% endcapture %}
 {% include code.html content=code %}
 
-### Position
+### Vertical align
 
-`top`, `right`, `bottom`, `left`, and `center`. Top and bottom positioning only applies of the container has height set.
+`top`, `bottom`, and `center`.
+
+### Grow
+
+`grow` fills up available horizontal space.
 
 ### Direction
 
