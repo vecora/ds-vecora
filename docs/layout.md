@@ -38,7 +38,7 @@ Three layout systems: columns, grid, and flex. All layout systems currently use 
 {% endcapture %}
 {% include code.html content=code %}
 
-`max-width-*-relative` sets the max width relative to unit. The absolute resolution is the same as above when unit is eight pixels. 
+`max-width-*-relative` sets the max width relative to unit. The absolute resolution is the same as above when unit is eight pixels.
 
 {% capture code %}
 <div class="container max-width-xs-relative"></div>
@@ -177,6 +177,10 @@ Shorthands for common responsive column layouts.
 `ltr`, and `rtl`.
 
 ### ?Responsiveness?
+
+## Order
+
+`order-*-n` can be applied to `.column`, `.cell`, and `.box`.
 
 ## Complex layouts
 

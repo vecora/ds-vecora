@@ -321,3 +321,18 @@
     }
   }
 }
+
+
+
+.column, .cell, .box {
+  @each $label, $screen-resolution in $screen-resolutions {
+    $width: map-get($screen-resolution, width);
+    @media (min-width: $width) {
+      @for $i from 1 through 10 { // $i is number of columns.
+        &.order-#{$label}-#{$i} {
+          order: $i;
+        }
+      }
+    }
+  }
+}
