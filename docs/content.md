@@ -4,6 +4,10 @@ title: Content
 description:
 ---
 
+**Resources**
+
+* [Deep dive CSS: font metrics, line-height and vertical-align](https://iamvdo.me/en/blog/css-font-metrics-line-height-and-vertical-align)
+
 ## Typography
 
 For text to be properly aligned with the 8 point grid, text should never be outside the proper tags (i.e. as a child of `body`, `main`, `article` etc.)
