@@ -129,6 +129,7 @@
   .cell {
     margin-left: calc(var(--spacer) / 2);
     margin-right: calc(var(--spacer) / 2);
+    margin-bottom: var(--spacer); // warning: this causes unfixed bugs for .no-gaps and .spacing-*-* classes
     width: 100%;
   }
   /**

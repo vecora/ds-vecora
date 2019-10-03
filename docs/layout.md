@@ -170,7 +170,7 @@ Shorthands for common responsive column layouts.
 
 ### Vertical align
 
-`top`, `bottom`, and `center`.
+`align-top`, `align-bottom`, and `align-center`.
 
 ### Grow
 

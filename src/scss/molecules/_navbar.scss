@@ -5,13 +5,14 @@ $navbarContentHeight: $navbarHeight - (2 * $navbarContentMargin); // = 40px
 $responsiveBreakPoint: 800px; // WARNING: This should be system wide, and not set here??
 $navPanelWidth: 400px;
 
+
 .navbar {
 
   // TODO: Place variables here.
 
 
   height: $navbarHeight;
-  background-color: white;
+  // background-color: var(--background-color);
 
 
   /*
@@ -33,7 +34,7 @@ $navPanelWidth: 400px;
     // Use these vars to alter dimensions
     $burgerHeight: 3 * $unit;
     $burgerWidth: 4 * $unit;
-    $barHeight: $unit / 2; 
+    $barHeight: $unit / 2;
     // WARNING: Leave these calculations alone!
     $barSpacing: ($burgerHeight - ($barHeight * 3)) / 2;
     $crossTranslation: (1.41421356237 * (($burgerHeight - $barHeight) / 2)) / 2;
@@ -75,8 +76,8 @@ $navPanelWidth: 400px;
       width: $burgerWidth;
       height: $barHeight;
       position: relative;
-      background: black;
-      border-radius: $barHeight / 2;
+      background-color: var(--text-color);
+      border-radius: 1px;
       transform-origin: center center;
       transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
                   opacity 0.55s ease;

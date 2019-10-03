@@ -1,3 +1,3 @@
 .navbar ul li a.active { background-color: $link-color } // should be accent color
-.subnav ul li a { color: $sg-text-color; }
-.subnav ul li a.active { background: $sg-text-color; color: $body-bg; }
+.subnav ul li a { color: $text-color; }
+.subnav ul li a.active { background: $text-color; color: $body-bg; }

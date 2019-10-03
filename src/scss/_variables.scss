@@ -23,7 +23,10 @@ $link-hover-color: $link-color;
   --spacer: calc(4 * var(--unit));
   --accent-color: #{$pink};
   --text-color: #{$dark-gray};
-  --link-color: #{$pink};
+  --link-color: var(--accent-color);
+  --background-color: white;
+  // experimental
+  --panel-background-color: $light-gray;
 }
 
 @media screen and (min-width: 600px) { // don't change the value

@@ -49,8 +49,8 @@ if (document.querySelector("#theme-switcher")) {
   $(document).ready(function() {
 
     switch (themeClass) {
-      case "theme-dark":
-        document.getElementById('theme-dark').checked = true;
+      case "--dark":
+        document.getElementById('--dark').checked = true;
         break;
       case "theme-corporate":
         document.getElementById('theme-corporate').checked = true;

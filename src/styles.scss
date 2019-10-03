@@ -19,10 +19,10 @@
 @import 'scss/card';
 @import 'scss/logo';
 @import 'scss/icons';
-@import 'scss/navbar';
 @import 'scss/sidenav';
 @import 'scss/crumbs';
 @import 'scss/buttons';
+@import 'scss/panels';
 @import 'scss/rating';
 @import 'scss/referral';
 @import 'scss/range';
@@ -34,13 +34,21 @@
 @import 'scss/lib/prism/default';
 
 @import 'scss/sections/magazine';
-@import 'scss/sections/headers';
-@import 'scss/sections/footers';
+
 @import 'scss/sections/contact';
 
 @import 'scss/animation';
 
 
+// molecules
+@import 'scss/molecules/navbar';
+
+// organisms
+@import 'scss/organisms/headers';
+@import 'scss/organisms/footers';
+
+// templates
+// @import 'scss/templates/magazine';
 
 // include themes
 @import 'scss/themes/default';

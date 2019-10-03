@@ -18,7 +18,7 @@ description:
 Theme classes can be applied to any box, and applies to everything inside that box, but not the box itself. To apply the theme to a whole page it must be applied to the `html` element, like so:
 
 ```html
-<html lang="en" class="theme-dark">
+<html lang="en" class="--dark">
 ```
 
 ## Live switch between themes
@@ -30,8 +30,8 @@ Theme classes can be applied to any box, and applies to everything inside that b
     <label class="custom-control-label" for="theme-default">Default</label>
   </div>
   <div class="custom-control custom-radio custom-control-inline">
-    <input type="radio" id="theme-dark" name="theme-class" class="custom-control-input" v-on:change="switchTheme('theme-dark')">
-    <label class="custom-control-label" for="theme-dark">Dark</label>
+    <input type="radio" id="--dark" name="theme-class" class="custom-control-input" v-on:change="switchTheme('--dark')">
+    <label class="custom-control-label" for="--dark">Dark</label>
   </div>
   <div class="custom-control custom-radio custom-control-inline">
     <input type="radio" id="theme-corporate" name="theme-class" class="custom-control-input" v-on:change="switchTheme('theme-corporate')">

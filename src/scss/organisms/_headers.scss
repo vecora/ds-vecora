@@ -1,6 +1,6 @@
 .vecora#header {
   z-index: 1000;
-  background-color: white;
+  background-color: var(--background-color);
 
   &.fixed {
     position: fixed;
