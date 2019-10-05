@@ -1,43 +1,6 @@
-.theme-corporate {
+.--corporate {
 
+  --accent-color: #{$blue};
+  --text-color: #{$blue};
 
-
-  $sg-bg-color: white;
-
-  $text-color: $blue;
-  $sg-text-color: $text-color; // legacy
-
-
-
-
-  //@import "../lib/bootstrap/reboot";
-  // this is all we need from reboot
-  body {
-    color: $text-color;
-    background-color: $sg-bg-color;
-  }
-
-
-  // Overrides for additional styles
-  $footer-bg: lighten($blue, 35%);
-  $footer-bg-legal: lighten($blue, 30%);
-  $cookie-message-bg: rgba(lighten($blue, 25%), 0.9);
-
-  $range-track-right: lighten($blue, 45%);
-  $range-track-left: lighten($blue, 25%);
-  $range-knob-color: $blue;
-
-  $button-colors: map-merge($button-colors, ("primary": $gradient-corporate $button-text-color-dark));
-
-  // Additional styles
-  @import '../variables';
-  // @import '../fullpage';
-  @import '../range';
-  @import '../buttons-theme';
-  @import '../logo-theme';
-  @import '../icons-theme';
-  @import '../timeline-theme';
-  @import '../type-theme';
-  // @import '../map';
-  // @import '../lib/prism/prism';
 }
