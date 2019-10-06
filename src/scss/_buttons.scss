@@ -76,11 +76,11 @@ fieldset:disabled a.button {
   background: none !important;
   //padding-top: 9px;
   //padding-bottom: 8px;
-  border: 2px solid $sg-text-color;
-  color: $sg-text-color !important;
+  border: 2px solid currentColor;
+  color: var(--text-color) !important;
   transition: color 100ms, background-color 100ms;
   &:hover {
-    background-color: $sg-text-color !important;
+    background-color: var(--text-color) !important;
     color: white !important;
   }
 
