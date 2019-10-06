@@ -25,6 +25,10 @@ $link-hover-color: $link-color;
   --text-color: #{$dark-gray};
   --link-color: var(--accent-color);
   --background-color: white;
+
+  --footer-color: white;
+  --footer-background-color: var(--text-color);
+
   // experimental
   --panel-background-color: $light-gray;
 }

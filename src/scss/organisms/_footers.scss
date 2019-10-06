@@ -37,8 +37,8 @@
 		padding-top: 2 * $unit;
 		padding-bottom: 2 * $unit;
 		text-align: center;
-		background-color: $text-color;
-		color: white;
+		background-color: var(--footer-background-color);
+		color: var(--footer-color);
 	}
 }
 
