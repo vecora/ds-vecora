@@ -9,13 +9,15 @@ FAQ.questions.forEach(function(question) {
   question.addEventListener("click", function(event) {
 
     var question = event.target;
-    // var answer = question.nextElementSibling;
+    var answer = question.nextElementSibling;
 
-    if (question.classList.contains("hide")) {
-      question.classList.replace("hide", "show")
+    if (question.classList.contains("collapsed")) {
+      answer.style.height = answer.scrollHeight + "px";
     } else {
-      question.classList.replace("show", "hide")
+      answer.style.height = "0px";
     }
+
+    question.classList.toggle("collapsed");
 
   });
 
@@ -27,5 +29,7 @@ FAQ.questions.forEach(function(question) {
 // Initialize
 
 FAQ.questions.forEach(function(question) {
-  question.classList.add("hide");
+  question.classList.add("collapsed");
+  var answer = question.nextElementSibling;
+  answer.style.height = "0px";
 });

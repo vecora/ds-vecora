@@ -1,10 +1,7 @@
 dl.faq {
 
-  dt.hide + dd {
-    display: none;
-  }
-  dt.show + dd {
-    display: block;
+  dt.collapsed + dd {
+    opacity: 0;
   }
 
   dt {
@@ -18,17 +15,20 @@ dl.faq {
 
   dt::before {
     @extend .icon;
-    @extend .icon.circle-arrow-right;
+    @extend .icon.circle-arrow-down;
     @extend .icon.inline;
     display: inline-block;
     content: "";
     margin-right: var(--unit);
+    transition: transform 200ms ease-out;
   }
-  dt.show::before {
-    transform: rotate(90deg);
+  dt.collapsed::before {
+    transform: rotate(-90deg);
   }
 
   dd {
+    overflow: hidden;
+    transition: all 200ms ease-out;
     margin-top: calc(var(--spacer) / 2);
   }
 
