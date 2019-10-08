@@ -17,7 +17,7 @@ var cp_dir = "../craft-vecora.no/web/";
 function copy (filename) {
   if (cp) {
     fs.createReadStream(buildPath + "/" + filename).pipe(fs.createWriteStream(cp_dir + filename));
-    console.log("copied");
+    console.log("Copied " + filename);
   }
 }
 
@@ -44,6 +44,7 @@ function combineMainScripts (callback) {
     .pipe(dest("dist/"))
     ; //.on("end", copy => copy("main.js"));
   callback();
+  copy("main.js");
 }
 
 function combineHeadScripts (callback) {
@@ -95,7 +96,7 @@ function copyResources (callback) {
 
 exports.watch = function() {
   watch("src/**/*.scss", { events: "all", ignoreInitial: false }, compileStyles);
-  //watch("src/js/**/*.js", { events: "all", ignoreInitial: false }, combineMainScripts);
+  watch("src/js/**/*.js", { events: "all", ignoreInitial: false }, combineMainScripts);
   watch("src/js/**/*.js", { events: "all", ignoreInitial: false }, combineHeadScripts);
   if (args.cp) {
     cp = true;

@@ -1,0 +1,35 @@
+dl.faq {
+
+  dt.hide + dd {
+    display: none;
+  }
+  dt.show + dd {
+    display: block;
+  }
+
+  dt {
+    font-weight: 600;
+    cursor: pointer;
+
+    &:not(:first-of-type) {
+      margin-top: var(--spacer);
+    }
+  }
+
+  dt::before {
+    @extend .icon;
+    @extend .icon.circle-arrow-right;
+    @extend .icon.inline;
+    display: inline-block;
+    content: "";
+    margin-right: var(--unit);
+  }
+  dt.show::before {
+    transform: rotate(90deg);
+  }
+
+  dd {
+    margin-top: calc(var(--spacer) / 2);
+  }
+
+}
