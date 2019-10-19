@@ -1,1 +1,9 @@
+.--no-theme {
+  --text-color: #{$dark-gray};
 
+  // Set currentColor
+  color: var(--text-color);
+
+  // Theme specific overrides
+  // @import 'on-color/type';
+}

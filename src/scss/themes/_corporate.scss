@@ -3,4 +3,7 @@
   --accent-color: #{$blue};
   --text-color: #{$blue};
 
+  // Set currentColor
+  color: var(--text-color);
+
 }

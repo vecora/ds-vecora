@@ -20,6 +20,25 @@ For text to be properly aligned with the 8 point grid, text should never be outs
   <p class="small">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 </div>
 
+### Headlines
+
+{% capture example %}
+<h1>Headline 1</h1>
+<h2>Headline 2</h2>
+<h3>Headline 3</h3>
+<h4>Headline 4</h4>
+<h5>Headline 5</h5>
+<h6>Headline 6</h6>
+{% endcapture %}
+{% include example.html content=example %}
+
+Can also be applied with the `.h1` to `.h6` classes
+
+{% capture example %}
+<h1 class="display-1">Display 1</h1>
+<h2 class="display-2">Display 2</h2>
+{% endcapture %}
+{% include example.html content=example %}
 
 ### Justify
 

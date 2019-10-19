@@ -1,0 +1,22 @@
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-weight: 400;
+}
+
+// Restore, after override above
+.display-1 { font-weight: 900; }
+.display-2 { font-weight: 700; }
+
+
+/*
+.--on-color {
+
+  a {
+    color: white;
+    border-color: white;
+    &:hover {
+      color: white;
+    }
+  }
+}
+*/
