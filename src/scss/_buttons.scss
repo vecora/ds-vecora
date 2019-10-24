@@ -78,9 +78,10 @@ fieldset:disabled a.button {
   //padding-bottom: 8px;
   border: 2px solid currentColor;
   color: var(--text-color) !important;
-  transition: color 100ms, background-color 100ms;
+  //transition: color 100ms, background-color 100ms;
   &:hover {
     background-color: var(--text-color) !important;
+    border-color: var(--text-color);
     color: white !important;
   }
 

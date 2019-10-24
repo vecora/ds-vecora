@@ -2,6 +2,7 @@
 
   --accent-color: #{$blue};
   --text-color: #{$blue};
+  --link-underline-color: #{rgba($blue,0.10)};
 
   // Set currentColor
   color: var(--text-color);

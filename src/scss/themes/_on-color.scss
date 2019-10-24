@@ -1,5 +1,6 @@
 .--on-color {
   --text-color: white;
+  --link-underline-color: rgba(255,255,255,0.25);
 
   // Set currentColor
   color: var(--text-color);

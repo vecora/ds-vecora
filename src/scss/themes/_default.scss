@@ -1,5 +1,6 @@
 .--no-theme {
   --text-color: #{$dark-gray};
+  --link-underline-color: #{rgba($dark-gray,0.15)};
 
   // Set currentColor
   color: var(--text-color);

@@ -23,7 +23,9 @@ $link-hover-color: $link-color;
   --spacer: calc(4 * var(--unit));
   --accent-color: #{$pink};
   --text-color: #{$dark-gray};
-  --link-color: var(--accent-color);
+  --link-color: currentColor;
+  --link-hover-color: currentColor;
+  --link-underline-color: #{rgba($dark-gray,0.15)};
   --background-color: white;
 
   --footer-color: white;
