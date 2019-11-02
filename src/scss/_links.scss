@@ -1,4 +1,9 @@
-a, button.link {
+button.link {
+  // @extend &.undo;
+  // TODO: Strip default button styles.
+}
+
+a.link, button.link {
   color: var(--link-color);
   text-decoration: none;
 
@@ -18,20 +23,4 @@ a, button.link {
     background-position-y: 100%;
     border-radius: 1px;
   }
-}
-
-a.undo { // used to undo our default styles
-  background: none;
-  padding: 0;
-  margin: 0;
-  transition: none;
-  &:hover {
-    background: none;
-    border-radius: 0;
-  }
-}
-
-button.link {
-  // @extend &.undo;
-  // TODO: Strip default button styles.
 }

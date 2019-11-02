@@ -1,17 +1,5 @@
 .logo {
 
-  // undo link styles
-  background: none;
-  padding: 0;
-  margin: 0;
-  transition: none;
-  &:hover {
-    //background: inherit;
-    border-radius: 0;
-  }
-
-  // begin
-
   @function height($width) {
     @return calc(#{$width} / 8 * 5);
   }
