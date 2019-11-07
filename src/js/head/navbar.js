@@ -1,13 +1,18 @@
+var togglerClass = "navbar__toggler";
+var togglerSelector = "." + togglerClass;
+var panelClass = "navbar__panel";
+var panelSelector = "." + panelClass;
+
 function initToggler() {
-  let = elementToggler = document.querySelector(".navbar__toggler")
+  let = elementToggler = document.querySelector(togglerSelector)
   // Add burger bars
   elementToggler.innerHTML = "<span></span><span></span><span></span>";
 
   // NOTE: Adding the event could theoretically go in main.js
   elementToggler.addEventListener("click", function (event) {
     var element = event.target;
-    element.classList.toggle("navbar__toggler--active");
-    element.closest(".navbar").querySelector(".navbar__nav").classList.toggle("navbar__nav--active");
+    element.classList.toggle(togglerClass + "--active"); 
+    element.closest(".navbar").querySelector(panelSelector).classList.toggle(panelClass + "--active");
   });
 }
 
@@ -17,7 +22,7 @@ var observer = new MutationObserver(function(mutationsList, observer) {
   for (i = 0; i < mutationsList.length; i++) {
     var mutation = mutationsList[i];
     if (mutation.type == 'childList') {
-      elementToggler = document.querySelector(".navbar__toggler");
+      elementToggler = document.querySelector(togglerSelector);
       if (elementToggler instanceof HTMLElement) {
         initToggler();
         observer.disconnect();

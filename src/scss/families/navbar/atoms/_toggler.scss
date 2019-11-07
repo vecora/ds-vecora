@@ -1,0 +1,81 @@
+/* Burger */
+.navbar__toggler {
+  // Use these vars to alter dimensions
+  $burgerHeight: 3 * $unit;
+  $burgerWidth: 4 * $unit;
+  $barHeight: $unit / 2;
+  // WARNING: Leave these calculations alone!
+  $barSpacing: ($burgerHeight - ($barHeight * 3)) / 2;
+  $crossTranslation: (1.41421356237 * (($burgerHeight - $barHeight) / 2)) / 2;
+
+  position: absolute;
+  right: 32px; top: ($navbarHeight - $burgerHeight) / 2;
+  cursor: pointer;
+  width: $burgerWidth;
+  z-index: 1000;
+
+  // Label
+  // ::before is the close label and ::after is the open (menu) label
+  &::after { content: attr(data-label-open); }
+  &::before { content: attr(data-label-close); opacity: 0; transform: scale(0.2, 0.2); }
+  &::after, &::before {
+    position: absolute;
+    top: 0;
+    right: $burgerWidth;
+    padding-right: 1 * $unit;
+    // TODO: Center cap height
+    text-transform: uppercase; // QUESTION: Use same mixin as we use elsewhere?
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                opacity 0.55s ease;
+    transform-origin: center right;
+  }
+  &.navbar__toggler--active::after {
+    opacity: 0;
+    transform: scale(0.2, 0.2);
+  }
+  &.navbar__toggler--active::before {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+
+  // Burger (bars)
+  span {
+    pointer-events: none;
+    display: block;
+    width: $burgerWidth;
+    height: $barHeight;
+    position: relative;
+    background-color: var(--text-color);
+    border-radius: 1px;
+    transform-origin: center center;
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                opacity 0.55s ease;
+    // Give the spacing to the middle bar (on both sides)
+    &:nth-last-child(2) {
+      margin-top: $barSpacing;
+      margin-bottom: $barSpacing;
+    }
+  }
+  span:last-child {
+    width: $burgerWidth / 3 * 2;
+    transition: width 200ms;
+  }
+  &.navbar__toggler--active span:last-child, &.navbar__toggler:hover span:last-child{
+    width: $burgerWidth;
+  }
+
+  // Transition burger into cross
+  &.navbar__toggler--active {
+    span {
+      transform: rotate(45deg) translate($crossTranslation, $crossTranslation);
+    }
+    span:nth-last-child(2) {
+      opacity: 0;
+      transform: scale(0.2, 0.2);
+    }
+    span:last-child {
+      transform: rotate(-45deg) translate($crossTranslation, -$crossTranslation);
+    }
+  }
+
+}

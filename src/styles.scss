@@ -24,6 +24,7 @@
 @import 'scss/crumbs';
 @import 'scss/buttons';
 @import 'scss/panels';
+@import 'scss/nav';
 @import 'scss/rating';
 @import 'scss/referral';
 @import 'scss/range';
@@ -43,11 +44,14 @@
 
 // molecules
 @import 'scss/molecules/faq';
-@import 'scss/molecules/navbar';
 
 // organisms
 @import 'scss/organisms/headers';
 @import 'scss/organisms/footers';
+
+
+// families
+@import 'scss/families/navbar';
 
 // templates
 // @import 'scss/templates/magazine';

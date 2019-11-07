@@ -1,0 +1,43 @@
+.navbar__panel {
+  opacity: 0;
+  position: fixed;
+  top: -100vh; right: 0;
+  width: 100vw;
+  height: 100vh;
+  transition: opacity 0s $animationSpeed, top $animationSpeed;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @extend %dark-panel;
+
+  list-style: none;
+  margin: 0;
+  padding: 32px; padding-top: $navbarHeight + 24px;
+
+  li {
+    text-align: center;
+    font-size: calc(1.5 * var(--spacer));
+    line-height: calc(1.5 * var(--spacer));
+    margin-bottom: calc(1.5 * var(--spacer));
+    a {
+      //border-radius: 1px; // overriding .link styles
+      padding: 3px 2px 2px 2px; // overriding .link styles
+      margin: -3px -2px -2px -2px; // overriding .link styles
+      border: none;
+      font-weight: 200;
+      &:hover {
+        //color: $sg-red;
+        //border-radius: 2px; // overriding .link styles
+      }
+    }
+  }
+
+}
+
+.navbar__panel--active {
+  opacity: 1;
+  top: 0;
+  transition: top $animationSpeed;
+}

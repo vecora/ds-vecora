@@ -1,0 +1,36 @@
+.subnav {
+  padding: 0;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+
+  ul {
+    list-style: none;
+    flex-direction: row;
+    display: flex;
+    text-align: center;
+    background-color: #282346;
+    margin:0;
+    padding:0;
+  }
+
+  li {
+    flex-grow: 1;
+  }
+
+  a {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 80%;
+    height: 45px;
+    line-height: 45px;
+    color: $sg-text-color;
+    display:inline-block;
+    width: 100%;
+
+    &.active {
+      background: $sg-text-color;
+      color: $body-bg;
+    }
+  }
+}
