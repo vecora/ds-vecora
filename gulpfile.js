@@ -11,13 +11,13 @@ const through = require('through2');
 
 const buildPath = "dist";
 
-var copy = false;
-var copy_dest = "../craft-vecora.com/web/";
+var copyStatus = false;
+var copyDest = "../craft-vecora.com/web/";
 
 function copy (filename) {
-  if (copy) {
-    fs.createReadStream(buildPath + "/" + filename).pipe(fs.createWriteStream(copy_dest + filename));
-    console.log("Copied " + filename);
+  if (copyStatus) {
+    fs.createReadStream(buildPath + "/" + filename).pipe(fs.createWriteStream(copyDest + filename));
+    console.log("Copied " + filename + " to " + copyDest + filename);
   }
 }
 
@@ -99,10 +99,10 @@ exports.watch = function() {
   watch("src/js/**/*.js", { events: "all", ignoreInitial: false }, combineMainScripts);
   watch("src/js/**/*.js", { events: "all", ignoreInitial: false }, combineHeadScripts);
   if (args.copy) {
-    copy = true;
-    if (args.copy === typeof stringValue) {
-      copy_dest = args.copy;
-    }
+    copyStatus = true;
+    // TODO: Validate that args.copy is an existing and writable path
+    copyDest = args.copy;
+    console.log("Copying files to " + args.copy);
   }
 }
 
