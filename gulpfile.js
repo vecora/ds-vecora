@@ -11,12 +11,12 @@ const through = require('through2');
 
 const buildPath = "dist";
 
-var cp = false;
-var cp_dir = "../craft-vecora.no/web/";
+var copy = false;
+var copy_dest = "../craft-vecora.com/web/";
 
 function copy (filename) {
-  if (cp) {
-    fs.createReadStream(buildPath + "/" + filename).pipe(fs.createWriteStream(cp_dir + filename));
+  if (copy) {
+    fs.createReadStream(buildPath + "/" + filename).pipe(fs.createWriteStream(copy_dest + filename));
     console.log("Copied " + filename);
   }
 }
@@ -98,10 +98,10 @@ exports.watch = function() {
   watch("src/**/*.scss", { events: "all", ignoreInitial: false }, compileStyles);
   watch("src/js/**/*.js", { events: "all", ignoreInitial: false }, combineMainScripts);
   watch("src/js/**/*.js", { events: "all", ignoreInitial: false }, combineHeadScripts);
-  if (args.cp) {
-    cp = true;
-    if (args.cp === typeof stringValue) {
-      cp_dir = args.cp;
+  if (args.copy) {
+    copy = true;
+    if (args.copy === typeof stringValue) {
+      copy_dest = args.copy;
     }
   }
 }
