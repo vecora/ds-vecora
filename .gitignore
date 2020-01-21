@@ -62,5 +62,9 @@ typings/
 # next.js build output
 .next
 
+# Ruby/Bundle
+.bundle/
+vendor/
+
 # Locally compiled Jekyll docs
 _site/

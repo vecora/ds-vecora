@@ -22,6 +22,17 @@ Read the [documentation](https://vecora.github.io/sg-vecora/docs/) for more info
 
 ### Building the documentation
 
+#### macOS Catalina
+
+Assuming Xcode is already installed.
+
+1. `gem install --user-install bundler jekyll`
+
+2. `bundle install --path vendor/bundle`
+
+3. `bundle exec jekyll serve`
+
+
 #### macOS Mojave
 
 1. `sudo xcode-select --install`
