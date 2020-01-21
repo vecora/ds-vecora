@@ -20,6 +20,9 @@ Read the [documentation](https://vecora.github.io/sg-vecora/docs/) for more info
 
 5. Type `gulp` to build. Build files are located in the `dist` folder. Alternatively type `gulp watch` to watch for changes in the `src` folder and build continuously as files are changed. You can type `gulp watch --cp [path]` to automatically copy the built files somewhere. **Warning:** if you provide the `--copy` option _and do not provide a path_ the files are automatically copied to `../craft-vecora.com/web/`. This behaviour is obviously subject to change in future updates.
 
+`gulp watch --copy`
+`gulp watch --copy ../craft-vecora-wiki/web/`
+
 ### Building the documentation
 
 #### macOS Catalina
