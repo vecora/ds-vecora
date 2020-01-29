@@ -1,3 +1,20 @@
+@media (prefers-color-scheme: dark) {
+  :root {
+    --accent-color: #{$pink};
+    --text-color: white;
+    --link-color: currentColor;
+    --link-hover-color: currentColor;
+    --link-underline-color: #{rgba(white,0.15)};
+    --background-color: #{$dark-gray};
+
+    --footer-color: white;
+    --footer-background-color: var(--text-color);
+
+    // experimental
+    --panel-background-color: $light-gray;
+  }
+}
+
 .--no-theme {
   --text-color: #{$dark-gray};
   --link-underline-color: #{rgba($dark-gray,0.15)};
