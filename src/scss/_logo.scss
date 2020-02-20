@@ -130,6 +130,21 @@
     mask-image: url(resources/logo-pixelated.svg);
   }
 
+  @at-root .logo--art_ascii::after {
+    -webkit-mask-image: url(resources/logo-ascii.svg);
+    mask-image: url(resources/logo-ascii.svg);
+  }
+
+  @at-root .logo--art_80s-shapes::after {
+    -webkit-mask-image: url(resources/logo-80s-shapes.svg);
+    mask-image: url(resources/logo-80s-shapes.svg);
+  }
+
+  @at-root .logo--art_times::after {
+    -webkit-mask-image: url(resources/logo-times.svg);
+    mask-image: url(resources/logo-times.svg);
+  }
+
   // Colored logos
 
   @at-root .logo--art_glitch_color::after {
