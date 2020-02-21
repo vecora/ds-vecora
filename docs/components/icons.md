@@ -64,6 +64,10 @@ Default color is text color.
     <pre class="small" style="margin-top: 10px;">circle-arrow-right</pre>
   </div>
   <div class="cell text-center">
+    <div class="icon heart" style="margin: 0 auto;"></div>
+    <pre class="small" style="margin-top: 10px;">heart</pre>
+  </div>
+  <div class="cell text-center">
     <div class="smiley rolling-eyes" style="margin: 0 auto;"></div>
     <pre class="small" style="margin-top: 10px;">rolling-eyes</pre>
   </div>

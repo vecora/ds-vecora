@@ -1,5 +1,5 @@
 ---
 layout: frontpage
-title: Style guide for web development
+title: Style guide for Vecora sites
 description:
 ---

@@ -18,11 +18,11 @@
 // supported inline elements
 a.icon, span.icon, a.smiley, span.smiley {
   display: inline-block;
-}
-
-
-a.icon, a.smiley {
-  text-indent: -99999px;
+  text-indent: -9999px;
+  .small &, &.small {
+    height: calc(3 * var(--unit));
+    width: calc(3 * var(--unit));
+  }
 }
 
 .icon.facebook {
@@ -71,6 +71,10 @@ a.icon, a.smiley {
 
 .icon.circle-arrow-right {
   -webkit-mask-image: url(resources/icon-circle-arrow-right.svg);
+}
+
+.icon.heart {
+  -webkit-mask-image: url(resources/icon-heart.svg);
 }
 
 .smiley.rolling-eyes {
