@@ -160,6 +160,11 @@
     mask-image: url(resources/logo/art/sticker-negative.svg);
   }
 
+  @at-root .logo--art_80s-font::after {
+    -webkit-mask-image: url(resources/logo/art/80s-font.svg);
+    mask-image: url(resources/logo/art/80s-font.svg);
+  }
+
   // Colored logos
 
   @at-root .logo--art_glitch_color::after {
