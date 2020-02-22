@@ -47,7 +47,7 @@ Pixels sizes assumes 1 [unit](docs/introduction/#eight-point-grid) = 8px.
 {% endcapture %}
 {% include example.html content=example %}
 
-<div class="container grid no-margins columns-3xs-2 columns-xs-3 columns-medium-4 columns-xl-5 columns-fhd-5">
+<div class="container grid no-margins columns-3xs-3 columns-xs-4 columns-xl-5 columns-fhd-5">
   <div class="cell text-center">
     <div class="logo logo--large logo--art_3d-stripes logo--center"></div>
     <pre class="small" style="margin-top: 10px;">3d-stripes</pre>
