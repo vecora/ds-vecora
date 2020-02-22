@@ -49,6 +49,7 @@ $link-hover-color: $link-color;
 
 
 $screen-resolutions: (
+  nano: ( width: 320px, height: 240px ),
   3xs: ( width: 480px, height: 320px ),
   2xs: ( width: 640px, height: 480px ),
   xs: ( width: 800px, height: 600px ),
