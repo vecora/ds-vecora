@@ -88,20 +88,7 @@ h1, h2, h3, h4, h5, h6,
 
 
 
-ul.list-unstyled {
-  list-style: none;
-  padding-left: 0;
-  margin-bottom: 0;
-  margin-block-end: 0;
-}
 
-ul.list-inline {
-  @extend .list-unstyled;
-  li, ol { display: inline-block; }
-  li:not(:last-child), ol:not(:last-child) {
-    margin-right: .5rem;
-  }
-}
 
 ol.roman {
   list-style-type: upper-roman;
@@ -115,3 +102,8 @@ ol.roman {
   font-weight: 600;
   letter-spacing: 0.09em;
 }
+
+
+
+@import 'type/links';
+@import 'type/lists';

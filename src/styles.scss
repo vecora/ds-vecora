@@ -14,11 +14,10 @@
 // themable styles
 @import 'scss/spacing';
 @import 'scss/colors';
-@import 'scss/type';
+@import 'scss/atoms/type';
 @import 'scss/design';
 @import 'scss/card';
 @import 'scss/logo';
-@import 'scss/links';
 @import 'scss/icons';
 @import 'scss/sidenav';
 @import 'scss/crumbs';
@@ -39,8 +38,6 @@
 
 @import 'scss/sections/contact';
 
-@import 'scss/animation';
-
 
 // molecules
 @import 'scss/molecules/faq';
@@ -51,6 +48,9 @@
 
 
 // families
+@import 'scss/families/animation';
+@import 'scss/families/forms';
+@import 'scss/families/tables';
 @import 'scss/families/navbar';
 
 // templates

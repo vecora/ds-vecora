@@ -70,6 +70,39 @@ This is a standard HTML entity, but still worth mentioning. Useful for hardcoded
 {% include example.html content=example %}
 
 
+## Lists
+
+### Unstyled
+
+{% capture example %}
+<ul class="unstyled">
+  <li>List item 1</li>
+  <li>List item 2
+    <ul class="unstyled">
+      <li>List item 2.1</li>
+      <li>List item 2.2</li>
+    </ul>
+  </li>
+  <li>List item 3</li>
+</ul>
+
+{% endcapture %}
+{% include example.html content=example %}
+
+### Inline
+
+{% capture example %}
+<ul class="inline">
+  <li><a href="#" class="link">Link 1</a></li>
+  <li><a href="#" class="link">Link 2</a></li>
+  <li><a href="#" class="link">Link 3</a></li>
+</ul>
+
+{% endcapture %}
+{% include example.html content=example %}
+
+### Description lists
+
 ## Tables
 
 ### Sorting

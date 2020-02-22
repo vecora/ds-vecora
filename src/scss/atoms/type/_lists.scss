@@ -1,0 +1,14 @@
+ul.unstyled, ol.unstyled, ul.list-unstyled { // ul.list-unstyled is legacy
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+  margin-block-end: 0;
+}
+
+ul.inline, ol.inline, ul.list-inline { // ul.list-inline is legacy
+  @extend ul.unstyled;
+  li { display: inline-block; }
+  li:not(:last-child) {
+    margin-right: .5rem;
+  }
+}

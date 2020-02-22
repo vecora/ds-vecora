@@ -15,6 +15,14 @@ description:
 {% endcapture %}
 {% include example.html content=example %}
 
+{% capture example %}
+<div data-scroll class="vecora">
+  <div class="logo logo--huge logo--center vecora animate center"></div>
+</div>
+{% endcapture %}
+{% include example.html content=example %}
+
+
 ### Delay
 
 | Class           | Length |

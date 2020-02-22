@@ -88,7 +88,7 @@ function copyFavicons (callback) {
 function copyResources (callback) {
   src([
       "!src/*.afdesign",
-      "src/resources/*"
+      "src/resources/**/*"
     ])
     .pipe(dest("dist/resources"));
   callback();

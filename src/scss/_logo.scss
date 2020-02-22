@@ -94,55 +94,70 @@
   }
 
   @at-root .logo--art_glitch::after {
-    -webkit-mask-image: url(resources/logo-glitch.png);
-    mask-image: url(resources/logo-glitch.png);
+    -webkit-mask-image: url(resources/logo/art/glitch.png);
+    mask-image: url(resources/logo/art/glitch.png);
     -webkit-mask-size: 100%;
     mask-size: 100%;
   }
 
   @at-root .logo--art_3d-shadow::after {
-    -webkit-mask-image: url(resources/logo-3d-shadow.svg);
-    mask-image: url(resources/logo-3d-shadow.svg);
+    -webkit-mask-image: url(resources/logo/art/3d-shadow.svg);
+    mask-image: url(resources/logo/art/3d-shadow.svg);
   }
 
   @at-root .logo--art_stripes::after {
-    -webkit-mask-image: url(resources/logo-stripes.svg);
-    mask-image: url(resources/logo-stripes.svg);
+    -webkit-mask-image: url(resources/logo/art/stripes.svg);
+    mask-image: url(resources/logo/art/stripes.svg);
   }
 
   @at-root .logo--art_stripes-2::after {
-    -webkit-mask-image: url(resources/logo-stripes-2.svg);
-    mask-image: url(resources/logo-stripes-2.svg);
+    -webkit-mask-image: url(resources/logo/art/stripes-2.svg);
+    mask-image: url(resources/logo/art/stripes-2.svg);
   }
 
   @at-root .logo--art_3d-stripes::after {
-    -webkit-mask-image: url(resources/logo-3d-stripes.svg);
-    mask-image: url(resources/logo-3d-stripes.svg);
+    -webkit-mask-image: url(resources/logo/art/3d-stripes.svg);
+    mask-image: url(resources/logo/art/3d-stripes.svg);
   }
 
   @at-root .logo--art_3d-stripes-2::after {
-    -webkit-mask-image: url(resources/logo-3d-stripes-2.svg);
-    mask-image: url(resources/logo-3d-stripes-2.svg);
+    -webkit-mask-image: url(resources/logo/art/3d-stripes-2.svg);
+    mask-image: url(resources/logo/art/3d-stripes-2.svg);
   }
 
   @at-root .logo--art_pixelated::after {
-    -webkit-mask-image: url(resources/logo-pixelated.svg);
-    mask-image: url(resources/logo-pixelated.svg);
+    -webkit-mask-image: url(resources/logo/art/pixelated.svg);
+    mask-image: url(resources/logo/art/pixelated.svg);
   }
 
   @at-root .logo--art_ascii::after {
-    -webkit-mask-image: url(resources/logo-ascii.svg);
-    mask-image: url(resources/logo-ascii.svg);
+    -webkit-mask-image: url(resources/logo/art/ascii.svg);
+    mask-image: url(resources/logo/art/ascii.svg);
   }
 
   @at-root .logo--art_80s-shapes::after {
-    -webkit-mask-image: url(resources/logo-80s-shapes.svg);
-    mask-image: url(resources/logo-80s-shapes.svg);
+    -webkit-mask-image: url(resources/logo/art/80s-shapes.svg);
+    mask-image: url(resources/logo/art/80s-shapes.svg);
   }
 
   @at-root .logo--art_times::after {
-    -webkit-mask-image: url(resources/logo-times.svg);
-    mask-image: url(resources/logo-times.svg);
+    -webkit-mask-image: url(resources/logo/art/times.svg);
+    mask-image: url(resources/logo/art/times.svg);
+  }
+
+  @at-root .logo--art_stripe::after {
+    -webkit-mask-image: url(resources/logo/art/stripe.svg);
+    mask-image: url(resources/logo/art/stripe.svg);
+  }
+
+  @at-root .logo--art_sticker::after {
+    -webkit-mask-image: url(resources/logo/art/sticker.svg);
+    mask-image: url(resources/logo/art/sticker.svg);
+  }
+
+  @at-root .logo--art_sticker-negative::after {
+    -webkit-mask-image: url(resources/logo/art/sticker-negative.svg);
+    mask-image: url(resources/logo/art/sticker-negative.svg);
   }
 
   // Colored logos

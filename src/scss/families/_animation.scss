@@ -9,6 +9,8 @@
 
   animation-duration: 1s;
 
+  &.center { animation-name: vecora-animate-center; animation-timing-function: cubic-bezier(0,.99,0,.99); animation-duration: 5s; }
+
   &.top { animation-name: vecora-animate-top-96; }
   &.right { animation-name: vecora-animate-right-96; }
   &.bottom { animation-name: vecora-animate-bottom-96; }
@@ -298,6 +300,17 @@
     }
     to {
       transform: translateX(0px);
+      opacity: 1;
+    }
+}
+
+@keyframes vecora-animate-center {
+    from {
+      transform: perspective(500px) translateZ(-512px);
+      opacity: 0;
+    }
+    to {
+      transform: perspective(500px) translateZ(0px);
       opacity: 1;
     }
 }

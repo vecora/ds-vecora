@@ -17,7 +17,10 @@
 
   <header>
     <br>
-    <p class="text-center"><a href="https://vecora.github.io/sg-vecora/docs/">Style guide</a> &bull; <a href="https://github.com/vecora/sg-vecora">GitHub</a></p>
+    <ul class="text-center inline">
+      <li><a href="https://vecora.github.io/sg-vecora/docs/" class="link">Style guide</a></li>
+      <li><a href="https://github.com/vecora/sg-vecora" class="link">GitHub</a></li>
+    </ul>
     <br>
   </header>
 
@@ -25,7 +28,7 @@
     <div class="container columns break-small max-width-fhd">
       <div class="column">
 
-          <nav class="sidenav sticky margin">
+          <nav class="sidenav fixed margin">
             <ul>
               <li><a href="{{ site.baseurl }}{% link docs/introduction.md %}">Introduction</a></li>
               <li><a href="{{ site.baseurl }}{% link docs/design.md %}">Design</a>
@@ -68,7 +71,8 @@
         </div>
         <div class="column hide-below-medium">
           <nav class="sidenav sticky margin">
-            {% include toc.html html=content %}
+            {% assign test = '/sg-vecora' | append: page.url %}
+            {% include toc.html html=content baseurl=test %}
           </nav>
         </div>
 

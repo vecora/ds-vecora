@@ -1,0 +1,43 @@
+form {
+
+  @import 'forms/reboot'; // TODO: Go through this file.
+
+
+  textarea {
+    min-height: 100px;
+  }
+
+  textarea,
+  input[type="text"],
+  input[type="search"],
+  input[type="number"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="password"],
+  input[type="file"] {
+    width: 100%;
+    border: 1px solid #eee;
+    background-color: #fafafa;
+    border-radius: 2px;
+    padding: 0 var(--unit);
+
+    &:focus {
+      outline: none;
+      border: 1px solid #098DFFaa;
+      background-color: #098DFF11;
+      box-shadow: 0 0 0 2px #098DFF66;
+
+    }
+  }
+
+  label {
+    font-weight: 600;
+  }
+
+  label.checkbox, label.radio {
+    font-weight: 400;
+  }
+
+  @import 'forms/atoms/file';
+
+}

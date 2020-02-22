@@ -4,11 +4,18 @@ title: Introduction
 description:
 ---
 
-This style guide is compatible and tested towards the newsest versions of modern browsers &mdash; Safari, Firefox, and the Chromium family of browsers. It is incompatible with Internet Explorer.
-
 Bootstrap has a class name convention where all classes are prefixed whatever they belong to. We <em>do not</em> use the same class name convention for our own classes [we use something similar to Semantic UI]. <- Bootstrap will be phased out and naming convention will be transitioned to BEM.
 
 [ [The Atomic Workflow](http://atomicdesign.bradfrost.com/chapter-4/) ]
+
+## Browser support
+
+| Chrome | Edge | Firefox | Safari for macOS | Safari for iOS |
+|--------|------|---------|--------|----------------|
+| 49 <span class="small">(early 2016)</span> | 15 <span class="small">(early 2017)</span> | 44 <span class="small">(early 2016)</span> | 11 <span class="small">(late 2017)</span>  | 11 <span class="small">(late 2017)</span> |
+
+Minimum browser support is dictated by the use of CSS variables and <code>let</code>. Internet Explorer does not support either of these features, and development of new features for Internet Explorer ceased with IE11 in 2013.
+
 
 ## Starter template
 
@@ -48,6 +55,7 @@ Bootstrap has a class name convention where all classes are prefixed whatever th
 </html>
 {% endcapture %}
 {% include code.html content=code %}
+
 
 ## BEM
 

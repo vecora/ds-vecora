@@ -43,15 +43,62 @@ Pixels sizes assumes 1 [unit](docs/introduction/#eight-point-grid) = 8px.
 ## Art logos
 
 {% capture example %}
-<div class="logo logo--large logo--art_3d-stripes"></div><br>
-<div class="logo logo--large logo--art_glitch"></div><br>
-<div class="logo logo--large logo--art_stripes-2"></div><br>
-<div class="logo logo--large logo--art_3d-shadow"></div><br>
-<div class="logo logo--large logo--art_stripes"></div><br>
-<div class="logo logo--large logo--art_3d-stripes-2"></div><br>
-<div class="logo logo--large logo--art_pixelated"></div>
+<div class="logo logo--large logo--art_3d-shadow"></div>
 {% endcapture %}
 {% include example.html content=example %}
+
+<div class="container grid no-margins columns-3xs-2 columns-xs-3 columns-medium-4 columns-xl-5 columns-fhd-5">
+  <div class="cell text-center">
+    <div class="logo logo--large logo--art_3d-stripes logo--center"></div>
+    <pre class="small" style="margin-top: 10px;">3d-stripes</pre>
+  </div>
+  <div class="cell text-center">
+    <div class="logo logo--large logo--art_glitch logo--center"></div>
+    <pre class="small" style="margin-top: 10px;">glitch</pre>
+  </div>
+  <div class="cell text-center">
+    <div class="logo logo--large logo--art_stripes-2 logo--center"></div>
+    <pre class="small" style="margin-top: 10px;">stripes-2</pre>
+  </div>
+  <div class="cell text-center">
+    <div class="logo logo--large logo--art_3d-shadow logo--center"></div>
+    <pre class="small" style="margin-top: 10px;">3d-shadow</pre>
+  </div>
+  <div class="cell text-center">
+    <div class="logo logo--large logo--art_3d-stripes-2 logo--center"></div>
+    <pre class="small" style="margin-top: 10px;">3d-stripes-2</pre>
+  </div>
+  <div class="cell text-center">
+    <div class="logo logo--large logo--art_pixelated logo--center"></div>
+    <pre class="small" style="margin-top: 10px;">pixelated</pre>
+  </div>
+  <div class="cell text-center">
+    <div class="logo logo--large logo--art_stripes logo--center"></div>
+    <pre class="small" style="margin-top: 10px;">stripes</pre>
+  </div>
+  <div class="cell text-center">
+    <div class="logo logo--large logo--art_times logo--center"></div>
+    <pre class="small" style="margin-top: 10px;">times</pre>
+  </div>
+  <div class="cell text-center">
+    <div class="logo logo--large logo--art_80s-shapes logo--center"></div>
+    <pre class="small" style="margin-top: 10px;">80s-shapes</pre>
+  </div>
+  <div class="cell text-center">
+    <div class="logo logo--large logo--art_ascii logo--center"></div>
+    <pre class="small" style="margin-top: 10px;">ascii</pre>
+  </div>
+  <div class="cell text-center">
+    <div class="logo logo--large logo--art_sticker logo--center"></div>
+    <pre class="small" style="margin-top: 10px; margin-bottom: 0;">sticker</pre>
+    <pre class="small" style="margin-top: 0;">sticker-negative</pre>
+  </div>
+  <div class="cell text-center">
+    <div class="logo logo--large logo--art_stripe logo--center"></div>
+    <pre class="small" style="margin-top: 10px;">stripe</pre>
+  </div>
+</div>
+
 
 ### Art logos with color
 
