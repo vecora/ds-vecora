@@ -226,6 +226,7 @@ Global modifiers `hide-below-*` and `hide-above-*`
 
 | Segment        | Width  | Height | Name   | Ratio |
 |----------------|--------|--------|--------|-------|
+| `nano`         |  320px |  240px |        |   3:2 |
 | `3xs`          |  480px |  320px |        |   4:3 |
 | `2xs`          |  640px |  480px |        |   4:3 |
 | `xs`           |  800px |  600px | SVGA   |   4:3 |
