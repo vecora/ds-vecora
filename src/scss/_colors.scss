@@ -1,12 +1,16 @@
 
 // NOTE: This is a modifier to blocks and elements, but independent of any spesific block or element.
 .--moving-background-gradient {
-  background: linear-gradient(-45deg, $magenta, $rose, $pink, $red, $orange, $fawn);
+  background-image: linear-gradient(-45deg, $magenta, $rose, $pink, $red, $orange, $fawn);
   background-size: 200% 200%;
   -webkit-animation: moving-background-gradient 30s ease infinite alternate;
   -moz-animation: moving-background-gradient 30s ease infinite alternate;
   animation: moving-background-gradient 30s ease infinite alternate;
   background-position: 200% 200%;
+}
+
+.--moving-background-gradient.secondary {
+  background-image: linear-gradient(-45deg, $blue, $azure, $cyan, #0BDFDC, $teal);
 }
 
 h1, h2, h3, h4, h5, h6
@@ -47,4 +51,48 @@ h1, h2, h3, h4, h5, h6
     linear-gradient(90deg, $secondary-color 1px, transparent 1px);
   background-size: 16px 16px, 16px 16px, 8px 8px, 8px 8px;
   background-position: -1px -1px, -1px -1px, -1px -1px, -1px -1px;
+}
+
+
+
+.swatch {
+  display: inline-block;
+  width: calc(var(--unit) * 16);
+  height: calc(var(--unit) * 16);
+  border-radius: 10%;
+
+  &.huge {
+    width: calc(var(--unit) * 24);
+    height: calc(var(--unit) * 24);
+  }
+
+  &.small {
+    width: calc(var(--unit) * 12);
+    height: calc(var(--unit) * 12);
+  }
+
+  &.nano {
+    width: calc(var(--unit) * 6);
+    height: calc(var(--unit) * 6);
+  }
+
+  &.fawn       { background-color: $fawn; }
+  &.orange     { background-color: $orange; }
+  &.red        { background-color: $red; }
+  &.pink       { background-color: $pink; }
+  &.rose       { background-color: $rose; }
+  &.magenta    { background-color: $magenta; }
+  &.blue       { background-color: $blue; }
+  &.dark-blue  { background-color: $dark-blue; }
+  &.azure      { background-color: $azure; }
+  &.cyan       { background-color: $cyan; }
+  &.cyan-bright       { background-color: $cyan-bright; }
+  &.light-gray { background-color: $light-gray; }
+  &.gray       { background-color: $gray; }
+  &.dark-gray  { background-color: $dark-gray; }
+
+  &.darkened {
+    filter: brightness(60%) saturate(120%);
+  }
+
 }
