@@ -101,6 +101,10 @@ Pixels sizes assumes 1 [unit](docs/introduction/#eight-point-grid) = 8px.
     <div class="logo logo--large logo--art_80s-font logo--center"></div>
     <pre class="small" style="margin-top: 10px;">80s-font</pre>
   </div>
+  <div class="cell text-center">
+    <div class="logo logo--large logo--art_isometric logo--center"></div>
+    <pre class="small" style="margin-top: 10px;">isometric</pre>
+  </div>
 </div>
 
 

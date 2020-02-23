@@ -165,6 +165,15 @@
     mask-image: url(resources/logo/art/80s-font.svg);
   }
 
+  @at-root .logo--art_isometric::after {
+    -webkit-mask-image: url(resources/logo/art/isometric.svg);
+    mask-image: url(resources/logo/art/isometric.svg);
+  }
+
+
+
+
+
   // Colored logos
 
   @at-root .logo--art_glitch_color::after {
