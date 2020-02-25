@@ -170,6 +170,26 @@
     mask-image: url(resources/logo/art/isometric.svg);
   }
 
+  @at-root .logo--art_3d-sheet::after {
+    -webkit-mask-image: url(resources/logo/art/3d-sheet.svg);
+    mask-image: url(resources/logo/art/3d-sheet.svg);
+  }
+
+  @at-root .logo--art_80s-shapes-2::after {
+    -webkit-mask-image: url(resources/logo/art/80s-shapes-2.svg);
+    mask-image: url(resources/logo/art/80s-shapes-2.svg);
+  }
+
+  @at-root .logo--art_stripe-2::after {
+    -webkit-mask-image: url(resources/logo/art/stripe-2.svg);
+    mask-image: url(resources/logo/art/stripe-2.svg);
+  }
+
+  @at-root .logo--art_hippie::after {
+    -webkit-mask-image: url(resources/logo/art/hippie.svg);
+    mask-image: url(resources/logo/art/hippie.svg);
+  }
+
 
 
 
