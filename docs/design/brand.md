@@ -107,19 +107,19 @@ Pixels sizes assumes 1 [unit](docs/introduction/#eight-point-grid) = 8px.
   </div>
   <div class="cell text-center">
     <div class="logo logo--large logo--art_3d-sheet logo--center"></div>
-    <pre class="small" style="margin-top: 10px;">isometric</pre>
+    <pre class="small" style="margin-top: 10px;">3d-sheet</pre>
   </div>
   <div class="cell text-center">
     <div class="logo logo--large logo--art_80s-shapes-2 logo--center"></div>
-    <pre class="small" style="margin-top: 10px;">isometric</pre>
+    <pre class="small" style="margin-top: 10px;">80s-shapes-2</pre>
   </div>
   <div class="cell text-center">
     <div class="logo logo--large logo--art_stripe-2 logo--center"></div>
-    <pre class="small" style="margin-top: 10px;">isometric</pre>
+    <pre class="small" style="margin-top: 10px;">stripe-2</pre>
   </div>
   <div class="cell text-center">
     <div class="logo logo--large logo--art_hippie logo--center"></div>
-    <pre class="small" style="margin-top: 10px;">isometric</pre>
+    <pre class="small" style="margin-top: 10px;">hippie</pre>
   </div>
 </div>
 
