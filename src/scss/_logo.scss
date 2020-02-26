@@ -105,14 +105,14 @@
     mask-image: url(resources/logo/art/3d-shadow.svg);
   }
 
-  @at-root .logo--art_stripes::after {
-    -webkit-mask-image: url(resources/logo/art/stripes.svg);
-    mask-image: url(resources/logo/art/stripes.svg);
+  @at-root .logo--art_neon::after {
+    -webkit-mask-image: url(resources/logo/art/neon.svg);
+    mask-image: url(resources/logo/art/neon.svg);
   }
 
-  @at-root .logo--art_stripes-2::after {
-    -webkit-mask-image: url(resources/logo/art/stripes-2.svg);
-    mask-image: url(resources/logo/art/stripes-2.svg);
+  @at-root .logo--art_neon-2::after {
+    -webkit-mask-image: url(resources/logo/art/neon-2.svg);
+    mask-image: url(resources/logo/art/neon-2.svg);
   }
 
   @at-root .logo--art_vector::after {
