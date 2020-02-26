@@ -115,19 +115,19 @@
     mask-image: url(resources/logo/art/stripes-2.svg);
   }
 
+  @at-root .logo--art_vector::after {
+    -webkit-mask-image: url(resources/logo/art/vector.svg);
+    mask-image: url(resources/logo/art/vector.svg);
+  }
+
   @at-root .logo--art_3d-stripes::after {
     -webkit-mask-image: url(resources/logo/art/3d-stripes.svg);
     mask-image: url(resources/logo/art/3d-stripes.svg);
   }
 
-  @at-root .logo--art_3d-stripes-2::after {
-    -webkit-mask-image: url(resources/logo/art/3d-stripes-2.svg);
-    mask-image: url(resources/logo/art/3d-stripes-2.svg);
-  }
-
-  @at-root .logo--art_pixelated::after {
-    -webkit-mask-image: url(resources/logo/art/pixelated.svg);
-    mask-image: url(resources/logo/art/pixelated.svg);
+  @at-root .logo--art_pixel::after {
+    -webkit-mask-image: url(resources/logo/art/pixel.svg);
+    mask-image: url(resources/logo/art/pixel.svg);
   }
 
   @at-root .logo--art_ascii::after {
@@ -175,9 +175,9 @@
     mask-image: url(resources/logo/art/3d-sheet.svg);
   }
 
-  @at-root .logo--art_80s-shapes-2::after {
-    -webkit-mask-image: url(resources/logo/art/80s-shapes-2.svg);
-    mask-image: url(resources/logo/art/80s-shapes-2.svg);
+  @at-root .logo--art_shade::after {
+    -webkit-mask-image: url(resources/logo/art/shade.svg);
+    mask-image: url(resources/logo/art/shade.svg);
   }
 
   @at-root .logo--art_stripe-2::after {
@@ -185,9 +185,9 @@
     mask-image: url(resources/logo/art/stripe-2.svg);
   }
 
-  @at-root .logo--art_hippie::after {
-    -webkit-mask-image: url(resources/logo/art/hippie.svg);
-    mask-image: url(resources/logo/art/hippie.svg);
+  @at-root .logo--art_blob::after {
+    -webkit-mask-image: url(resources/logo/art/blob.svg);
+    mask-image: url(resources/logo/art/blob.svg);
   }
 
 

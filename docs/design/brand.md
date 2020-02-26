@@ -49,32 +49,32 @@ Pixels sizes assumes 1 [unit](docs/introduction/#eight-point-grid) = 8px.
 
 <div class="container grid no-margins columns-nano-2 columns-3xs-3 columns-xs-4 columns-xl-5 columns-fhd-5">
   <div class="cell text-center">
-    <div class="logo logo--large logo--art_3d-stripes logo--center"></div>
-    <pre class="small" style="margin-top: 10px;">3d-stripes</pre>
+    <div class="logo logo--large logo--art_vector logo--center"></div>
+    <pre class="small" style="margin-top: 10px;">vector</pre>
   </div>
   <div class="cell text-center">
     <div class="logo logo--large logo--art_glitch logo--center"></div>
     <pre class="small" style="margin-top: 10px;">glitch</pre>
   </div>
   <div class="cell text-center">
-    <div class="logo logo--large logo--art_stripes-2 logo--center"></div>
-    <pre class="small" style="margin-top: 10px;">stripes-2</pre>
+    <div class="logo logo--large logo--art_neon logo--center"></div>
+    <pre class="small" style="margin-top: 10px;">neon</pre>
   </div>
   <div class="cell text-center">
     <div class="logo logo--large logo--art_3d-shadow logo--center"></div>
     <pre class="small" style="margin-top: 10px;">3d-shadow</pre>
   </div>
   <div class="cell text-center">
-    <div class="logo logo--large logo--art_3d-stripes-2 logo--center"></div>
-    <pre class="small" style="margin-top: 10px;">3d-stripes-2</pre>
+    <div class="logo logo--large logo--art_3d-stripes logo--center"></div>
+    <pre class="small" style="margin-top: 10px;">3d-stripes</pre>
   </div>
   <div class="cell text-center">
-    <div class="logo logo--large logo--art_pixelated logo--center"></div>
-    <pre class="small" style="margin-top: 10px;">pixelated</pre>
+    <div class="logo logo--large logo--art_pixel logo--center"></div>
+    <pre class="small" style="margin-top: 10px;">pixel</pre>
   </div>
   <div class="cell text-center">
-    <div class="logo logo--large logo--art_stripes logo--center"></div>
-    <pre class="small" style="margin-top: 10px;">stripes</pre>
+    <div class="logo logo--large logo--art_neon-2 logo--center"></div>
+    <pre class="small" style="margin-top: 10px;">neon-2</pre>
   </div>
   <div class="cell text-center">
     <div class="logo logo--large logo--art_times logo--center"></div>
@@ -110,16 +110,16 @@ Pixels sizes assumes 1 [unit](docs/introduction/#eight-point-grid) = 8px.
     <pre class="small" style="margin-top: 10px;">3d-sheet</pre>
   </div>
   <div class="cell text-center">
-    <div class="logo logo--large logo--art_80s-shapes-2 logo--center"></div>
-    <pre class="small" style="margin-top: 10px;">80s-shapes-2</pre>
+    <div class="logo logo--large logo--art_shade logo--center"></div>
+    <pre class="small" style="margin-top: 10px;">shade</pre>
   </div>
   <div class="cell text-center">
     <div class="logo logo--large logo--art_stripe-2 logo--center"></div>
     <pre class="small" style="margin-top: 10px;">stripe-2</pre>
   </div>
   <div class="cell text-center">
-    <div class="logo logo--large logo--art_hippie logo--center"></div>
-    <pre class="small" style="margin-top: 10px;">hippie</pre>
+    <div class="logo logo--large logo--art_blob logo--center"></div>
+    <pre class="small" style="margin-top: 10px;">blob</pre>
   </div>
 </div>
 
