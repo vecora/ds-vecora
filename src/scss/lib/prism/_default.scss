@@ -11,13 +11,15 @@ pre[class*="language-"] {
 	color: black;
 	background: none;
 	text-shadow: 0 1px white;
-	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-family: Hack, monospace;
 	text-align: left;
 	white-space: pre;
 	word-spacing: normal;
 	word-break: normal;
 	word-wrap: normal;
-	line-height: 1.5;
+	//line-height: 1.5;
+	font-size: calc-font-size(1.5, map-get($fonts, gilroy));
+  line-height: calc-line-height(2, 1.5, map-get($fonts, gilroy));
 
 	-moz-tab-size: 4;
 	-o-tab-size: 4;

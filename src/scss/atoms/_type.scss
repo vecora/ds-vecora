@@ -11,6 +11,12 @@ small, .small, .small p {
   line-height: calc-line-height(2, 1.5, map-get($fonts, gilroy));
 }
 
+pre, code {
+  font-family: Hack, monospace;
+  font-size: calc-font-size(1.5, map-get($fonts, gilroy));
+  line-height: calc-line-height(2, 1.5, map-get($fonts, gilroy));
+}
+
 .justify {
   text-align: justify;
   -webkit-hyphens: auto;
@@ -29,7 +35,7 @@ small, .small, .small p {
 }
 
 p, ul, ol {
-  .no-margin {
+  &.no-margin {
     // remove bottom margins
   }
 }
