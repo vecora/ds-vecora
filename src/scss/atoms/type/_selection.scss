@@ -1,0 +1,8 @@
+::selection {
+	text-shadow: none;
+	background: var(--accent-color);
+	color: white;
+  margin: calc(-var(--unit) / 2);
+  padding: calc(var(--unit) / 2);
+  border-radius: calc(var(--unit) / 2);
+}

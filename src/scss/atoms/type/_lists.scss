@@ -12,3 +12,8 @@ ul.inline, ol.inline, ul.list-inline { // ul.list-inline is legacy
     margin-right: .5rem;
   }
 }
+
+
+ol.roman {
+  list-style-type: upper-roman;
+}

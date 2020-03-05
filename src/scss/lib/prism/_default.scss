@@ -6,11 +6,12 @@ https://prismjs.com/download.html#themes=prism&languages=markup+css+clike+javasc
  * @author Lea Verou
  */
 
+
 code[class*="language-"],
 pre[class*="language-"] {
 	color: black;
 	background: none;
-	text-shadow: 0 1px white;
+	//text-shadow: 0 1px white;
 	font-family: Hack, monospace;
 	text-align: left;
 	white-space: pre;
@@ -31,17 +32,7 @@ pre[class*="language-"] {
 	hyphens: none;
 }
 
-pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
-code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
-	text-shadow: none;
-	background: #f5f5f5;
-}
 
-pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
-code[class*="language-"]::selection, code[class*="language-"] ::selection {
-	text-shadow: none;
-	background: #f5f5f5;
-}
 
 @media print {
 	code[class*="language-"],
@@ -64,7 +55,7 @@ pre[class*="language-"] {
 
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
-	background: #f5f5f5;
+	background: lighten($light-gray, 10%);
 }
 
 /* Inline code */
@@ -81,8 +72,8 @@ pre[class*="language-"] {
 	color: slategray;
 }
 
-.token.punctuation {
-	color: #999;
+.token.punctuation, .token.attr-value .token.punctuation:first-child {
+	color: #ced0d2; // $gray
 }
 
 .namespace {
@@ -96,7 +87,7 @@ pre[class*="language-"] {
 .token.constant,
 .token.symbol,
 .token.deleted {
-	color: #905;
+	color: $pink;
 }
 
 .token.selector,
@@ -105,7 +96,7 @@ pre[class*="language-"] {
 .token.char,
 .token.builtin,
 .token.inserted {
-	color: #690;
+	color: $azure;
 }
 
 .token.operator,
@@ -118,9 +109,13 @@ pre[class*="language-"] {
 }
 
 .token.atrule,
-.token.attr-value,
 .token.keyword {
 	color: #07a;
+}
+
+.token.attr-value,
+.token.attr-value .token.punctuation {
+	color: $green;
 }
 
 .token.function,

@@ -90,6 +90,8 @@ h1, h2, h3, h4, h5, h6
   &.light-gray { background-color: $light-gray; }
   &.gray       { background-color: $gray; }
   &.dark-gray  { background-color: $dark-gray; }
+  &.sand       { background-color: $sand; }
+  &.green       { background-color: $green; }
 
   &.darkened {
     filter: brightness(60%) saturate(120%);

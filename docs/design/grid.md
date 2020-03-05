@@ -17,3 +17,7 @@ The unit is used to calculate sizes for all of the UI (until we introduce a sepa
 | `< 600`                        | 6px  |
 | Between `>= 600` and `<= 1920` | 8px  |
 | `> 1920`                       | 10px |
+
+## Spacer
+
+Four units.

@@ -80,6 +80,10 @@ description:
     <div class="swatch light-gray small"></div>
     <pre class="small" style="margin-top: 10px;">light-gray</pre>
   </div>
+  <div class="cell text-center">
+    <div class="swatch sand small"></div>
+    <pre class="small" style="margin-top: 10px;">sand</pre>
+  </div>
 </div>
 
 
@@ -94,6 +98,10 @@ description:
   <div class="cell text-center">
     <div class="swatch azure nano"></div>
     <pre class="small" style="margin-top: 10px;">azure</pre>
+  </div>
+  <div class="cell text-center">
+    <div class="swatch green nano"></div>
+    <pre class="small" style="margin-top: 10px;">green</pre>
   </div>
 
 </div>

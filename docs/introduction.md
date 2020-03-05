@@ -12,10 +12,9 @@ Bootstrap has a class name convention where all classes are prefixed whatever th
 
 | Chrome | Edge | Firefox | Safari for macOS | Safari for iOS |
 |--------|------|---------|--------|----------------|
-| 49 <span class="small">(early 2016)</span> | 15 <span class="small">(early 2017)</span> | 44 <span class="small">(early 2016)</span> | 11 <span class="small">(late 2017)</span>  | 11 <span class="small">(late 2017)</span> |
+| 49 <span class="small">(early 2016)</span> | 15 <span class="small">(early 2017)</span> | 62 <span class="small">(early 2020)</span> | 11 <span class="small">(late 2017)</span>  | 11 <span class="small">(late 2017)</span> |
 
-Minimum browser support is dictated by the use of CSS variables and <code>let</code>. Internet Explorer does not support either of these features, and development of new features for Internet Explorer ceased with IE11 in 2013.
-
+Minimum browser support is dictated by the use of CSS variables, the <code>::selection</code> pseudo-element without prefixes, and the JavaScript keyword <code>let</code>. Other features, like CSS filters, may be tested for, and so degrades well in browsers that don't support them. Internet Explorer ceased development in 2013 and will never be supported.
 
 ## Starter template
 
