@@ -4,6 +4,24 @@ title: Layout
 description:
 ---
 
+{% assign pageUrl = '/sg-vecora' | append: page.url %}
+
+<div class="container columns">
+  <a href="{{ pageUrl }}#columns" class="column ">
+    <p class="display-2">Columns</p>
+    <p class="small text-center">The classic column layout.</p>
+  </a>
+  <a href="{{ pageUrl }}#grid" class="column">
+    <p class="display-2">Grid</p>
+    <p class="small text-center">Boxes in a grid.</p>
+  </a>
+  <a href="{{ pageUrl }}#flex" class="column">
+    <p class="display-2">Flex</p>
+    <p class="small text-center">Whatever.</p>
+  </a>
+</div>
+
+
 Three layout systems: columns, grid, and flex. All layout systems currently use CSS flexbox under the hood. Templates may apply additional styles to change the order of boxes etc., but beware that using CSS Grid for the grid layout system may be investigated, and subsequently changed, in the future.
 
 **Resources**
@@ -22,7 +40,7 @@ Three layout systems: columns, grid, and flex. All layout systems currently use 
 
 ### Margins
 
-`margins` or `no-margins` affects the left and right visual margins of the container. Margins are 4 <a href="">units</a> wide. Defaults to `margins`. Both classes may be needed when building <a href="">complex layouts</a>. Vertical margins are called <a href="">spacing</a>.
+`margins` or `no-margins` affects the left and right visual margins of the container. Margins are 4 <a href="">units</a> wide. Defaults to `margins`. Both classes may be needed when building <a href="{{ pageUrl }}#complex-layouts" class="link">complex layouts</a>. Vertical margins are called <a href="">spacing</a>.
 
 {% capture code %}
 <div class="container no-margins"></div>
@@ -31,7 +49,7 @@ Three layout systems: columns, grid, and flex. All layout systems currently use 
 
 ### Max width
 
-`max-width-*` where `*` can be any of the <a href="">available resolution segments</a>.
+`max-width-*` where `*` can be any of the <a href="{{ pageUrl }}#resolutions" class="link">available resolution segments</a>.
 
 {% capture code %}
 <div class="container max-width-hd"></div>
@@ -226,7 +244,7 @@ Global modifiers `hide-below-*` and `hide-above-*`
 
 | Segment        | Width  | Height | Name   | Ratio |
 |----------------|--------|--------|--------|-------|
-| `nano`         |  320px |  240px |        |   3:2 |
+| `nano`         |  320px |  240px |        |   4:3 |
 | `3xs`          |  480px |  320px |        |   4:3 |
 | `2xs`          |  640px |  480px |        |   4:3 |
 | `xs`           |  800px |  600px | SVGA   |   4:3 |
