@@ -21,3 +21,7 @@ $spacers: (
   .--spacing-before-#{$label} { margin-top: calc(#{$size} * var(--spacer)); }
   .--spacing-after-#{$label} { margin-bottom: calc(#{$size} * var(--spacer)); }
 }
+
+.--no-spacing { margin-top: 0; margin-bottom: 0; }
+.--spacing-before { margin-top: 0; }
+.--spacing-after { margin-bottom: 0; }

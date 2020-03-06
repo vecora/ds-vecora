@@ -268,6 +268,8 @@ Spacing applies to the vertical margins. They affect the `margin-top` and `margi
 
 `--spacing-before-*` `--spacing-after-*`
 
+`--no-spacing` `--no-spacing-before` `--no-spacing-after`
+
 Internally one spacer is `4 * unit`. The size of a spacer is a multiple of the internal spacer.
 
 | Class Segment | Size   | Comment   |
