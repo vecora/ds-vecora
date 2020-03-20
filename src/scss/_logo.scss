@@ -22,7 +22,7 @@
   width: $width;
 
   background-color: var(--text-color);
-  -webkit-mask-image: url(resources/logo.svg);
+  -webkit-mask-image: url(resources/logo/logo.svg);
   -webkit-mask-repeat: no-repeat;
 
   @media (max-width: 384px) {
@@ -33,16 +33,16 @@
 
   @at-root .logo--alt-2 {
     width: calc(10 * var(--unit)); height: calc(10 * var(--unit));
-    -webkit-mask-image: url(resources/logo-alt-2.svg);
+    -webkit-mask-image: url(resources/logo/logo-alt-2.svg);
   }
 
   @at-root .logo--alt-3 {
     width: calc(height($width) * 4.25);
-    -webkit-mask-image: url(resources/logo-alt-3.svg);
+    -webkit-mask-image: url(resources/logo/logo-alt-3.svg);
   }
 
   @at-root .logo--outline {
-    -webkit-mask-image: url(resources/logo-outline.svg);
+    -webkit-mask-image: url(resources/logo/logo-outline.svg);
   }
 
   @at-root .logo--center {
@@ -62,7 +62,7 @@
 
   // Art logos
 
-  @at-root [class*=logo--art] {
+  @at-root [class*=logo--art]:not(.logo--art_plain) {
     background-color: transparent;
     -webkit-mask: none;
     mask: none;
@@ -70,7 +70,7 @@
     &::after {
       content: '';
       position: absolute;
-      background-color: $text-color;
+      background-color: var(--text-color);
       pointer-events: none;
     }
 
@@ -91,6 +91,12 @@
       bottom: $margin;
       left: $margin;
     }
+  }
+
+
+  @at-root .logo--art_plain {
+    -webkit-mask-image: url(resources/logo/logo.svg);
+    mask-image: url(resources/logo/logo.svg);
   }
 
   @at-root .logo--art_glitch::after {
@@ -140,9 +146,9 @@
     mask-image: url(resources/logo/art/80s-shapes.svg);
   }
 
-  @at-root .logo--art_times::after {
-    -webkit-mask-image: url(resources/logo/art/times.svg);
-    mask-image: url(resources/logo/art/times.svg);
+  @at-root .logo--art_book::after {
+    -webkit-mask-image: url(resources/logo/art/book.svg);
+    mask-image: url(resources/logo/art/book.svg);
   }
 
   @at-root .logo--art_stripe::after {
@@ -191,50 +197,6 @@
   }
 
 
-
-
-
-  // Colored logos
-
-  @at-root .logo--art_glitch_color::after {
-    background-image: url(resources/logo-glitch-color.png);
-    background-size: 100%;
-    background-color: transparent;
-  }
-
-  @at-root .logo--art_3d-shadow_color::after {
-    background-image: url(resources/logo-3d-shadow-color.png);
-    background-size: 100%;
-    background-color: transparent;
-  }
-
-  @at-root .logo--art_stripes_color::after {
-    background-image: url(resources/logo-stripes-color.png);
-    background-size: 100%;
-    background-color: transparent;
-  }
-
-  @at-root .logo--art_stripes-2_color::after {
-    background-image: url(resources/logo-stripes-2-color.png);
-    background-size: 100%;
-    background-color: transparent;
-  }
-
-  @at-root .logo--art_3d-stripes_color::after {
-    background-image: url(resources/logo-3d-stripes-color.svg);
-    background-color: transparent;
-  }
-
-  @at-root .logo--art_3d-stripes-2_color::after {
-    background-image: url(resources/logo-3d-stripes-2-color.svg);
-    background-color: transparent;
-  }
-
-  @at-root .logo--art_sticker_color::after {
-    background-image: url(resources/logo-sticker-color.png);
-    background-size: 100%;
-    background-color: transparent;
-  }
 
 
   // On color

@@ -1,0 +1,41 @@
+.logo:not([class*=logo--art]) {
+  background-color: transparent;
+  -webkit-mask: none;
+  mask: none;
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    background-color: var(--text-color);
+    pointer-events: none;
+    -webkit-mask-image: url(resources/logo/art/book.svg);
+    mask-image: url(resources/logo/art/book.svg);
+    $margin: -25%;
+    top: $margin;
+    right: $margin;
+    bottom: $margin;
+    left: $margin;
+  }
+
+  $sizes: (
+    "nano": 3,
+    "tiny": 4,
+    "small": 6,
+    "large": 12,
+    "big": 16,
+    "huge": 32,
+    "massive": 64
+  );
+
+  // Generate sizes
+  @each $name, $multiplier in $sizes {
+    @at-root .logo--#{$name}::after:not([class*=logo--art]::after) {
+      $margin: -25%;
+      top: $margin;
+      right: $margin;
+      bottom: $margin;
+      left: $margin;
+    }
+  }
+
+}

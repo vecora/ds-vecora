@@ -49,6 +49,10 @@ Pixels sizes assumes 1 [unit](docs/introduction/#eight-point-grid) = 8px.
 
 <div class="container grid no-margins columns-nano-2 columns-3xs-3 columns-xs-4 columns-xl-5 columns-fhd-5">
   <div class="cell text-center">
+    <div class="logo logo--large logo--art_plain logo--center"></div>
+    <pre class="small" style="margin-top: 10px;">plain</pre>
+  </div>
+  <div class="cell text-center">
     <div class="logo logo--large logo--art_vector logo--center"></div>
     <pre class="small" style="margin-top: 10px;">vector</pre>
   </div>
@@ -77,8 +81,8 @@ Pixels sizes assumes 1 [unit](docs/introduction/#eight-point-grid) = 8px.
     <pre class="small" style="margin-top: 10px;">neon-2</pre>
   </div>
   <div class="cell text-center">
-    <div class="logo logo--large logo--art_times logo--center"></div>
-    <pre class="small" style="margin-top: 10px;">times</pre>
+    <div class="logo logo--large logo--art_book logo--center"></div>
+    <pre class="small" style="margin-top: 10px;">book</pre>
   </div>
   <div class="cell text-center">
     <div class="logo logo--large logo--art_80s-shapes logo--center"></div>
@@ -122,17 +126,3 @@ Pixels sizes assumes 1 [unit](docs/introduction/#eight-point-grid) = 8px.
     <pre class="small" style="margin-top: 10px;">blob</pre>
   </div>
 </div>
-
-
-### Art logos with color
-
-{% capture example %}
-<div class="logo logo--large logo--art_3d-stripes_color"></div><br>
-<div class="logo logo--large logo--art_glitch_color"></div><br>
-<div class="logo logo--large logo--art_stripes-2_color"></div><br>
-<div class="logo logo--large logo--art_3d-shadow_color"></div><br>
-<div class="logo logo--large logo--art_stripes_color"></div><br>
-<div class="logo logo--large logo--art_sticker_color"></div><br>
-<div class="logo logo--large logo--art_3d-stripes-2_color"></div>
-{% endcapture %}
-{% include example.html content=example %}
