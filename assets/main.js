@@ -52,14 +52,17 @@ if (document.querySelector("#theme-switcher")) {
       case "--dark":
         document.getElementById('--dark').checked = true;
         break;
-      case "theme-corporate":
-        document.getElementById('theme-corporate').checked = true;
+      case "--corporate":
+        document.getElementById('--corporate').checked = true;
         break;
-      case "theme-sales":
-        document.getElementById('theme-sales').checked = true;
+      case "--sales":
+        document.getElementById('--sales').checked = true;
+        break;
+      case "--book":
+        document.getElementById('--book').checked = true;
         break;
       default:
-        document.getElementById('theme-default').checked = true;
+        document.getElementById('--default').checked = true;
     }
   });
 
