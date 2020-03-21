@@ -71,7 +71,7 @@ function compileStyles (callback) {
 }
 
 function copyWebfonts (callback) {
-  src("src/webfonts/*")
+  src("src/webfonts/**/*")
     .pipe(dest("dist/webfonts"));
   callback();
 }
