@@ -1,16 +1,4 @@
-<!doctype html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}" class="theme-dark">
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <base href="{{ site.baseurl }}/">
-  <link rel="shortcut icon" type="image/png" href="favicon.png">
-  <link rel="stylesheet" href="dist/styles.css">
-  <link rel="stylesheet" href="assets/main.css">
-  <script src="dist/head.js"></script>
-  <title>{{ page.title }}</title>
-</head>
+{% include header.html %}
 
 <body data-spy="scroll" data-target="#document-nav" data-offset="0" class="docs-frontpage --moving-background-gradient --on-color">
 
@@ -27,9 +15,9 @@
           <br>
 
         <div class="text-center">
-          <a href="https://vecora.github.io/sg-vecora/docs/introduction" class="button huge outline negative">Read the documentation</a>
+          <a href="{{ site.baseurl }}{% link docs/introduction.md %}" class="button huge outline negative">Read the documentation</a>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <a href="https://github.com/vecora/sg-vecora" class="button huge outline negative">Download from GitHub</a>
+          <a href="https://github.com/owe/style-guide" class="button huge outline negative">Download from GitHub</a>
         </div>
 
     </div>
@@ -47,10 +35,7 @@
   </footer>
 
   {% include cookie-message.html %}
-
-  <script src="dist/main.js"></script>
-  <script async defer src="//maps.googleapis.com/maps/api/js?key=AIzaSyDAC2otWTUAVKGqsOyNNOgztuH64LFBNQs&callback=Maps.init"></script>
-  <script src="assets/main.js"></script>
+  {% include footer.html %}
 </body>
 
 </html>

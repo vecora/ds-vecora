@@ -1,17 +1,4 @@
-
-<!doctype html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <base href="{{ site.baseurl }}/">
-  <link rel="shortcut icon" type="image/png" href="favicon.png">
-  <link rel="stylesheet" href="assets/styles.css">
-  <link rel="stylesheet" href="assets/docs.css">
-  <script src="assets/head.js"></script>
-  <title>Style guide &mdash; {{ page.title }}</title>
-</head>
+{% include header.html %}
 
 <body data-spy="scroll" data-target="#document-nav" data-offset="0">
 
@@ -84,10 +71,7 @@
   </footer>
 
   {% include cookie-message.html %}
-
-  <script src="assets/main.js"></script>
-  <script async defer src="//maps.googleapis.com/maps/api/js?key=AIzaSyDAC2otWTUAVKGqsOyNNOgztuH64LFBNQs&callback=Maps.init"></script>
-  <script src="assets/docs.js"></script>
+  {% include footer.html %}
 </body>
 
 </html>
