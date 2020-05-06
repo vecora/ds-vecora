@@ -39,3 +39,38 @@
   }
 
 }
+
+
+
+.glossary-logo.full {
+
+  display: block;
+
+  height: 130px;
+  width: 210px;
+
+  background-color: var(--text-color);
+  -webkit-mask-image: url(resources/logo/glossary/logo-full.svg);
+  -webkit-mask-repeat: no-repeat;
+
+}
+
+.glossary-logo.full.large {
+  height: 195px;
+  width: 315px;
+}
+
+.glossary-logo.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1.glossary-logo {
+  text-indent: -9999px;
+}
+
+a.glossary-logo {
+  text-indent: -9999px;
+  // Cancel out link border
+  border-bottom: none;
+}

@@ -2,7 +2,7 @@
 
   --accent-color: #C8B594;
   --text-color: #282829;
-  --link-underline-color: #{rgba(#C8B594,0.5)};
+  --link-underline-color: #2f2f2f;
 
   // Set currentColor
   color: var(--text-color);
@@ -15,7 +15,37 @@
 
 @media (prefers-color-scheme: dark) {
   .--book {
-    --background-color: #282829;
-    --text-color: #FCFCFC;
+    --accent-color: #C8C8C8;
+    //--background-color: #282829;
+    --text-color: #C8C8C8;
+
+    // TODO: Make responsive.
+    body {background: radial-gradient(#2a2a2a, #181818) center; }
+  }
+}
+
+
+// TEMPORARY STYLES
+
+@media (prefers-color-scheme: dark) {
+  .--book {
+    .muted {
+      color: #3a3a3a;
+    }
+
+    input[type=search] {
+      border-radius: 50px;
+      background-color: #141414;
+      padding: calc(1 * var(--unit)) calc(3 * var(--unit));
+      border-color: #313131;
+      caret-color: var(--text-color);
+
+      &:focus {
+        outline: none;
+        box-shadow: 0 0 0 1px #555;
+        border-color: #555;
+        background-color: #141414;
+      }
+    }
   }
 }
