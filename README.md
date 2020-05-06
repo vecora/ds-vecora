@@ -29,29 +29,12 @@ Read the [documentation](https://owe.github.io/style-guide/) for more informatio
 
 Assuming Xcode is already installed.
 
-1. `gem install --user-install bundler jekyll`
+1. `cd docs`
 
-2. `bundle install --path vendor/bundle`
+2. `gem install --user-install bundler jekyll`
 
-3. `bundle exec jekyll serve`
+3. `bundle config set path 'vendor/bundle'`
 
+4. `bundle install`
 
-#### macOS Mojave
-
-1. `sudo xcode-select --install`
-
-2. `open /Library/Developer/CommandLineTools/Packages/macOS_SDK_headers_for_macOS_10.14.pkg`
-
-3.
-```
-echo '# Install Ruby Gems to ~/gems' >> ~/.bashrc
-echo 'export GEM_HOME=$HOME/gems' >> ~/.bashrc
-echo 'export PATH=$HOME/gems/bin:$PATH' >> ~/.bashrc
-source ~/.bashrc
-```
-
-4. `gem install bundler jekyll` (locally. no sudo)
-
-5. `bundle install`
-
-6. `bundle exec jekyll serve`
+5. `bundle exec jekyll serve`
