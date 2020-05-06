@@ -13,15 +13,17 @@ $spacers: (
   8: 8
 );
 
-.--spacing-before { margin-top: var(--spacer); }
-.--spacing-after { margin-bottom: var(--spacer); }
+// NOTE: !important was added to override styles with higher specificity (like h1). Probably not ideal.
+
+.--spacing-before { margin-top: var(--spacer) !important; }
+.--spacing-after { margin-bottom: var(--spacer) !important; }
 
 
 @each $label, $size in $spacers {
-  .--spacing-before-#{$label} { margin-top: calc(#{$size} * var(--spacer)); }
-  .--spacing-after-#{$label} { margin-bottom: calc(#{$size} * var(--spacer)); }
+  .--spacing-before-#{$label} { margin-top: calc(#{$size} * var(--spacer)) !important; }
+  .--spacing-after-#{$label} { margin-bottom: calc(#{$size} * var(--spacer)) !important; }
 }
 
-.--no-spacing { margin-top: 0; margin-bottom: 0; }
-.--no-spacing-before { margin-top: 0; }
-.--no-spacing-after { margin-bottom: 0; }
+.--no-spacing { margin-top: 0; margin-bottom: 0 !important; }
+.--no-spacing-before { margin-top: 0 !important; }
+.--no-spacing-after { margin-bottom: 0 !important; }
