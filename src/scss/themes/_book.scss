@@ -3,6 +3,7 @@
   --accent-color: #FFDC00;
   --text-color: #3b3b3b;
   --link-underline-color: #FFDC00;
+  --muted-color: #d2d2d2;
 
   // Set currentColor
   color: var(--text-color);
@@ -48,9 +49,7 @@
 
 @media (prefers-color-scheme: dark) {
   .--book {
-    .muted {
-      color: #3a3a3a;
-    }
+    --muted-color: #3a3a3a;
 
     input[type=search] {
       background-color: #141414;
