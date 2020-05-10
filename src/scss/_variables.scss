@@ -80,9 +80,17 @@ $screen-resolutions: (
 
 
 // these metrics are specific to each font, and can be found using FontForge (see https://iamvdo.me/en/blog/css-font-metrics-line-height-and-vertical-align)
-$fonts: (
+/* $fonts: (
   gilroy: (
     family: "Gilroy",
+    cap-height: 0.7,
+    ascender: 0.971,
+    descender: 0.277
+  )
+); */
+$fonts: (
+  gilroy: (
+    family: "Circular",
     cap-height: 0.7,
     ascender: 0.971,
     descender: 0.277

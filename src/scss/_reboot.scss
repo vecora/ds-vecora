@@ -25,7 +25,7 @@
 // 4. Change the default tap highlight to be completely transparent in iOS.
 body {
   margin: 0; // 1
-  font-family: "Gilroy";
+  font-family: "Circular";
   font-size: calc-font-size(2, map-get($fonts, gilroy));
   line-height: calc-line-height(2, 2, map-get($fonts, gilroy));
 
