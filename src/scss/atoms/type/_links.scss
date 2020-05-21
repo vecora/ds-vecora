@@ -3,7 +3,16 @@ button.link {
   // TODO: Strip default button styles.
 }
 
-a.link, button.link {
+
+// Default link
+a:not([class]), a.link, button.link {
+  &:hover {
+    background-color: var(--link-hover-color);
+  }
+}
+
+
+a.underline, button.underline {
   color: var(--link-color);
   text-decoration: none;
 
