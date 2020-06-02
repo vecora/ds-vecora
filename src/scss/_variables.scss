@@ -28,6 +28,8 @@ $link-hover-color: $link-color;
 :root {
   --unit: 6px;
   --spacer: calc(4 * var(--unit));
+
+  // UI Colors
   --accent-color: #{$pink};
   --text-color: #{$dark-gray};
   --link-color: currentColor;

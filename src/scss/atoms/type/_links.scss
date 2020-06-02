@@ -3,11 +3,27 @@ button.link {
   // TODO: Strip default button styles.
 }
 
+a {
+  color: var(--accent-color);
 
-// Default link
-a:not([class]), a.link, button.link {
   &:hover {
-    background-color: var(--link-hover-color);
+    color: var(--inverted-text-color);
+    background-color: var(--text-color);
+    margin: 0 calc(-1 * var(--unit) / 2);
+    padding: 0 calc(var(--unit) / 2);
+    border-radius: 2px;
+  }
+
+  &.undo {
+    color: currentColor;
+
+    &:hover {
+      color: inherit;
+      background-color: inherit;
+      margin: inherit;
+      padding: inherit;
+      border-radius: inherit;
+    }
   }
 }
 

@@ -40,15 +40,6 @@
 
 }
 
-.glossary-logo-footer {
-  float:left;
-  display: block;
-  margin-right: calc(var(--spacer) / 2);
-  text-indent: -9999px;
-  background-color: var(--muted-color);
-  -webkit-mask-image: url(resources/logo/glossary/logo-mark.svg);
-  -webkit-mask-repeat: no-repeat;
-}
 
 .glossary-logo.full {
 
@@ -59,6 +50,19 @@
 
   background-color: var(--text-color);
   -webkit-mask-image: url(resources/logo/glossary/logo-full.svg);
+  -webkit-mask-repeat: no-repeat;
+
+}
+
+.glossary-logo.wide {
+
+  display: block;
+
+  height: calc(var(--unit) * 5);
+  width: calc(var(--unit) * 32);
+
+  background-color: var(--text-color);
+  -webkit-mask-image: url(resources/logo/glossary/logo-wide.svg);
   -webkit-mask-repeat: no-repeat;
 
 }

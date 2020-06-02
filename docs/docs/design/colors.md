@@ -4,9 +4,33 @@ title: Colors
 description:
 ---
 
-[THE colors]
+## Colors
 
-## Palette
+<div class="container grid no-margins columns-nano-2 columns-3xs-3 columns-xs-4 columns-xl-5 columns-fhd-5">
+
+  <div class="cell text-center">
+    <div class="swatch accent-color"></div>
+    <pre class="small" style="margin-top: 10px; margin-bottom: 0;">--accent-color</pre>
+  </div>
+
+  <div class="cell text-center">
+    <div class="swatch text-color"></div>
+    <pre class="small" style="margin-top: 10px; margin-bottom: 0;">--text-color</pre>
+  </div>
+
+  <div class="cell text-center">
+    <div class="swatch link-color"></div>
+    <pre class="small" style="margin-top: 10px; margin-bottom: 0;">--link-color</pre>
+    <p class="small muted">Set to <code>currentColor</code>.</p>
+  </div>
+
+</div>
+
+
+CSS variables set to <a href="https://css-tricks.com/currentcolor/">`currentColor`</a> will change the actual value based on context.
+
+
+## Palette OLD STUFF
 
 ### Primary color
 

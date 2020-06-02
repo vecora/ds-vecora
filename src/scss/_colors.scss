@@ -76,6 +76,12 @@ h1, h2, h3, h4, h5, h6
     height: calc(var(--unit) * 6);
   }
 
+  &.accent-color       { background-color: var(--accent-color); }
+  &.text-color       { background-color: var(--text-color); }
+  &.link-color       { background-color: var(--link-color); }
+
+  // OLD STUFF
+
   &.fawn       { background-color: $fawn; }
   &.orange     { background-color: $orange; }
   &.red        { background-color: $red; }
