@@ -49,6 +49,9 @@ if (document.querySelector("#theme-switcher")) {
   $(document).ready(function() {
 
     switch (themeClass) {
+      case "--circular":
+        document.getElementById('--circular').checked = true;
+        break;
       case "--dark":
         document.getElementById('--dark').checked = true;
         break;
