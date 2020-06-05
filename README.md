@@ -29,9 +29,9 @@ Read the [documentation](https://owe.github.io/style-guide/) for more informatio
 
 Assuming Xcode is already installed.
 
-1. `cd docs`
+1. `gem install --user-install bundler jekyll`
 
-2. `gem install --user-install bundler jekyll`
+2. `cd docs`
 
 3. `bundle config set path 'vendor/bundle'`
 
