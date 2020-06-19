@@ -4,7 +4,6 @@
   --text-color: #3b3b3b;
   --link-underline-color: var(--accent-color);
   --muted-text-color: #d2d2d2;
-  --code-background-color: #f5f1e9;
 
 
   // Set currentColor
@@ -44,6 +43,19 @@
     }
   }
 
+
+  // table.scss
+
+  table, th, td { border: 0; } // undo. should use dedicated .undo class
+
+  table {
+    --code-background-color: white;
+    border-collapse: separate;
+    border-spacing: calc(var(--unit) / 2);
+  }
+
+  th, td { background-color: rgba(0,0,0,0.03); }
+
 }
 
 @media (prefers-color-scheme: dark) {
@@ -57,6 +69,11 @@
     body {
       background-image: radial-gradient(#2a2a2a, #181818);
     }
+
+    // table.scss
+
+    table { --code-background-color: #272727; }
+    th, td { background-color: #2f2f2f; }
   }
 }
 
