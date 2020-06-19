@@ -87,6 +87,8 @@ This is a standard HTML entity, but still worth mentioning. Useful for hardcoded
 
 ## Links
 
+[TODO: Brief, but descriptive explanation here, and then link to exhaustive tests.]
+
 {% capture example %}
 <a href="#">Defualt styling</a>
 {% endcapture %}
@@ -114,7 +116,9 @@ For muted text, incognito class is applied by default.
 {% include example.html content=example %}
 
 {% capture example %}
-<a href="#" class="underline muted">Muted underline styling</a>
+<p class="mute">
+  <a href="#" class="underline muted">Muted underline styling</a>
+</p>
 {% endcapture %}
 {% include example.html content=example %}
 
