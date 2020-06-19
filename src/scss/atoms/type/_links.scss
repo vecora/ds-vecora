@@ -4,16 +4,17 @@ button.link {
 }
 
 a {
-  color: var(--accent-color);
+  color: var(--link-color);
 
   &:hover {
-    color: var(--inverted-text-color);
-    background-color: var(--text-color);
-    margin: 0 calc(-1 * var(--unit) / 2);
-    padding: 0 calc(var(--unit) / 2);
+    color: var(--link-color-opposite);
+    background-color: var(--link-color);
+    margin: -2px;
+    padding: 2px;
     border-radius: 2px;
   }
 
+  // Helper class
   &.undo {
     color: currentColor;
 
@@ -25,6 +26,20 @@ a {
       border-radius: inherit;
     }
   }
+}
+
+a.incognito {
+  color: var(--text-color);
+
+  &:hover {
+    color: var(--text-color-opposite);
+    background-color: var(--text-color);
+  }
+}
+
+.mute a:not(.unmute) {
+  --text-color: var(--muted-text-color);
+  @extend a.incognito;
 }
 
 
