@@ -1,9 +1,11 @@
 .--book {
 
-  --accent-color: #ffcb5c;
+  --accent-color: #a48f63;
   --text-color: #3b3b3b;
   --link-underline-color: var(--accent-color);
   --muted-text-color: #d2d2d2;
+  --code-background-color: #f5f1e9;
+
 
   // Set currentColor
   color: var(--text-color);
@@ -49,7 +51,7 @@
     //--accent-color: #C8C8C8;
     //--background-color: #282829;
     --text-color: #C8C8C8;
-    --inverted-text-color: #2a2a2a;
+    --code-background-color: #3c3a36;
 
     // TODO: Make responsive.
     body {

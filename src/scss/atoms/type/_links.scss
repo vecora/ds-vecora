@@ -7,7 +7,7 @@ a {
   color: var(--link-color);
 
   &:hover {
-    color: var(--link-color-opposite);
+    color: var(--link-color-flipped);
     background-color: var(--link-color);
     margin: -2px;
     padding: 2px;
@@ -32,13 +32,13 @@ a.incognito {
   color: var(--text-color);
 
   &:hover {
-    color: var(--text-color-opposite);
+    color: var(--text-color-flipped);
     background-color: var(--text-color);
   }
 }
 
 .mute a:not(.unmute) {
-  --text-color: var(--muted-text-color);
+  --text-color: var(--mute-color);
   @extend a.incognito;
 }
 

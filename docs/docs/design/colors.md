@@ -21,8 +21,8 @@ description:
     <td><code>--text-color</code></td>
   </tr>
   <tr>
-    <td><div class="swatch nano" style="background-color: var(--text-color-opposite);"></div></td>
-    <td><code>--text-color-opposite</code></td>
+    <td><div class="swatch nano" style="background-color: var(--text-color-flipped);"></div></td>
+    <td><code>--text-color-flipped</code></td>
     <td>Is this used for anything else than incognito links?</td>
   </tr>
   <tr>
@@ -30,12 +30,24 @@ description:
     <td><code>--link-color</code></td>
   </tr>
   <tr>
-    <td><div class="swatch nano" style="background-color: var(--link-color-opposite);"></div></td>
-    <td><code>--link-color-opposite</code></td>
+    <td><div class="swatch nano" style="background-color: var(--link-color-flipped);"></div></td>
+    <td><code>--link-color-flipped</code></td>
   </tr>
   <tr>
-    <td><div class="swatch nano" style="background-color: var(--muted-text-color);"></div></td>
-    <td><code>--muted-text-color</code></td>
+    <td><div class="swatch nano" style="background-color: var(--mute-color);"></div></td>
+    <td><code>--mute-color</code></td>
+  </tr>
+  <tr>
+    <td><div class="swatch nano" style="background-color: var(--mute-color-flipped);"></div></td>
+    <td><code>--mute-color-flipped</code></td>
+  </tr>
+  <tr>
+    <td><div class="swatch nano" style="background-color: var(--code-text-color);"></div></td>
+    <td><code>--code-text-color</code></td>
+  </tr>
+  <tr>
+    <td><div class="swatch nano" style="background-color: var(--code-background-color);"></div></td>
+    <td><code>--code-background-color</code></td>
   </tr>
 </table>
 
