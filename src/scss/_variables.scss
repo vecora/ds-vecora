@@ -36,6 +36,9 @@ $link-hover-color: $link-color;
   --link-color: var(--accent-color);
   --link-color-opposite: white;
   --muted-text-color: #{$light-gray};
+  --code-text-color: var(--text-color);
+  --code-background-color: #{$sand};
+
 
   --link-hover-color: currentColor;
   --link-underline-color: #{rgba($dark-gray,0.15)};
