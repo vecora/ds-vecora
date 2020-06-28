@@ -1,9 +1,9 @@
 .--book {
 
-  --accent-color: #a48f63;
+  --accent-color: #c7b99c;
   --text-color: #3b3b3b;
   --link-underline-color: var(--accent-color);
-  --muted-text-color: #d2d2d2;
+  --mute-color: #d2d2d2;
 
 
   // Set currentColor
@@ -43,6 +43,15 @@
     }
   }
 
+  // links.scss
+  a.underline {
+    background-position-y: 8%;
+    transition-duration: 400ms;
+    &:hover {
+      background-position-y: 100%;
+      border-radius: 2px;
+    }
+  }
 
   // table.scss
 
@@ -63,7 +72,11 @@
     //--accent-color: #C8C8C8;
     //--background-color: #282829;
     --text-color: #C8C8C8;
+    --text-color-flipped: #2a2a2a;
+    --link-underline-color: #675d4a;
     --code-background-color: #3c3a36;
+    --mute-color: #3a3a3a;
+    --mute-color-flipped: #aaa;
 
     // TODO: Make responsive.
     body {
@@ -82,7 +95,6 @@
 
 @media (prefers-color-scheme: dark) {
   .--book {
-    --muted-color: #3a3a3a;
 
     input[type=search] {
       background-color: #141414;
