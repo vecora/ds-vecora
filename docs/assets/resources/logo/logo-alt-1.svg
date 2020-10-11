@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 2559 1708" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+    <g transform="matrix(5.55556,0,0,5.55556,-1302.42,-967.173)">
+        <text x="234.138px" y="479.993px" style="font-family:'Gilroy-Bold', 'Gilroy';font-weight:700;font-size:99px;">V<tspan x="312.091px " y="479.993px ">E</tspan></text>
+        <text x="377.966px" y="479.993px" style="font-family:'Gilroy-Bold', 'Gilroy';font-weight:700;font-size:99px;">C</text>
+        <text x="462.155px" y="479.993px" style="font-family:'Gilroy-Bold', 'Gilroy';font-weight:700;font-size:99px;">O</text>
+        <text x="554.463px" y="479.993px" style="font-family:'Gilroy-Bold', 'Gilroy';font-weight:700;font-size:99px;">R</text>
+        <text x="629.049px" y="479.993px" style="font-family:'Gilroy-Bold', 'Gilroy';font-weight:700;font-size:99px;">A</text>
+    </g>
+    <g transform="matrix(5.55556,0,0,5.55556,1194.53,850.9)">
+        <path d="M0,-153.162L-30.633,-84.881L-61.265,-153.162L-107.214,-153.162L-30.633,0L45.949,-153.162L0,-153.162Z" style="fill-rule:nonzero;"/>
+    </g>
+    <g transform="matrix(5.55556,0,0,5.55556,1407.25,595.634)">
+        <path d="M0,-61.265L22.975,-107.214L99.557,45.948L53.607,45.948L53.607,45.949L0,-61.265Z"/>
+    </g>
+</svg>

@@ -28,9 +28,19 @@ $link-hover-color: $link-color;
 :root {
   --unit: 6px;
   --spacer: calc(4 * var(--unit));
+
+  // UI Colors
   --accent-color: #{$pink};
   --text-color: #{$dark-gray};
-  --link-color: currentColor;
+  --text-color-flipped: white; // Q: Is this used for anything else than incognito links?
+  --link-color: var(--accent-color);
+  --link-color-flipped: white;
+  --mute-color: #{$light-gray};
+  --mute-color-flipped: white;
+  --code-text-color: var(--text-color);
+  --code-background-color: #{$sand};
+
+
   --link-hover-color: currentColor;
   --link-underline-color: #{rgba($dark-gray,0.15)};
   --background-color: white;
@@ -80,9 +90,17 @@ $screen-resolutions: (
 
 
 // these metrics are specific to each font, and can be found using FontForge (see https://iamvdo.me/en/blog/css-font-metrics-line-height-and-vertical-align)
-$fonts: (
+/* $fonts: (
   gilroy: (
     family: "Gilroy",
+    cap-height: 0.7,
+    ascender: 0.971,
+    descender: 0.277
+  )
+); */
+$fonts: (
+  gilroy: (
+    family: "Circular",
     cap-height: 0.7,
     ascender: 0.971,
     descender: 0.277

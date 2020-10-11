@@ -1,5 +1,5 @@
 ---
 layout: frontpage
-title: Style guide for Vecora sites
+title: Design System for <a href="https://www.vecora.com/" class="underline">Vecora</a>
 description:
 ---

@@ -4,7 +4,7 @@
 
 To use the styles, copy everything in the `dist` folder to your web root.
 
-Read the [documentation](https://vecora.github.io/sg-vecora/docs/) for more information.
+Read the [documentation](https://owe.github.io/style-guide/) for more information.
 
 ## Build instructions
 
@@ -18,10 +18,10 @@ Read the [documentation](https://vecora.github.io/sg-vecora/docs/) for more info
 
 4. Install dependencies locally by typing `npm install --save-dev`.
 
-5. Type `gulp` to build. Build files are located in the `dist` folder. Alternatively type `gulp watch` to watch for changes in the `src` folder and build continuously as files are changed. You can type `gulp watch --cp [path]` to automatically copy the built files somewhere. **Warning:** if you provide the `--copy` option _and do not provide a path_ the files are automatically copied to `../craft-vecora.com/web/`. This behaviour is obviously subject to change in future updates.
+5. Type `gulp` to build. Build files are located in the `dist` folder. Alternatively type `gulp watch` to watch for changes in the `src` folder and build continuously as files are changed. You can type `gulp watch --cp [path]` to automatically copy the built files somewhere. **Warning:** if you provide the `--copy` option _and do not provide a path_ the files are automatically copied to `../project/public/`. This behaviour is obviously subject to change in future updates.
 
 `gulp watch --copy`
-`gulp watch --copy ../craft-vecora-wiki/web/`
+`gulp watch --copy ../project/public/`
 
 ### Building the documentation
 
@@ -31,27 +31,10 @@ Assuming Xcode is already installed.
 
 1. `gem install --user-install bundler jekyll`
 
-2. `bundle install --path vendor/bundle`
+2. `cd docs`
 
-3. `bundle exec jekyll serve`
+3. `bundle config set path 'vendor/bundle'`
 
+4. `bundle install`
 
-#### macOS Mojave
-
-1. `sudo xcode-select --install`
-
-2. `open /Library/Developer/CommandLineTools/Packages/macOS_SDK_headers_for_macOS_10.14.pkg`
-
-3.
-```
-echo '# Install Ruby Gems to ~/gems' >> ~/.bashrc
-echo 'export GEM_HOME=$HOME/gems' >> ~/.bashrc
-echo 'export PATH=$HOME/gems/bin:$PATH' >> ~/.bashrc
-source ~/.bashrc
-```
-
-4. `gem install bundler jekyll` (locally. no sudo)
-
-5. `bundle install`
-
-6. `bundle exec jekyll serve`
+5. `bundle exec jekyll serve`

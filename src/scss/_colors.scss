@@ -76,6 +76,9 @@ h1, h2, h3, h4, h5, h6
     height: calc(var(--unit) * 6);
   }
 
+
+  // OLD STUFF
+
   &.fawn       { background-color: $fawn; }
   &.orange     { background-color: $orange; }
   &.red        { background-color: $red; }

@@ -1,0 +1,77 @@
+{% include header.html %}
+
+<body data-spy="scroll" data-target="#document-nav" data-offset="0">
+
+  <header>
+    <br>
+    <ul class="text-center inline">
+      <li><a href="https://vecora.github.io/sg-vecora/docs/" class="link">Style guide</a></li>
+      <li><a href="https://github.com/vecora/sg-vecora" class="link">GitHub</a></li>
+    </ul>
+    <br>
+  </header>
+
+  <main>
+    <div class="container columns break-small max-width-fhd">
+      <div class="column">
+
+          <nav class="sidenav fixed margin">
+            <ul>
+              <li><a href="{{ site.baseurl }}{% link docs/introduction.md %}">Introduction</a></li>
+              <li><a href="{{ site.baseurl }}{% link docs/design.md %}">Design</a>
+                <ul>
+                  <li><a href="{{ site.baseurl }}{% link docs/design/grid.md %}">Grid</a></li>
+                  <li><a href="{{ site.baseurl }}{% link docs/design/brand.md %}">Brand</a></li>
+                  <li><a href="{{ site.baseurl }}{% link docs/design/colors.md %}">Colors</a></li>
+                  <li><a href="{{ site.baseurl }}{% link docs/design/themes.md %}">Themes</a></li>
+                  <li><a href="{{ site.baseurl }}{% link docs/design/animation.md %}">Animation</a></li>
+                </ul>
+              </li>
+              <li><a href="{{ site.baseurl }}{% link docs/layout.md %}">Layout</a></li>
+              <li><a href="{{ site.baseurl }}{% link docs/content.md %}">Content</a></li>
+              <li><a href="{{ site.baseurl }}{% link docs/components/index.md %}">Components</a>
+                <ul>
+                  <li><a href="{{ site.baseurl }}{% link docs/components/buttons.md %}">Buttons</a></li>
+                  <li><a href="{{ site.baseurl }}{% link docs/components/card.md %}">Card</a></li>
+                  <li><a href="{{ site.baseurl }}{% link docs/components/forms.md %}">Forms</a></li>
+                  <li><a href="{{ site.baseurl }}{% link docs/components/icons.md %}">Icons & Smileys</a></li>
+                  <li><a href="{{ site.baseurl }}{% link docs/components/faq.md %}">FAQ</a></li>
+                  <li><a href="{{ site.baseurl }}{% link docs/components/navs.md %}">Navs</a></li>
+                  <li><a href="{{ site.baseurl }}{% link docs/components/social-proofing.md %}">Social Proofing</a></li>
+                  <li><a href="{{ site.baseurl }}{% link docs/components/timeline.md %}">Timeline</a></li>
+                  <li><a href="{{ site.baseurl }}{% link docs/components/hubspot.md %}">HubSpot</a></li>
+                  <li><a href="{{ site.baseurl }}{% link docs/components/more.md %}">More</a></li>
+                </ul>
+              </li>
+              <li><a href="{{ site.baseurl }}{% link docs/fullpage.md %}">Fullpage</a></li>
+              <li><a href="{{ site.baseurl }}{% link docs/scripts.md %}">Scripts</a></li>
+            </ul>
+          </nav>
+
+        </div>
+        <div class="column five">
+
+          <h1>{{ page.title }}</h1>
+          <p class="lead">{{ page.description }}</p>
+          {{ content }}
+
+        </div>
+        <div class="column hide-below-medium">
+          <nav class="sidenav sticky margin">
+            {% assign test = '/sg-vecora' | append: page.url %}
+            {% include toc.html html=content baseurl=test %}
+          </nav>
+        </div>
+
+    </div>
+  </main>
+
+  <footer>
+
+  </footer>
+
+  {% include cookie-message.html %}
+  {% include footer.html %}
+</body>
+
+</html>

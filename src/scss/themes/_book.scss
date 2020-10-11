@@ -1,8 +1,10 @@
 .--book {
 
-  --accent-color: #C8B594;
-  --text-color: #282829;
-  --link-underline-color: #{rgba(#C8B594,0.5)};
+  --accent-color: #c7b99c;
+  --text-color: #3b3b3b;
+  --link-underline-color: var(--accent-color);
+  --mute-color: #d2d2d2;
+
 
   // Set currentColor
   color: var(--text-color);
@@ -11,11 +13,98 @@
   @import 'book/type';
   @import 'book/logo';
 
+  body {
+    background-image: radial-gradient(#fff, #f5f5f5);
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+  }
+
+  input[type=search] {
+    border-radius: 50px;
+    background-color: #fff;
+    padding: calc(1 * var(--unit)) calc(3 * var(--unit));
+    border-color: #e5e5e5;
+    caret-color: var(--text-color);
+    color: var(--text-color);
+
+    &::-webkit-search-decoration,
+    &::-webkit-search-cancel-button,
+    &::-webkit-search-results-button,
+    &::-webkit-search-results-decoration {
+      -webkit-appearance:none;
+    }
+
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0 1px #ddd;
+      border-color: #ddd;
+      background-color: #fff;
+    }
+  }
+
+  // links.scss
+  a.underline {
+    background-position-y: 8%;
+    transition-duration: 400ms;
+    &:hover {
+      background-position-y: 100%;
+      border-radius: 2px;
+    }
+  }
+
+  // table.scss
+
+  table, th, td { border: 0; } // undo. should use dedicated .undo class
+
+  table {
+    --code-background-color: white;
+    border-collapse: separate;
+    border-spacing: calc(var(--unit) / 2);
+  }
+
+  th, td { background-color: rgba(0,0,0,0.03); }
+
 }
 
 @media (prefers-color-scheme: dark) {
   .--book {
-    --background-color: #282829;
-    --text-color: #FCFCFC;
+    //--accent-color: #C8C8C8;
+    //--background-color: #282829;
+    --text-color: #C8C8C8;
+    --text-color-flipped: #2a2a2a;
+    --link-underline-color: #675d4a;
+    --code-background-color: #3c3a36;
+    --mute-color: #3a3a3a;
+    --mute-color-flipped: #aaa;
+
+    // TODO: Make responsive.
+    body {
+      background-image: radial-gradient(#2a2a2a, #181818);
+    }
+
+    // table.scss
+
+    table { --code-background-color: #272727; }
+    th, td { background-color: #2f2f2f; }
+  }
+}
+
+
+// TEMPORARY STYLES
+
+@media (prefers-color-scheme: dark) {
+  .--book {
+
+    input[type=search] {
+      background-color: #141414;
+      border-color: #313131;
+
+      &:focus {
+        box-shadow: 0 0 0 1px #555;
+        border-color: #555;
+        background-color: #141414;
+      }
+    }
   }
 }

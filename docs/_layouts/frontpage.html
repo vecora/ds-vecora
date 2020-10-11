@@ -1,0 +1,42 @@
+{% include header.html %}
+
+<body data-spy="scroll" data-target="#document-nav" data-offset="0" class="docs-frontpage --moving-background-gradient --on-color">
+
+  <main>
+    <div class="container-100vh container-100vh--center">
+
+      <div>
+<div style="-webkit-mask-image: url({{ site.baseurl }}/assets/docs-logo.svg); background-color: white; margin-left: auto;
+    margin-right: auto; width: 300px; height: 300px; margin-bottom: -32px;">
+</div>
+
+          <br><br>
+          <h1 class="text-center">{{ page.title }}</h1>
+
+          <br>
+
+        <div class="text-center">
+          <a href="{{ site.baseurl }}{% link docs/introduction.md %}" class="button huge outline negative">Read the documentation</a>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="https://github.com/owe/style-guide" class="button huge outline negative">Download from GitHub</a>
+        </div>
+
+    </div>
+  </main>
+
+  <footer class="compact-footer small" id="footer">
+
+    <div class="container">
+      <p class="text-center">Created with <span class="icon heart">love</span> by <a href="https://www.vecora.com" class="underline">Vecora in Norway</a>.</p>
+    </div>
+
+    <div class="container" id="legal">
+      2018 – 2020 © Vecora AS and Erling Owe. Code is mostly <a href="https://github.com/owe/style-guide/blob/master/LICENSE.md" class="underline">licensed</a> under <a href="http://www.gnu.org/licenses/gpl-3.0.html" class="underline">GPLv3</a>. Vecora® is a registered trademark in EU and other countries.
+    </div>
+  </footer>
+
+  {% include cookie-message.html %}
+  {% include footer.html %}
+</body>
+
+</html>
