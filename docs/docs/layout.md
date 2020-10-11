@@ -4,7 +4,7 @@ title: Layout
 description:
 ---
 
-{% assign pageUrl = '/sg-vecora' | append: page.url %}
+{% assign pageUrl = '/ds-vecora' | append: page.url %}
 
 <div class="container columns">
   <a href="{{ pageUrl }}#columns" class="column ">

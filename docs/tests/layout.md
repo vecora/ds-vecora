@@ -4,7 +4,7 @@ title: Layout Demos
 description:
 ---
 
-{% assign pageUrl = '/sg-vecora' | append: page.url %}
+{% assign pageUrl = '/ds-vecora' | append: page.url %}
 
 
 <div class="container grid no-margins columns-nano-2 columns-3xs-3 columns-xs-4 columns-xl-5 columns-fhd-5">
