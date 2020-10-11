@@ -1,8 +1,8 @@
-title: Generic style guide
+title: Design System for Vecora
 email: your-email@example.com
 description: > # this means to ignore newlines until "baseurl:"
-  Generic style guide
-baseurl: "/style-guide" # the subpath of your site, e.g. /blog
+  Design System for Vecora
+baseurl: "/ds-vecora" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  vecora
 
