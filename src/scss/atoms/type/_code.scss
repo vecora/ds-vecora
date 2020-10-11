@@ -2,7 +2,7 @@ pre, code {
   font-family: Hack, monospace;
   font-size: calc-font-size(1.5, map-get($fonts, gilroy));
   line-height: calc-line-height(2, 1.5, map-get($fonts, gilroy));
-  background-color: $sand;
+  background-color: var(--code-background-color);
   //display: inline-block;
   margin: calc(-var(--unit) / 2);
   padding: calc(var(--unit) / 2);

@@ -32,7 +32,15 @@ $link-hover-color: $link-color;
   // UI Colors
   --accent-color: #{$pink};
   --text-color: #{$dark-gray};
-  --link-color: currentColor;
+  --text-color-flipped: white; // Q: Is this used for anything else than incognito links?
+  --link-color: var(--accent-color);
+  --link-color-flipped: white;
+  --mute-color: #{$light-gray};
+  --mute-color-flipped: white;
+  --code-text-color: var(--text-color);
+  --code-background-color: #{$sand};
+
+
   --link-hover-color: currentColor;
   --link-underline-color: #{rgba($dark-gray,0.15)};
   --background-color: white;

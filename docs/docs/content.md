@@ -87,18 +87,26 @@ This is a standard HTML entity, but still worth mentioning. Useful for hardcoded
 
 ## Links
 
+[TODO: Brief, but descriptive explanation here, and then link to exhaustive tests.]
+
 {% capture example %}
 <a href="#">Defualt styling</a>
 {% endcapture %}
 {% include example.html content=example %}
 
 {% capture example %}
-<a href="#" class="external">External link</a>
+External <a href="#" class="external">link</a>.
 {% endcapture %}
 {% include example.html content=example %}
 
 {% capture example %}
-<a href="#" class="incognito">Doesn't look like a link</a>
+Doesn't look like a <a href="#" class="incognito">link</a>, but is.
+{% endcapture %}
+{% include example.html content=example %}
+
+For muted text, incognito class is applied by default.
+{% capture example %}
+<p class="mute">Muted text with a <a href="#">link</a> within.</p>
 {% endcapture %}
 {% include example.html content=example %}
 
@@ -108,7 +116,9 @@ This is a standard HTML entity, but still worth mentioning. Useful for hardcoded
 {% include example.html content=example %}
 
 {% capture example %}
-<a href="#" class="underline muted">Muted underline styling</a>
+<p class="mute">
+  <a href="#" class="underline muted">Muted underline styling</a>
+</p>
 {% endcapture %}
 {% include example.html content=example %}
 

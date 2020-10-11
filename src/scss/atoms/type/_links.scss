@@ -4,16 +4,17 @@ button.link {
 }
 
 a {
-  color: var(--accent-color);
+  color: var(--link-color);
 
   &:hover {
-    color: var(--inverted-text-color);
-    background-color: var(--text-color);
-    margin: 0 calc(-1 * var(--unit) / 2);
-    padding: 0 calc(var(--unit) / 2);
+    color: var(--link-color-flipped);
+    background-color: var(--link-color);
+    margin: -2px;
+    padding: 2px;
     border-radius: 2px;
   }
 
+  // Helper class
   &.undo {
     color: currentColor;
 
@@ -27,19 +28,33 @@ a {
   }
 }
 
+a.incognito {
+  color: var(--text-color);
+
+  &:hover {
+    color: var(--text-color-flipped);
+    background-color: var(--text-color);
+  }
+}
+
+.mute a:not(.unmute) {
+  --text-color: var(--mute-color);
+  @extend a.incognito;
+}
+
 
 a.underline, button.underline {
-  color: var(--link-color);
-  text-decoration: none;
+  @extend a.undo;
 
-  // font-weight: 500;
+  color: var(--text-color);
+  text-decoration: none;
 
   background-image: linear-gradient(180deg, transparent 50%, var(--link-underline-color) 50%);
   background-size: 100% 200%;
   background-position-y: 23%; // TODO: Consider using absolute pixel sizes for various text sizes.
   padding: 2px 1px 1px 1px;
   margin: -2px -1px -1px -1px;
-  transition: all 200ms ease;
+  transition: all 200ms ease; //was 200ms
 
   &:hover {
     color: var(--link-hover-color);
@@ -47,5 +62,20 @@ a.underline, button.underline {
 
     background-position-y: 100%;
     border-radius: 1px;
+
+    // these should be unnecessary. why is there flicker when they are not there?
+    padding: 2px 1px 1px 1px;
+    margin: -2px -1px -1px -1px;
+  }
+}
+
+.mute {
+  a.underline, button.underline {
+    color: var(--mute-color);
+    background-image: linear-gradient(180deg, transparent 50%, var(--mute-color) 50%);
+    &:hover {
+      color: var(--mute-color-flipped);
+      background-color: transparent; // undos mute link style
+    }
   }
 }

@@ -1,10 +1,10 @@
 .--book {
 
-  --accent-color: #ffcb5c;
+  --accent-color: #c7b99c;
   --text-color: #3b3b3b;
-  --inverted-text-color: white;
   --link-underline-color: var(--accent-color);
-  --muted-color: #d2d2d2;
+  --mute-color: #d2d2d2;
+
 
   // Set currentColor
   color: var(--text-color);
@@ -43,6 +43,28 @@
     }
   }
 
+  // links.scss
+  a.underline {
+    background-position-y: 8%;
+    transition-duration: 400ms;
+    &:hover {
+      background-position-y: 100%;
+      border-radius: 2px;
+    }
+  }
+
+  // table.scss
+
+  table, th, td { border: 0; } // undo. should use dedicated .undo class
+
+  table {
+    --code-background-color: white;
+    border-collapse: separate;
+    border-spacing: calc(var(--unit) / 2);
+  }
+
+  th, td { background-color: rgba(0,0,0,0.03); }
+
 }
 
 @media (prefers-color-scheme: dark) {
@@ -50,12 +72,21 @@
     //--accent-color: #C8C8C8;
     //--background-color: #282829;
     --text-color: #C8C8C8;
-    --inverted-text-color: #2a2a2a;
+    --text-color-flipped: #2a2a2a;
+    --link-underline-color: #675d4a;
+    --code-background-color: #3c3a36;
+    --mute-color: #3a3a3a;
+    --mute-color-flipped: #aaa;
 
     // TODO: Make responsive.
     body {
       background-image: radial-gradient(#2a2a2a, #181818);
     }
+
+    // table.scss
+
+    table { --code-background-color: #272727; }
+    th, td { background-color: #2f2f2f; }
   }
 }
 
@@ -64,7 +95,6 @@
 
 @media (prefers-color-scheme: dark) {
   .--book {
-    --muted-color: #3a3a3a;
 
     input[type=search] {
       background-color: #141414;
