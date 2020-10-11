@@ -4,7 +4,10 @@ title: Introduction
 description:
 ---
 
-Bootstrap has a class name convention where all classes are prefixed whatever they belong to. We <em>do not</em> use the same class name convention for our own classes [we use something similar to Semantic UI]. <- Bootstrap will be phased out and naming convention will be transitioned to BEM.
+[CSS naming convention similar to Semantic UI. Not clearly defined yet, and our code ia not currently very consistent. We use the atomic design terminology. In addition we have modifier classes, utility classes (i.e. spacing classes), and theme classes (global on the html element, or only parts of a page).]
+
+[[Principles (brand values, purposes, objectives). Identity (from design department). Style Guide (is just a coded version of the identity / design language) and Pattern library (and/or component library) (everything between base styles up to templates). <- technical and functional documentation.] [guidelines for language and overall communications style and policies, including social media.] <- here we overstep the boundaries of a design system.]
+
 
 [ [The Atomic Workflow](http://atomicdesign.bradfrost.com/chapter-4/) ]
 
