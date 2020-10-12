@@ -12,7 +12,7 @@ const through = require('through2');
 const buildPath = "dist";
 
 var copyStatus = false;
-var copyDest = "../craft-vecora.com/web/";
+var copyDest = "/docs/assets/";
 
 function copy (filename) {
   if (copyStatus) {
