@@ -12,7 +12,7 @@ const through = require('through2');
 const buildPath = "dist";
 
 var copyStatus = false;
-var copyDest = "/docs/assets/";
+var copyDest = "./docs/assets/";
 
 function copy (filename) {
   if (copyStatus) {
@@ -100,8 +100,9 @@ exports.watch = function() {
   watch("src/js/**/*.js", { events: "all", ignoreInitial: false }, combineHeadScripts);
   if (args.copy) {
     copyStatus = true;
-    // TODO: Validate that args.copy is an existing and writable path
-    copyDest = args.copy;
+    if (args.copy !== true) {
+        copyDest = args.copy // TODO: Validate that args.copy is an existing and writable path
+    }
     console.log("Copying files to " + args.copy);
   }
 }
