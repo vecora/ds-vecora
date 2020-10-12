@@ -40,7 +40,7 @@ Three layout systems: columns, grid, and flex. All layout systems currently use 
 
 ### Margins
 
-`margins` or `no-margins` affects the left and right visual margins of the container. Margins are 4 <a href="">units</a> wide. Defaults to `margins`. Both classes may be needed when building <a href="{{ pageUrl }}#complex-layouts" class="link">complex layouts</a>. Vertical margins are called <a href="">spacing</a>.
+`margins` or `no-margins` affects the left and right visual margins of the container. Margins are 4 <a href="">units</a> wide. Defaults to `margins`. Both classes may be needed when building <a href="{{ pageUrl }}#complex-layouts">complex layouts</a>. Vertical margins are called <a href="">spacing</a>.
 
 {% capture code %}
 <div class="container no-margins"></div>
@@ -77,7 +77,7 @@ Three layout systems: columns, grid, and flex. All layout systems currently use 
 
 Boxes and columns are incompatible layout systems. [Explain the use of the flex class, that it opens up the possibility of future layout systems, for example a grid based one, still using the container class.]
 
-The columns may have additional classes from `two` to `eleven` to manipulate the widths. Default is 1.
+The columns may have additional classes from <code>two</code> to <code>eleven</code> to manipulate the widths. Default is 1.
 
 This example has a six column layout, where the middle column span four columns.
 
@@ -94,7 +94,7 @@ This example has a six column layout, where the middle column span four columns.
 
 ### Gaps
 
-`gaps` or `no-gaps` may be applied to the container. Defaults to `gaps`, but both classes may be needed when building <a href="">complex layouts</a>.
+<code>gaps</code> or <code>no-gaps</code> may be applied to the container. Defaults to <code>gaps</code>, but both classes may be needed when building <a href="">complex layouts</a>.
 
 ### Break points
 
@@ -164,15 +164,15 @@ Shorthands for common responsive column layouts.
 
 ### Gaps
 
-`gaps` or `no-gaps` may be applied to the container. Defaults to `gaps`, but both classes may be needed when building <a href="">complex layouts</a>.
+<code>gaps</code> or <code>no-gaps</code> may be applied to the container. Defaults to <code>gaps</code>, but both classes may be needed when building <a href="">complex layouts</a>.
 
 ### Inset
 
-`inset` or `no-inset` may be applied to the container. Defaults to `no-inset`, but both classes may be needed when building <a href="">complex layouts</a>.
+<code>inset</code> or <code>no-inset</code> may be applied to the container. Defaults to <code>no-inset</code>, but both classes may be needed when building <a href="">complex layouts</a>.
 
 ### Borders
 
-`inner-borders` may be applied to the container. This will also apply `no-gaps` and `inset` by default.
+<code>inner-borders</code> may be applied to the container. This will also apply <code>no-gaps</code> and <code>inset</code> by default.
 
 ## Flex
 
