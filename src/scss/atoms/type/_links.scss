@@ -7,6 +7,14 @@ a {
   color: var(--link-color);
 
   &:hover {
+    color: var(--link-color-hover);
+  }
+}
+
+a.backdrop {
+  color: var(--link-color);
+
+  &:hover {
     color: var(--link-color-flipped);
     background-color: var(--link-color);
     margin: -2px;

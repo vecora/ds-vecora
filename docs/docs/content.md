@@ -94,8 +94,15 @@ This is a standard HTML entity, but still worth mentioning. Useful for hardcoded
 {% endcapture %}
 {% include example.html content=example %}
 
+[Missing visuals to show that the link is external.]
+
 {% capture example %}
 External <a href="#" class="external">link</a>.
+{% endcapture %}
+{% include example.html content=example %}
+
+{% capture example %}
+<a href="#" class="backdrop">Backdrop style</a>
 {% endcapture %}
 {% include example.html content=example %}
 

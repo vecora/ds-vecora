@@ -5,6 +5,7 @@ $fawn: #FFAE5C;
 $orange: #FE7333;
 $red: #FA4024;
 $pink: #F71D52; // primary color
+$pink-dark: #AF003C; // primary color
 $rose: #F0027B;
 $magenta: #E412C5;
 $blue: #0B4EEC;
@@ -34,6 +35,7 @@ $link-hover-color: $link-color;
   --text-color: #{$dark-gray};
   --text-color-flipped: white; // Q: Is this used for anything else than incognito links?
   --link-color: var(--accent-color);
+  --link-color-hover: #{$pink-dark};
   --link-color-flipped: white;
   --mute-color: #{$light-gray};
   --mute-color-flipped: white;
